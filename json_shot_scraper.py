@@ -39,6 +39,7 @@ def flatten_goal(goal, game_id):
             'coord_z2': goal_data['coord']['2']['z']}
 
 def flatten_complete_pass(apass, game_id):
+    """Flatten the schema of a completed pass."""
     pass_id = apass[0]
     pass_data = apass[1]
 
@@ -60,6 +61,7 @@ def flatten_complete_pass(apass, game_id):
 
 
 def flatten_incomplete_pass(apass, game_id):
+    """Flatten the schema of an incomplete pass."""
     pass_id = apass[0]
     pass_data = apass[1]
 
