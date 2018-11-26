@@ -13,12 +13,12 @@ def flatten_shot(shot, game_id):
             'team_id': shot_data['team'],
             'player_id': shot_data['plyrId'],
             'caught_by': shot_data.get('ctchBy', None),
-            'coord_x1': shot_data['coord']['1']['x'],
-            'coord_y1': shot_data['coord']['1']['y'],
-            'coord_z1': shot_data['coord']['1']['z'],
-            'coord_x2': shot_data['coord']['2']['x'],
-            'coord_y2': shot_data['coord']['2']['y'],
-            'coord_z2': shot_data['coord']['2']['z']}
+            'shot_coord_x1': shot_data['coord']['1']['x'],
+            'shot_coord_y1': shot_data['coord']['1']['y'],
+            'shot_coord_z1': shot_data['coord']['1']['z'],
+            'shot_coord_x2': shot_data['coord']['2']['x'],
+            'shot_coord_y2': shot_data['coord']['2']['y'],
+            'shot_coord_z2': shot_data['coord']['2']['z']}
 
 def flatten_goal(goal, game_id):
     """Flatten the schema of a goal record."""
@@ -31,12 +31,12 @@ def flatten_goal(goal, game_id):
             'team_id': goal_data['team'],
             'player_id': goal_data['plyrId'],
             'assisted_by': goal_data.get('assBy', None),
-            'coord_x1': goal_data['coord']['1']['x'],
-            'coord_y1': goal_data['coord']['1']['y'],
-            'coord_z1': goal_data['coord']['1']['z'],
-            'coord_x2': goal_data['coord']['2']['x'],
-            'coord_y2': goal_data['coord']['2']['y'],
-            'coord_z2': goal_data['coord']['2']['z']}
+            'shot_coord_x1': goal_data['coord']['1']['x'],
+            'shot_coord_y1': goal_data['coord']['1']['y'],
+            'shot_coord_z1': goal_data['coord']['1']['z'],
+            'shot_coord_x2': goal_data['coord']['2']['x'],
+            'shot_coord_y2': goal_data['coord']['2']['y'],
+            'shot_coord_z2': goal_data['coord']['2']['z']}
 
 def flatten_complete_pass(apass, game_id):
     """Flatten the schema of a completed pass."""
@@ -52,12 +52,12 @@ def flatten_complete_pass(apass, game_id):
             'team_id': pass_data['team'],
             'rec_player': pass_data['recvId'],
             'pass_player': pass_data['plyrId'],
-            'coord_x1': pass_data['coord']['1']['x'],
-            'coord_y1': pass_data['coord']['1']['y'],
-            'coord_z1': pass_data['coord']['1']['z'],
-            'coord_x2': pass_data['coord']['2']['x'],
-            'coord_y2': pass_data['coord']['2']['y'],
-            'coord_z2': pass_data['coord']['2']['z'] }
+            'pass_coord_x1': pass_data['coord']['1']['x'],
+            'pass_coord_y1': pass_data['coord']['1']['y'],
+            'pass_coord_z1': pass_data['coord']['1']['z'],
+            'pass_coord_x2': pass_data['coord']['2']['x'],
+            'pass_coord_y2': pass_data['coord']['2']['y'],
+            'pass_coord_z2': pass_data['coord']['2']['z'] }
 
 
 def flatten_incomplete_pass(apass, game_id):
@@ -73,9 +73,10 @@ def flatten_incomplete_pass(apass, game_id):
             'time_of_event(min)': (pass_data['t']['m'] + (pass_data['t']['s'] / 60 )),
             'team_id': pass_data['team'],
             'pass_player': pass_data['plyrId'],
-            'coord_x1': pass_data['coord']['1']['x'],
-            'coord_y1': pass_data['coord']['1']['y'],
-            'coord_z1': pass_data['coord']['1']['z'],
-            'coord_x2': pass_data['coord']['2']['x'],
-            'coord_y2': pass_data['coord']['2']['y'],
-            'coord_z2': pass_data['coord']['2']['z'] }
+            'inc_coord_x1': pass_data['coord']['1']['x'],
+            'inc_coord_y1': pass_data['coord']['1']['y'],
+            'inc_coord_z1': pass_data['coord']['1']['z'],
+            'inc_coord_x2': pass_data['coord']['2']['x'],
+            'inc_coord_y2': pass_data['coord']['2']['y'],
+            'inc_coord_z2': pass_data['coord']['2']['z'] }
+
