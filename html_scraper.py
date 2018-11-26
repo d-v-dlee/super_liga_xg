@@ -40,5 +40,5 @@ def scrape_soccer_json(urls):
     for url in urls:
         with urllib.request.urlopen(url) as url:
             data = json.loads(url.read().decode())
-            coll.insert(data)
+            coll.insert_one(data)
             time.sleep(15)
