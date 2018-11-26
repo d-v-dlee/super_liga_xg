@@ -18,8 +18,20 @@ def shot_to_pass(shot_df, pass_df, time_elapsed=.16667):
         if len(possible_pass_df) == 0:
             shot_df.loc[indx, 'passed_from_id'] = None
         elif len(possible_pass_df) > 1:
-            shot_df.loc[indx, 'passed_from_id'] = possible_pass_df.iloc[-1, :]['pass_player']   
+            shot_df.loc[indx, 'passed_from_id'] = possible_pass_df.iloc[-1, :]['pass_player'] 
+            shot_df.loc[indx, 'pass_coord_x1'] = possible_pass_df.iloc[-1, :]['pass_coord_x1'] 
+            shot_df.loc[indx, 'pass_coord_x2'] = possible_pass_df.iloc[-1, :]['pass_coord_x2'] 
+            shot_df.loc[indx, 'pass_coord_y1'] = possible_pass_df.iloc[-1, :]['pass_coord_y1'] 
+            shot_df.loc[indx, 'pass_coord_y2'] = possible_pass_df.iloc[-1, :]['pass_coord_y2'] 
+            shot_df.loc[indx, 'pass_coord_z1'] = possible_pass_df.iloc[-1, :]['pass_coord_z1'] 
+            shot_df.loc[indx, 'pass_coord_z2'] = possible_pass_df.iloc[-1, :]['pass_coord_z2']   
         else:
             shot_df.loc[indx, 'passed_from_id'] = possible_pass_df.iloc[0, :]['pass_player']
+            shot_df.loc[indx, 'pass_coord_x1'] = possible_pass_df.iloc[0, :]['pass_coord_x1']
+            shot_df.loc[indx, 'pass_coord_x2'] = possible_pass_df.iloc[0, :]['pass_coord_x2']
+            shot_df.loc[indx, 'pass_coord_y1'] = possible_pass_df.iloc[0, :]['pass_coord_y1']
+            shot_df.loc[indx, 'pass_coord_y2'] = possible_pass_df.iloc[0, :]['pass_coord_y2']
+            shot_df.loc[indx, 'pass_coord_yz'] = possible_pass_df.iloc[0, :]['pass_coord_z1']
+            shot_df.loc[indx, 'pass_coord_y2'] = possible_pass_df.iloc[0, :]['pass_coord_z2']
     return shot_df
     
