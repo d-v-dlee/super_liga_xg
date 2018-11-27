@@ -1,3 +1,5 @@
+import pandas as pd
+
 def pass_to_shot(shot_df, pass_df, time_elapsed=.16667):
     """
     Links shots to previous passes to 
@@ -9,7 +11,7 @@ def pass_to_shot(shot_df, pass_df, time_elapsed=.16667):
     
     Returns
     -------
-    shots_df with new column 'passed_from_id' and 'pass_id'
+    shots_df with new column 'passed_from_id' and 'coordinates'
     """
     for indx, row in shot_df.iterrows():
         shooter_id = row['player_id']
@@ -46,7 +48,7 @@ def corner_to_shot(shot_df, corner_df, time_elapsed=.27):
     
     Returns
     -------
-    shots_df with new column 'passed_from_id' and 'pass_id'
+    shots_df with updated column 'passed_from_id' and 'pass_id'
     """
     for indx, row in shot_df.iterrows():
         shooter_id = row['player_id']
@@ -74,3 +76,21 @@ def corner_to_shot(shot_df, corner_df, time_elapsed=.27):
             shot_df.loc[indx, 'pass_coord_y2'] = possible_corner_df.iloc[0, :]['ck_coord_z2']
             shot_df.loc[indx, 'corner_kick'] = 1 
     return shot_df
+
+def transpose_coordinates(input_df, inplace=True):
+    """takes a dataframe and transposes all points on one side so that
+    all events occur on one side of the grid"""
+    if inplace==False:
+        df = input_df.copy()
+    else:
+        df = input_df
+    df.loc[df['shot_coord_x1']< 0, ['shot_coord_x1', 'shot_coord_x2', 'shot_coord_y1', 'shot_coord_y2',
+                 'pass_coord_x1', 'pass_coord_x2', 'pass_coord_y1', 'pass_coord_y2'] ] *= -1
+    return df
+
+    # pos_df = df.loc[df['shot_coord_x1']>= 0, :]
+    # neg_df = df.loc[df['shot_coord_x1'] < 0, :].copy()
+    # neg_df.loc[:,['shot_coord_x1', 'shot_coord_x2', 'shot_coord_y1', 'shot_coord_y2',
+    #             'pass_coord_x1', 'pass_coord_x2', 'pass_coord_y1', 'pass_coord_y2']] *= -1
+    # transposed_shot_df = pd.concat([neg_df, pos_df], axis=0)
+    # return transposed_shot_df
