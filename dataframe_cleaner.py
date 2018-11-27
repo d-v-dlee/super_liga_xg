@@ -33,8 +33,8 @@ def pass_to_shot(shot_df, pass_df, time_elapsed=.16667):
             shot_df.loc[indx, 'pass_coord_x2'] = possible_pass_df.iloc[0, :]['pass_coord_x2']
             shot_df.loc[indx, 'pass_coord_y1'] = possible_pass_df.iloc[0, :]['pass_coord_y1']
             shot_df.loc[indx, 'pass_coord_y2'] = possible_pass_df.iloc[0, :]['pass_coord_y2']
-            shot_df.loc[indx, 'pass_coord_yz'] = possible_pass_df.iloc[0, :]['pass_coord_z1']
-            shot_df.loc[indx, 'pass_coord_y2'] = possible_pass_df.iloc[0, :]['pass_coord_z2']
+            shot_df.loc[indx, 'pass_coord_z1'] = possible_pass_df.iloc[0, :]['pass_coord_z1']
+            shot_df.loc[indx, 'pass_coord_z2'] = possible_pass_df.iloc[0, :]['pass_coord_z2']
     return shot_df
     
 def corner_to_shot(shot_df, corner_df, time_elapsed=.27):
@@ -72,8 +72,8 @@ def corner_to_shot(shot_df, corner_df, time_elapsed=.27):
             shot_df.loc[indx, 'pass_coord_x2'] = possible_corner_df.iloc[0, :]['ck_coord_x2']
             shot_df.loc[indx, 'pass_coord_y1'] = possible_corner_df.iloc[0, :]['ck_coord_y1']
             shot_df.loc[indx, 'pass_coord_y2'] = possible_corner_df.iloc[0, :]['ck_coord_y2']
-            shot_df.loc[indx, 'pass_coord_yz'] = possible_corner_df.iloc[0, :]['ck_coord_z1']
-            shot_df.loc[indx, 'pass_coord_y2'] = possible_corner_df.iloc[0, :]['ck_coord_z2']
+            shot_df.loc[indx, 'pass_coord_z1'] = possible_corner_df.iloc[0, :]['ck_coord_z1']
+            shot_df.loc[indx, 'pass_coord_z2'] = possible_corner_df.iloc[0, :]['ck_coord_z2']
             shot_df.loc[indx, 'corner_kick'] = 1 
     return shot_df
 
