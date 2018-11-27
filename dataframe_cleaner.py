@@ -1,4 +1,4 @@
-def shot_to_pass(shot_df, pass_df, time_elapsed=.16667):
+def pass_to_shot(shot_df, pass_df, time_elapsed=.16667):
     """
     Links shots to previous passes to 
     try to link assists based on time between pass and shot
@@ -35,3 +35,42 @@ def shot_to_pass(shot_df, pass_df, time_elapsed=.16667):
             shot_df.loc[indx, 'pass_coord_y2'] = possible_pass_df.iloc[0, :]['pass_coord_z2']
     return shot_df
     
+def corner_to_shot(shot_df, corner_df, time_elapsed=.27):
+    """
+    Links shots to previous corners to 
+    try to link assists based on time between pass and corner
+    ----------
+    shot_df: shot_df of a game with passes included
+    corner_df: corner_df of a game
+    time: fraction of a minute between pass and shot, default 16 seconds (because data has a corner assist at that time)
+    
+    Returns
+    -------
+    shots_df with new column 'passed_from_id' and 'pass_id'
+    """
+    for indx, row in shot_df.iterrows():
+        shooter_id = row['player_id']
+        shoot_time = row['time_of_event(min)']
+        possible_corner_df =  corner_df[(corner_df['time_of_event(min)'] < shoot_time) & (corner_df['time_of_event(min)'] > shoot_time - time_elapsed)]
+        if len(possible_corner_df) == 0:
+            # shot_df.loc[indx, 'passed_from_id'] = None
+            shot_df.loc[indx, 'corner_kick'] = 0
+        elif len(possible_corner_df) > 1:
+            shot_df.loc[indx, 'passed_from_id'] = possible_corner_df.iloc[-1, :]['player_id'] 
+            shot_df.loc[indx, 'pass_coord_x1'] = possible_corner_df.iloc[-1, :]['ck_coord_x1'] 
+            shot_df.loc[indx, 'pass_coord_x2'] = possible_corner_df.iloc[-1, :]['ck_coord_x2'] 
+            shot_df.loc[indx, 'pass_coord_y1'] = possible_corner_df.iloc[-1, :]['ck_coord_y1'] 
+            shot_df.loc[indx, 'pass_coord_y2'] = possible_corner_df.iloc[-1, :]['ck_coord_y2'] 
+            shot_df.loc[indx, 'pass_coord_z1'] = possible_corner_df.iloc[-1, :]['ck_coord_z1'] 
+            shot_df.loc[indx, 'pass_coord_z2'] = possible_corner_df.iloc[-1, :]['ck_coord_z2']
+            shot_df.loc[indx, 'corner_kick'] = 1  
+        else:
+            shot_df.loc[indx, 'passed_from_id'] = possible_corner_df.iloc[0, :]['player_id']
+            shot_df.loc[indx, 'pass_coord_x1'] = possible_corner_df.iloc[0, :]['ck_coord_x1']
+            shot_df.loc[indx, 'pass_coord_x2'] = possible_corner_df.iloc[0, :]['ck_coord_x2']
+            shot_df.loc[indx, 'pass_coord_y1'] = possible_corner_df.iloc[0, :]['ck_coord_y1']
+            shot_df.loc[indx, 'pass_coord_y2'] = possible_corner_df.iloc[0, :]['ck_coord_y2']
+            shot_df.loc[indx, 'pass_coord_yz'] = possible_corner_df.iloc[0, :]['ck_coord_z1']
+            shot_df.loc[indx, 'pass_coord_y2'] = possible_corner_df.iloc[0, :]['ck_coord_z2']
+            shot_df.loc[indx, 'corner_kick'] = 1 
+    return shot_df

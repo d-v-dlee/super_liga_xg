@@ -28,7 +28,7 @@ def flatten_goal(goal, game_id):
     return {'game_id': game_id,
             'goal_id': goal_id,
             'shot_type': goal_data['type'],
-            'time_of_event(min)': (goal_data['t']['m'] + (shot_data['t']['s'] / 60 )),
+            'time_of_event(min)': (goal_data['t']['m'] + (goal_data['t']['s'] / 60 )),
             'team_id': goal_data['team'],
             'player_id': float(goal_data['plyrId']),
             'assisted_by': goal_data.get('assBy', None),
@@ -39,7 +39,7 @@ def flatten_goal(goal, game_id):
             'shot_coord_y2': goal_data['coord']['2']['y'],
             'shot_coord_z2': goal_data['coord']['2']['z']}
 
-def flatten_corner_kick(corner_kick, game_id):
+def flatten_corner(corner_kick, game_id):
     """Flatten the schema of a corner kick."""
     ck_id = corner_kick[0]
     ck_data = corner_kick[1]
@@ -47,7 +47,8 @@ def flatten_corner_kick(corner_kick, game_id):
     return {'game_id': game_id,
             'ck_id': ck_id,
             'time_of_event(min)': (ck_data['t']['m'] + (ck_data['t']['s'] / 60 )),
-            'assist': ck_data.get('assBy', None),
+            # 'assist': ck_data.get('assBy', None),
+            'player_id': float(ck_data['plyrId']),
             'ck_coord_x1': ck_data['coord']['1']['x'],
             'ck_coord_y1': ck_data['coord']['1']['y'],
             'ck_coord_z1': ck_data['coord']['1']['z'],
