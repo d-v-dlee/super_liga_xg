@@ -79,7 +79,7 @@ def corner_to_shot(shot_df, corner_df, time_elapsed=.27):
 
 def transpose_coordinates(input_df, inplace=True):
     """takes a dataframe and transposes all points on one side so that
-    all events occur on one side of the grid"""
+    all events occur on right side of the grid"""
     if inplace==False:
         df = input_df.copy()
     else:
@@ -88,9 +88,20 @@ def transpose_coordinates(input_df, inplace=True):
                  'pass_coord_x1', 'pass_coord_x2', 'pass_coord_y1', 'pass_coord_y2'] ] *= -1
     return df
 
-    # pos_df = df.loc[df['shot_coord_x1']>= 0, :]
-    # neg_df = df.loc[df['shot_coord_x1'] < 0, :].copy()
-    # neg_df.loc[:,['shot_coord_x1', 'shot_coord_x2', 'shot_coord_y1', 'shot_coord_y2',
-    #             'pass_coord_x1', 'pass_coord_x2', 'pass_coord_y1', 'pass_coord_y2']] *= -1
-    # transposed_shot_df = pd.concat([neg_df, pos_df], axis=0)
-    # return transposed_shot_df
+def coord_to_yards(input_df, x_normalizer=88.8888, y_normalizer=60.538, inplace=True):
+    """take a dataframe and turn the coordinats into yardage coordinates from the goal"""
+    if inplace==False:
+        df = input_df.copy()
+    else:
+        df = input_df
+    df['shot_coord_x1'] = df['shot_coord_x1'].apply(lambda x: (1 - x) / 2 * x_normalizer).round(2)
+    df['shot_coord_x2'] = df['shot_coord_x2'].apply(lambda x: (1 - x) / 2 * x_normalizer).round(2)
+    df['pass_coord_x1'] = df['pass_coord_x1'].apply(lambda x: (1 - x) / 2 * x_normalizer).round(2)
+    df['pass_coord_x2'] = df['pass_coord_x2'].apply(lambda x: (1 - x) / 2 * x_normalizer).round(2)
+
+    df['shot_coord_y1'] = df['shot_coord_y1'].apply(lambda x: x / 2 * y_normalizer).round(2)
+    df['shot_coord_y2'] = df['shot_coord_y2'].apply(lambda x: x / 2 * y_normalizer).round(2)
+    df['pass_coord_y1'] = df['pass_coord_y1'].apply(lambda x: x / 2 * y_normalizer).round(2)
+    df['pass_coord_y2'] = df['pass_coord_y2'].apply(lambda x: x / 2 * y_normalizer).round(2)
+    return df
+

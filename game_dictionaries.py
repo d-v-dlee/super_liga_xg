@@ -8,7 +8,7 @@ def field_units():
     field_markers['right_18_edge'] = -0.715
     field_markers['left_6_edge'] = 0.325
     field_markers['right_6_edge'] = -0.325
-    field_markers['eight_yard'] = 0.595
+    field_markers['eighteen_yard'] = 0.595
     field_markers['penalty'] = 0.73
     field_markers['six_yard_box'] = 0.865
     
