@@ -38,3 +38,14 @@ def game_to_cleaned_df(game):
     df_no_own = drop_own_goals(df)
     df_final = goal_dummy(df_no_own)
     return df_final
+
+def create_frame():
+    """create dataframe to concat new dataframes to"""
+    attach_to_df = pd.DataFrame(columns=['game_id', 'player_id', 'shot_coord_x1', 'shot_coord_x2',
+       'shot_coord_y1', 'shot_coord_y2', 'shot_coord_z1', 'shot_coord_z2',
+       'shot_id', 'shot_type', 'team_id', 'time_of_event(min)',
+       'passed_from_id', 'pass_coord_x1', 'pass_coord_x2', 'pass_coord_y1',
+       'pass_coord_y2', 'pass_coord_z1', 'pass_coord_z2', 'corner_kick',
+       'shot_distance', 'shot_angle', 'assisted_shot', 'is_penalty_attempt',
+       'goal'])
+    return attach_to_df
