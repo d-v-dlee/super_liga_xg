@@ -42,3 +42,6 @@ def scrape_soccer_json(urls):
             data = json.loads(url.read().decode())
             coll.insert_one(data)
             time.sleep(15)
+
+
+#dropped games from mongoDB = [448694, 448698, 448623, 448627]
