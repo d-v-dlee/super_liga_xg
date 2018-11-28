@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 def pass_to_shot(shot_df, pass_df, time_elapsed=.16667):
     """
@@ -104,4 +105,14 @@ def coord_to_yards(input_df, x_normalizer=88.8888, y_normalizer=60.538, inplace=
     df['pass_coord_y1'] = df['pass_coord_y1'].apply(lambda x: x / 2 * y_normalizer).round(2)
     df['pass_coord_y2'] = df['pass_coord_y2'].apply(lambda x: x / 2 * y_normalizer).round(2)
     return df
+
+
+def shot_distance_angle(input_df):
+    """take a dataframe and calculate the distance of each shot from the center of the goal
+    and the angle of each shot"""
+    input_df['shot_distance'] = np.sqrt((0 - input_df['shot_coord_x1']) ** 2 + (0 - input_df['shot_coord_y1']) ** 2)
+    input_df['shot_angle'] = (np.arctan(input_df['shot_coord_y1']/input_df['shot_coord_x1']) * (180/np.pi))
+    return input_df
+
+
 
