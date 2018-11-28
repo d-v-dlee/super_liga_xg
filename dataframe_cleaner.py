@@ -114,5 +114,25 @@ def shot_distance_angle(input_df):
     input_df['shot_angle'] = (np.arctan(input_df['shot_coord_y1']/input_df['shot_coord_x1']) * (180/np.pi))
     return input_df
 
+def dummy_columns(input_df):
+    """add dummy columns on whether or not a shot was preceded by a direct pass
+    add dummy columns on whether or not a shot attempt was a penalty
+    input: dataframe
+    output: dataframe with dummy columns """
+    input_df['assisted_shot'] = input_df['passed_from_id'].notnull().astype(int)
+    input_df['is_penalty_attempt'] = input_df['shot_type'].isin([13, 44]).astype(int)
+    return input_df
+
+def drop_own_goals(input_df):
+    """only return shots that were not own goals"""
+    input_df = input_df[input_df['shot_type'] != 10]
+    return input_df
+
+def goal_dummy(input_df):
+    """creates dummy variable on whether a shot resulted in a goal or not"""
+    input_df['goal'] = input_df['shot_type'].isin([9, 11, 12, 13]).astype(int)
+    return input_df
+
+
 
 
