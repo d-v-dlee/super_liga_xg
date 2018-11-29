@@ -95,12 +95,13 @@ def create_player_min_frame():
 
 def create_master_player_min_df(games):
     """input games from mongodb by db.games.find() and return a cleaned dataframe"""
+    
     columns = ['game_id', 'name', 'player_id', 'position_id', 'squad_number',
        'substitute', 'team_id', 'minutes_played']
 
-    to_attach_df = create_player_min_frame()
+    attach_df = create_player_min_frame()
     for game in games:
         df = game_to_player_df(game)
-        master_df = pd.concat([to_attach_df, df], axis=0, ignore_index=True)
-        to_attach_df = master_df.copy()
-    return master_df[columns].copy()
+        merged_df = pd.concat([attach_df, df], axis=0, ignore_index=True)
+        to_attach_df = merged_df.copy()
+    return merged_df
