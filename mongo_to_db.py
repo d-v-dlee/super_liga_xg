@@ -66,11 +66,9 @@ def create_master_df(games):
     attach_to_df = create_frame()
     for game in games:
         df = game_to_cleaned_df(game)
-        master_df = pd.concat([attach_to_df, df], axis=0, ignore_index=True)
-        attach_to_df = master_df.copy()
-    return master_df[columns].copy()
-
-#player/sub functions
+        final_df = pd.concat([attach_to_df, df], axis=0, ignore_index=True)
+        attach_to_df = final_df.copy()
+    return final_df[columns].copy()
 
 def game_to_player_df(game):
     """input game from db and output pandas dataframe with plaer information + minutes played"""
@@ -105,3 +103,7 @@ def create_master_player_min_df(games):
         merged_df = pd.concat([attach_df, df], axis=0, ignore_index=True)
         to_attach_df = merged_df.copy()
     return merged_df
+
+def player_dict(games):
+
+    player_dict = {}
