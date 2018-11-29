@@ -23,12 +23,14 @@ def game_to_cleaned_df(game):
     shot_pass_df = pass_to_shot(shot_df, completed_passes_df)
 
     corners = list(game['incidences']['cornerKicks'].items())
-    corner_dicts = [flatten_corner(kick, game_id) for kick in corners]
-    corner_df = pd.DataFrame(corner_dicts)
+    if len(corners) > 0
+        corner_dicts = [flatten_corner(kick, game_id) for kick in corners]
+        corner_df = pd.DataFrame(corner_dicts)
 
-    shot_pass_corner = corner_to_shot(shot_pass_df, corner_df)
-
-    transposed_df = transpose_coordinates(shot_pass_corner)
+        shot_pass_corner = corner_to_shot(shot_pass_df, corner_df)
+        transposed_df = transpose_coordinates(shot_pass_corner)
+    else:
+        transposed_df = transpose_coordinates(shot_pass_df)
 
     yard_df = coord_to_yards(transposed_df)
 
