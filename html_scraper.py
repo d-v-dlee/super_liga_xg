@@ -44,4 +44,4 @@ def scrape_soccer_json(urls):
             time.sleep(15)
 
 
-#dropped games from mongoDB = [448694, 448698, 448623, 448627]
+#dropped games from mongoDB = [448694, 448698, 448623, 448627, 448633]
