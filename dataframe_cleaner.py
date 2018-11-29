@@ -133,6 +133,20 @@ def goal_dummy(input_df):
     input_df['is_goal'] = input_df.loc[:, 'shot_type'].isin([9, 11, 12, 13]).astype(int)
     return input_df
 
-
+def minutes_played(subs_df, player_df):
+    """input dataframe of subsitutions and players for each game and return 
+    dataframe with player information + minutes played that game """
+    player_df['minutes_played'] = player_df['substitute'] * 90
+    for indx, row1 in subs_df.iterrows():
+        player_off = row1['player_off']
+        player_on = row1['player_on']
+        minute = row1['time_of_event(min)']
+        for indx, row2 in player_df.iterrows():
+            if player_off == row2['player_id']:
+                player_df.loc[indx, 'minutes_played'] = minute
+            elif player_on == row2['player_id']:
+                player_df.loc[indx, 'minutes_played'] = 90 - minute
+    return player_df
+    
 
 
