@@ -51,3 +51,12 @@ def create_frame():
        'shot_distance', 'shot_angle', 'assisted_shot', 'is_penalty_attempt',
        'goal'])
     return attach_to_df
+
+
+def create_master_df(games):
+    attach_to_df = create_frame()
+    for game in games:
+        df = game_to_cleaned_df(game)
+        master_df = pd.concat([attach_to_df, df], axis=0, ignore_index=True)
+        attach_to_df = master_df.copy()
+    return master_df
