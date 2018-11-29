@@ -54,7 +54,8 @@ def create_frame():
 
 
 def create_master_df(games):
-    
+    """input games from mongodb by db.games.find() and return a cleaned dataframe
+    """
     columns = ['game_id', 'player_id', 'shot_coord_x1', 'shot_coord_x2',
        'shot_coord_y1', 'shot_coord_y2', 'shot_coord_z1', 'shot_coord_z2',
        'shot_id', 'shot_type', 'team_id', 'time_of_event(min)',
