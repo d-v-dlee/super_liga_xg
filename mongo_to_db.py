@@ -54,9 +54,17 @@ def create_frame():
 
 
 def create_master_df(games):
+    
+    columns = ['game_id', 'player_id', 'shot_coord_x1', 'shot_coord_x2',
+       'shot_coord_y1', 'shot_coord_y2', 'shot_coord_z1', 'shot_coord_z2',
+       'shot_id', 'shot_type', 'team_id', 'time_of_event(min)',
+       'passed_from_id', 'pass_coord_x1', 'pass_coord_x2', 'pass_coord_y1',
+       'pass_coord_y2', 'pass_coord_z1', 'pass_coord_z2', 'corner_kick',
+       'shot_distance', 'shot_angle', 'assisted_shot', 'is_penalty_attempt',
+       'is_goal']
     attach_to_df = create_frame()
     for game in games:
         df = game_to_cleaned_df(game)
         master_df = pd.concat([attach_to_df, df], axis=0, ignore_index=True)
         attach_to_df = master_df.copy()
-    return master_df
+    return master_df[columns].copy()
