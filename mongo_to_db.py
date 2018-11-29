@@ -5,7 +5,7 @@ import numpy as np
 from json_shot_scraper import flatten_shot, flatten_goal, flatten_complete_pass, flatten_incomplete_pass, flatten_corner
 from  player_scraper import flatten_player, flatten_sub
 from dataframe_cleaner import (pass_to_shot, corner_to_shot, transpose_coordinates, coord_to_yards, 
-                               shot_distance_angle, dummy_columns, drop_own_goals, goal_dummy)
+                               shot_distance_angle, dummy_columns, drop_own_goals, goal_dummy, minutes_played)
 from html_scraper import db
 
 def game_to_cleaned_df(game):
@@ -68,4 +68,39 @@ def create_master_df(games):
         df = game_to_cleaned_df(game)
         master_df = pd.concat([attach_to_df, df], axis=0, ignore_index=True)
         attach_to_df = master_df.copy()
+    return master_df[columns].copy()
+
+#player/sub functions
+
+def game_to_player_df(game):
+    """input game from db and output pandas dataframe with plaer information + minutes played"""
+    game_id = game['match']['matchId']
+    
+    players = list(game['players'].items())
+    player_list_dicts = [flatten_player(player, game_id) for player in players]
+    player_df = pd.DataFrame(player_list_dicts)
+
+    subs = list(game['incidences']['substitutions'].items())
+    subs_dicts = [flatten_sub(sub, game_id) for sub in subs]
+    subs_df = pd.DataFrame(subs_dicts)
+
+    minutes_player_df = minutes_played(subs_df, player_df)
+    return minutes_player_df
+
+def create_player_min_frame():
+    """return a dataframe to concat to for player_sub_information"""
+    attach_to_df = pd.DataFrame(columns = ['game_id', 'name', 'player_id', 'position_id', 'squad_number',
+       'substitute', 'team_id', 'minutes_played'])
+    return attach_to_df
+
+def create_master_player_min_df(games):
+    """input games from mongodb by db.games.find() and return a cleaned dataframe"""
+    columns = ['game_id', 'name', 'player_id', 'position_id', 'squad_number',
+       'substitute', 'team_id', 'minutes_played']
+
+    to_attach_df = create_player_min_frame()
+    for game in games:
+        df = game_to_player_df(game)
+        master_df = pd.concat([to_attach_df, df], axis=0, ignore_index=True)
+        to_attach_df = master_df.copy()
     return master_df[columns].copy()
