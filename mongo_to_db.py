@@ -23,7 +23,7 @@ def game_to_cleaned_df(game):
     shot_pass_df = pass_to_shot(shot_df, completed_passes_df)
 
     corners = list(game['incidences']['cornerKicks'].items())
-    if len(corners) > 0
+    if len(corners) > 0:
         corner_dicts = [flatten_corner(kick, game_id) for kick in corners]
         corner_df = pd.DataFrame(corner_dicts)
 
