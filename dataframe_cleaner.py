@@ -130,7 +130,7 @@ def drop_own_goals(input_df):
 
 def goal_dummy(input_df):
     """creates dummy variable on whether a shot resulted in a goal or not"""
-    input_df['is_goal'] = input_df['shot_type'].isin([9, 11, 12, 13]).astype(int)
+    input_df['is_goal'] = input_df.loc[:, 'shot_type'].isin([9, 11, 12, 13]).astype(int)
     return input_df
 
 
