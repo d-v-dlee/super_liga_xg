@@ -90,6 +90,12 @@ def create_xG_df(test_data, test_y, model_predictions):
     df['xA'] = df['assisted_shot'] * df['xG']
     return df
 
+def create_hypothetical_df(test_data, model_predictions):
+    """create new dataframe with predicted probas and actual goals for predicted shots"""
+    df = pd.DataFrame(test_data)
+    df['xG'] = model_predictions[:, 1]
+    return df
+
 def create_summed_xG_df(df):
     """input xg_df and return dataframe of summed xg and xa for each player"""
     unique_players = df['player_id'].unique()
