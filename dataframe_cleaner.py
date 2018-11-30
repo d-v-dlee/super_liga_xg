@@ -136,7 +136,7 @@ def goal_dummy(input_df):
 def minutes_played(subs_df, player_df):
     """input dataframe of subsitutions and players for each game and return 
     dataframe with player information + minutes played that game """
-    player_df['minutes_played'] = player_df['substitute'] * 90
+    player_df['minutes_played'] = (1 - player_df['substitute']) * 90
     for indx, row1 in subs_df.iterrows():
         player_off = row1['player_off']
         player_on = row1['player_on']
