@@ -70,6 +70,8 @@ def create_master_df(games):
         attach_to_df = final_df.copy()
     return final_df[columns].copy()
 
+###below is for players
+
 def game_to_player_df(game):
     """input game from db and output pandas dataframe with plaer information + minutes played"""
     game_id = game['match']['matchId']
@@ -101,9 +103,6 @@ def create_master_player_min_df(games):
     for game in games:
         df = game_to_player_df(game)
         merged_df = pd.concat([attach_df, df], axis=0, ignore_index=True)
-        to_attach_df = merged_df.copy()
+        attach_df = merged_df.copy()
     return merged_df
 
-def player_dict(games):
-
-    player_dict = {}
