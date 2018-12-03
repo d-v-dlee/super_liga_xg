@@ -101,9 +101,12 @@ def flatten_incomplete_pass(apass, game_id):
 
 
 def flatten_team(team):
+    """Flatten the schema of a team for each game
+    team_dicts = [flatten_team(team) for team in teams] """
+
     team_id = team[0]
     team_data = team[1]
 
     return {'team_id': team_id,
-            'team_intitials': team_data['initials'],
+            'team_intitials': team_data['initials']
             'short_name': team_data['shortName']}
