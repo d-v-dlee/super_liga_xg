@@ -134,3 +134,17 @@ def merged_dataframes(player_df, contribution_df):
     xg_min['xG+xA/90'] = xg_min['total_xG+xA'].copy() / (xg_min['total_minutes_played'] / 90)
     xg_final = xg_min[columns]
     return xg_final
+
+def player_minutes_total(players_minutes_df):
+    """input player_minutes_df from create_test_min_df so that each row is a unique player"""
+    players = players_minutes_df['player_id'].unique()
+    player_minutes = []
+    for player in players:
+        total_minutes = players_minutes_df[players_minutes_df['player_id'] == player]['minutes_played'].sum()
+        name = players_minutes_df[players_minutes_df['player_id'] == player]['name'].iloc[0]
+        squad_num = players_minutes_df[players_minutes_df['player_id'] == player]['squad_number'].iloc[0]
+        club_brev = players_minutes_df[players_minutes_df['player_id'] == player]['club_brev'].iloc[0]
+        player_minutes.append([player, total_minutes, name, squad_num, club_brev])
+        
+    summed_player_min = pd.DataFrame(player_minutes, columns=['player_id', 'total_minutes_played', 'player_name', 'squad_num', 'club_brev'])
+    return summed_player_min
