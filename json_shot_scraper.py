@@ -108,5 +108,16 @@ def flatten_team(team):
     team_data = team[1]
 
     return {'team_id': team_id,
-            'team_intitials': team_data['initials']
+            'team_intitials': team_data['initials'],
             'short_name': team_data['shortName']}
+
+def team_dicts(games):
+    """input games from db.games.find() and return unique dictionary for teams"""
+    team_dicts = []
+    for game in games:
+        teams = list(game['teams'].items())
+        game_team = [flatten_team(team) for team in teams]
+        for team in game_team:
+            if team not in team_dicts:
+                team_dicts.append(team)
+    return team_dicts
