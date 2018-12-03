@@ -158,4 +158,26 @@ def turn_into_dollar_value(value, exchange_rate):
         return None
     return round((num_value * exchange_rate), 2)
 
+def transfer_markt_cleaner(players):
+    """input players from db.players.find() and return cleaned dataframe with club_brev and squad_num as floats"""
+    
+    tm_club_brev = {'Squad Club Atlético Boca Juniors': 'BOC' , 'Squad Club Atlético Independiente': 'IND', 'Squad Club Atlético River Plate': 'RIV', 'Squad Racing Club': 'RAC',
+       'Squad Club Atlético San Lorenzo de Almagro': 'SLO', 'Squad Club Atlético Lanús': 'LAN', 'Squad Club Atlético Vélez Sarsfield': 'VEL',
+       'Squad Club Deportivo Godoy Cruz Antonio Tomba': 'GOD', 'Squad Club Atlético Colón': 'COL', 'Squad Club Social y Deportivo Defensa y Justicia': 'DEF',
+       'Squad Club Atlético Rosario Central': 'ROS', 'Squad Club Atlético Talleres': 'TAL', 'Squad Club Atlético Unión (Santa Fe)': 'UNI',
+       'Squad Club Estudiantes de La Plata': 'EST', 'Squad Club Atlético Huracán': 'HUR', 'Squad Asociación Atlética Argentinos Juniors': 'ARG',
+       'Squad Club Atlético Banfield': 'BAN', 'Squad Club Atlético Belgrano': 'BEL', 'Squad Club Atlético Tigre': 'TIG', "Squad Club Atlético Newell's Old Boys": 'NOB',
+       'Squad Club Atlético Tucumán': 'ATT', 'Squad Club de Gimnasia y Esgrima La Plata': 'GIM', 'Squad Club Atlético Aldosivi': 'ALD',
+       'Squad Club Atlético San Martín (SJ)': 'SMS', 'Squad Club Atlético San Martín (Tucumán)': 'SMT', 'Squad Club Atlético Patronato de la Juventud Católica': 'PA'}
+    
+    master_list = []
+    for player in players:
+        master_list.append(player)
+    tm_player = pd.DataFrame(master_list)
+    tm_player.loc[tm_player.squad_num == '-', 'squad_num'] = None
+    tm_player = tm_player.astype({'squad_num': float})
+    tm_player['club_brev'] = tm_player['club'].map(tm_club_brev)
+    return tm_player
+
+
 
