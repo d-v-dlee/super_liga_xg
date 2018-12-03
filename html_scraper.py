@@ -1,4 +1,10 @@
 # Setup MongoDB connection to MongoDB collection
+from selenium.webdriver import (Chrome, Firefox)
+import time
+
+import requests
+from bs4 import BeautifulSoup
+
 
 import urllib.request, json 
 import pymongo
@@ -8,6 +14,9 @@ mc = pymongo.MongoClient()
 db = mc['gameinfo_db']
 coll = db['games']
 players = db['players']
+
+browser = Firefox()
+
 
 def get_urls(page_links):
     """Insert page links, return list of url addresses of the json"""
@@ -56,8 +65,8 @@ def scrape_player_info(urls, delay=15):
         The URL of the site to scrape.
     """
     chars = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'k', 'm', '.']
-    time.sleep(delay)
     for url in urls:
+        time.sleep(delay)
         club = url.split('/')[3]
         browser.get(url)
         player_dict_odd = {}
@@ -77,6 +86,9 @@ def scrape_player_info(urls, delay=15):
             player_dict_even[player] = {'club': club, 'squad_num': squad_num, 'birthday': birthday, 'transfer_value(sterlings)': transfer_value}
         player_dict = {**player_dict_even, **player_dict_odd}
         db.players.insert_one(player_dict)
+            
+
+
 
 
     
