@@ -99,3 +99,11 @@ def flatten_incomplete_pass(apass, game_id):
             'inc_coord_y2': pass_data['coord']['2']['y'],
             'inc_coord_z2': pass_data['coord']['2']['z'] }
 
+
+def flatten_team(team):
+    team_id = team[0]
+    team_data = team[1]
+
+    return {'team_id': team_id,
+            'team_intitials': team_data['initials'],
+            'short_name': team_data['shortName']}
