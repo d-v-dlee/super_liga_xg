@@ -148,5 +148,13 @@ def minutes_played(subs_df, player_df):
                 player_df.loc[indx, 'minutes_played'] = 90 - minute
     return player_df
     
+def turn_into_dollar_value(value, exchange_rate):
+    """input value (transfer_value(sterlings) in dataframe) and return dollar amount as float"""
+    if 'm' in value:
+        num_value = float(''.join(x for x in test if x in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.']))
+    elif 'k' in value:
+        num_value = float(''.join(x for x in test if x in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.'])) / 1000
+    
+    return num_value * exchange_rate
 
 
