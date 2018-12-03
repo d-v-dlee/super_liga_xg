@@ -75,13 +75,14 @@ def scrape_page(url):
 
 def get_player_data(page_source):
     soup = BeautifulSoup(page_source, 'html.parser')
+    club = soup.select_one('div.table-header').text.strip()
     for row in soup.select('tr.odd'):
-        yield parse_row(row)
+        yield parse_row(row, club)
     for row in soup.select('tr.even'):
-        yield parse_row(row)
+        yield parse_row(row, club)
 
 
-def parse_row(row):
+def parse_row(row, club):
     """Return the values from a row element as a dictionary."""
     player = row.select_one('td.hauptlink a').text
     squad_num = row.select('td.zentriert')[0].text
@@ -106,9 +107,17 @@ def get_all_player_data_from_url(url):
     yield from get_player_data(page_source)
 
 
-def team_scrape(urls):
-    for url in urls:
-        db.teams.insert_one(get_all_player_data_from_url(url))
+# def team_scrape(urls):
+#     for url in urls:
+#         db.teams.insert_one(get_all_player_data_from_url(url))
+
+def add_player_to_db(player_dict):
+    """remove any duplicates and add player"""
+    player = player_dict['player']
+    club = player_dict['club']
+    players.delete_many({'player': player, 'club': club})
+    players.insert_one(player_dict)
+
 
 
 # def scrape_player_info(urls, delay=15):
