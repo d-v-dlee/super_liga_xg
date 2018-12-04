@@ -17,7 +17,7 @@ players = db['players']
 teams = db['teams']
 
 #turned off because scrape complete...
-browser = Firefox()
+# browser = Firefox()
 
 
 def get_urls(page_links):

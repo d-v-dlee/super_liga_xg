@@ -98,11 +98,20 @@ def create_master_player_min_df(games):
     
     columns = ['game_id', 'name', 'player_id', 'position_id', 'squad_number',
        'substitute', 'team_id', 'minutes_played']
+    
+    afa_team_dict = {20: 'VEL', 13: 'NOB', 136: 'TIG', 19: 'SLO', 8: 'GIM', 2: 'ARG',
+    137: 'UNI', 122: 'ALD', 869: 'PA', 6: 'COL', 124: 'BEL', 134: 'SMS',
+    5: 'BOC', 135: 'TAL', 132: 'GOD', 7: 'EST', 12: 'LAN', 129: 'DEF',
+    18: 'ROS', 4: 'BAN', 100: 'HUR', 17: 'RIV', 815: 'ATT', 16: 'RAC', 10: 'IND',
+    490: 'SMT'}
 
     attach_df = create_player_min_frame()
     for game in games:
         df = game_to_player_df(game)
         merged_df = pd.concat([attach_df, df], axis=0, ignore_index=True)
         attach_df = merged_df.copy()
+    
+    merged_df['club_brev'] = merged_df['team_id'].map(afa_team_dict)
+
     return merged_df
 

@@ -159,7 +159,8 @@ def turn_into_dollar_value(value, exchange_rate):
     return round((num_value * exchange_rate), 2)
 
 def transfer_markt_cleaner(players):
-    """input players from db.players.find() and return cleaned dataframe with club_brev and squad_num as floats"""
+    """input players from db.players.find() and return cleaned dataframe with club_brev and squad_num as floats, 
+    transfer_value in USD and age"""
     
     tm_club_brev = {'Squad Club Atlético Boca Juniors': 'BOC' , 'Squad Club Atlético Independiente': 'IND', 'Squad Club Atlético River Plate': 'RIV', 'Squad Racing Club': 'RAC',
        'Squad Club Atlético San Lorenzo de Almagro': 'SLO', 'Squad Club Atlético Lanús': 'LAN', 'Squad Club Atlético Vélez Sarsfield': 'VEL',
@@ -177,6 +178,9 @@ def transfer_markt_cleaner(players):
     tm_player.loc[tm_player.squad_num == '-', 'squad_num'] = None
     tm_player = tm_player.astype({'squad_num': float})
     tm_player['club_brev'] = tm_player['club'].map(tm_club_brev)
+    tm_player['age'] = tm_player.birthday.str[-3:-1].astype(int)
+    tm_player['transfer_value(USD)'] = tm_player['transfer_value(sterlings)'].apply(lambda x: turn_into_dollar_value(x, 1.27))
+
     return tm_player
 
 
