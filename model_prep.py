@@ -148,3 +148,9 @@ def player_minutes_total(players_minutes_df):
         
     summed_player_min = pd.DataFrame(player_minutes, columns=['player_id', 'total_minutes_played', 'player_name', 'squad_num', 'club_brev'])
     return summed_player_min
+
+
+def create_rf_prep(df):
+    """input df, return the appropriate columns to be run through rf"""
+    rf_columns = ['player_id', 'shot_distance', 'shot_angle', 'assisted_shot', 'is_penalty_attempt']
+    return df[rf_columns]
