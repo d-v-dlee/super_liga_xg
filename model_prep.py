@@ -1,5 +1,7 @@
 import numpy as np
 import pandas as pd
+from sklearn.metrics import log_loss
+import matplotlib.pyplot as plt
 
 def manual_train_split(df, train_sample_size=80):
     """input dataframe of shots, return train_test_split by game_id
@@ -32,7 +34,8 @@ def manual_train_split(df, train_sample_size=80):
     return possible_games, games_to_train_on
 
 def manual_test_split(possible_games, test_sample_size=50):
-    """input: possible_games which is game_ids minus the game_ids used for training
+    """input: possible_games which is game_ids minus the game_ids used for training, 
+    test_sample_size is 50 games to predict on, usually less due to random sample
     output: list of games_ids to predict and remaining holdout set
     
     first for loop: takes random sample, then corresponding game_ids in list (by position)
@@ -56,15 +59,15 @@ def manual_test_split(possible_games, test_sample_size=50):
         
 def create_training_df(df, train_sample_size=90):
     """input total shot df and return training data split into train_data (x) and train_y (y)
-    
+    train_sample_size is the number of games (will sample 90 with some possible repeats)
     ex: train_data, train_y, indices, hold_test = training_df(shots_df)
     
     """
     rf_columns = ['player_id', 'shot_distance', 'shot_angle', 'assisted_shot', 'is_penalty_attempt']
     hold_test, train = manual_train_split(df)
     shots_to_train_on = df[df['game_id'].isin(np.array(train))].copy()
-    train_data = shots_to_train_on[rf_columns]
-    train_y = shots_to_train_on['is_goal']
+    train_data = shots_to_train_on[rf_columns].astype(float)
+    train_y = shots_to_train_on['is_goal'].astype(float)
     indices = shots_to_train_on.index.values
 
     return train_data, train_y, indices, hold_test
@@ -75,8 +78,8 @@ def create_test_df(df, hold_test):
     rf_columns = ['player_id', 'shot_distance', 'shot_angle', 'assisted_shot', 'is_penalty_attempt']
     holdout, test = manual_test_split(hold_test)
     shots_to_predict = df[df['game_id'].isin(np.array(test))].copy()
-    test_data = shots_to_predict[rf_columns]
-    test_y = shots_to_predict['is_goal']
+    test_data = shots_to_predict[rf_columns].astype(float)
+    test_y = shots_to_predict['is_goal'].astype(float)
     indices1 = shots_to_predict.index.values
 
     return test_data, test_y, indices1, holdout, test
@@ -154,3 +157,51 @@ def create_rf_prep(df):
     """input df, return the appropriate columns to be run through rf"""
     rf_columns = ['player_id', 'shot_distance', 'shot_angle', 'assisted_shot', 'is_penalty_attempt']
     return df[rf_columns]
+
+#use to tune classifiers
+
+def stage_score_plot(estimator, X_train, y_train, X_test, y_test):
+    '''
+    Parameters: estimator: GradientBoostingClassifier or xgBoostClassifier
+                X_train: pandas dataframe
+                y_train: 1d panda dataframe
+                X_test: pandas dataframe
+                y_test: 1d panda dataframe
+
+    Returns: A plot of the number of iterations vs the log loss for the model for
+    both the training set and test set.
+    '''
+    # fit estimator
+    estimator.fit(X_train, y_train)
+    train_logloss_at_stages = []
+    test_logloss_at_stages = []
+    
+    # iterate through all stages for test and train and record log loss lists
+    for y1, y2 in zip(estimator.staged_predict_proba(X_train), estimator.staged_predict_proba(X_test)):
+        train_logloss = log_loss(y_train, y1)
+        train_logloss_at_stages.append(train_logloss)
+        
+        test_logloss = log_loss(y_test, y2)
+        test_logloss_at_stages.append(test_logloss)
+
+    # find the # of trees at which test error is the lowest
+    lowest_test_error = np.argmin(test_logloss_at_stages)
+
+    # create xs in order to plot. each x represents n_estimators.
+    xs = range(0, len(test_logloss_at_stages))
+
+    fig, ax = plt.subplots(figsize=(12, 8))
+    ax.plot(xs, train_logloss_at_stages, 
+            label="{} Train".format(estimator.__class__.__name__))
+    ax.plot(xs, test_logloss_at_stages, 
+            label="{} Test".format(estimator.__class__.__name__))
+    ax.axvline(lowest_test_error)
+    print(lowest_test_error)
+
+
+    # example of how to use:
+    # fig, ax = plt.subplots(figsize=(12, 8))
+    # stage_score_plot(gdbr_model, X_train, y_train, X_test, y_test)
+    # stage_score_plot(gdbr_model_2, X_train, y_train, X_test, y_test)
+    # ax.legend()
+    # plt.show()
