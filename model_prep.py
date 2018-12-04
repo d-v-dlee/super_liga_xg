@@ -84,6 +84,16 @@ def create_test_df(df, hold_test):
 
     return test_data, test_y, indices1, holdout, test
 
+def use_holdout_df(df, holdout):
+    """insert df and holdout (game_ids not yet predicted) and return df to predict on"""
+    rf_columns = ['player_id', 'shot_distance', 'shot_angle', 'assisted_shot', 'is_penalty_attempt']
+    shots_to_predict = df[df['game_id'].isin(np.array(holdout))].copy()
+    test_data = shots_to_predict[rf_columns].astype(float)
+    test_y = shots_to_predict['is_goal'].astype(float)
+    indices1 = shots_to_predict.index.values
+
+    return test_data, test_y, indices1 
+
 
 def create_xG_df(test_data, test_y, model_predictions):
     """create new dataframe with predicted probas and actual goals for predicted shots"""
@@ -156,7 +166,7 @@ def player_minutes_total(players_minutes_df):
 def create_rf_prep(df):
     """input df, return the appropriate columns to be run through rf"""
     rf_columns = ['player_id', 'shot_distance', 'shot_angle', 'assisted_shot', 'is_penalty_attempt']
-    return df[rf_columns]
+    return df[rf_columns].astype(float)
 
 #use to tune classifiers
 
@@ -185,7 +195,8 @@ def stage_score_plot(estimator, X_train, y_train, X_test, y_test):
         test_logloss_at_stages.append(test_logloss)
 
     # find the # of trees at which test error is the lowest
-    lowest_test_error = np.argmin(test_logloss_at_stages)
+    lowest_test_error = np.min(test_logloss_at_stages)
+    num_trees_lowest_test_error = np.argmin(test_logloss_at_stages)
 
     # create xs in order to plot. each x represents n_estimators.
     xs = range(0, len(test_logloss_at_stages))
@@ -195,8 +206,10 @@ def stage_score_plot(estimator, X_train, y_train, X_test, y_test):
             label="{} Train".format(estimator.__class__.__name__))
     ax.plot(xs, test_logloss_at_stages, 
             label="{} Test".format(estimator.__class__.__name__))
-    ax.axvline(lowest_test_error)
-    print(lowest_test_error)
+    ax.axvline(num_trees_lowest_test_error)
+    ax.legend()
+    print(f'lowest test error(log loss): {lowest_test_error}')
+    print(f'num_trees at lowest test error: {num_trees_lowest_test_error}')
 
 
     # example of how to use:
