@@ -30,12 +30,13 @@ def coord_table(y_start, y_end, y_unit, x_start, x_end, x_unit):
 
 def distance_pred(df, assisted=0):
     """turn shot coordinates into distance and angle"""
+    columns = ['shot_distance', 'shot_angle', 'assisted_shot', 'is_penalty_attempt']
     df['assisted_shot'] = assisted
     df['is_penalty_attempt'] = 0
     df_2 = shot_distance_angle(df)
     df_final = df_2.drop(columns=['shot_coord_x1', 'shot_coord_y1'])
     # df_final['player_id'] = player_id
-    return df_final
+    return df_final[columns]
     
 
 def shot_probability_player():
