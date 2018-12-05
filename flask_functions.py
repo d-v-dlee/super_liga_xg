@@ -48,26 +48,26 @@ def top_20_young(min_minutes=300, max_age=25):
     """returns scatter plot of 20 young players by xG+xA/90 vs value and age
     as well as dataframe"""
     df = pd.read_csv('xgboost_table.csv')
-    top_20_df = df[(df['total_minutes_played'] >= 300 ) & (df['age'] <= 25)].sort_values(by=['xG+xA/90'], ascending=False).head(20).copy()
+    top_20_df = df[(df['transfer_value(USD)'] < 8) & (df['total_minutes_played'] >= 300 ) & (df['age'] <= 25)].sort_values(by=['xG+xA/90'], ascending=False).head(20).copy()
     return top_20_df
     
-def top_20_scatter(df):
-    pass    
-    fig, (ax, ax1) = plt.subplots(2, 1)
-    fig.set_figheight(15)
-    fig.set_figwidth(15)
+# def top_20_scatter(df):
+#     pass    
+#     fig, (ax, ax1) = plt.subplots(2, 1)
+#     fig.set_figheight(15)
+#     fig.set_figwidth(15)
 
-    ax.scatter(top_20_df['age'], top_20_df['xG+xA/90'], alpha=0.7)
-    ax.set_title('Age vs. xG+xA/90 for Top 20 Young Performers')
-    ax.set_ylabel('xG+xA/90')
-    ax.set_xlabel('Age')
-    ax.plot()
+#     ax.scatter(top_20_df['age'], top_20_df['xG+xA/90'], alpha=0.7)
+#     ax.set_title('Age vs. xG+xA/90 for Top 20 Young Performers')
+#     ax.set_ylabel('xG+xA/90')
+#     ax.set_xlabel('Age')
+#     ax.plot()
 
-    ax1.scatter(top_20_df['transfer_value(USD)'], top_20_df['xG+xA/90'], alpha=0.7)
-    ax1.set_title('Transfer Value vs. xG+xA/90 for Top 20 Young Performers')
-    ax1.set_ylabel('xG+xA/90')
-    ax1.set_xlabel('Player Value in Millions (USD)')
-    ax1.plot()
+#     ax1.scatter(top_20_df['transfer_value(USD)'], top_20_df['xG+xA/90'], alpha=0.7)
+#     ax1.set_title('Transfer Value vs. xG+xA/90 for Top 20 Young Performers')
+#     ax1.set_ylabel('xG+xA/90')
+#     ax1.set_xlabel('Player Value in Millions (USD)')
+#     ax1.plot()
 
     # return top_20_df
 
