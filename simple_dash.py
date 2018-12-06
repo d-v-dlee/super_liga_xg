@@ -56,7 +56,7 @@ overview = html.Div([  # page 1
                             calculating the probability of successful events. By doing so,  \
                             and comparing these metrics to their proposed transfer value \
                             (via Transfer Market) and age, high value or high potential players  \
-                            may beidentified for a potentially transfer to the MLS"),
+                            may be identified for a potentially transfer to the MLS"),
 
                 ], className="six columns"),
 
@@ -351,7 +351,46 @@ per_90 = html.Div([ # page 4
 
     ], className="page")
 
+gems = html.Div([ # page 4
 
+        html.Div([
+
+            Header(),
+
+            # Row 1
+
+            html.Div([
+
+                html.Div([
+                    html.H6("Top xG+xA/90",
+                            className="gs-header gs-table-header padded"),
+                    dash_table.DataTable(
+                        id = 'Top Contributors',
+                        columns=[{"name": i, "id": i} for i in young_top_20.columns],
+                        data=young_top_20.to_dict("rows"),
+                        css=[{
+                        'selector': '.dash-cell div.dash-cell-value',
+                        'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
+                    }],
+                        style_data_conditional=[{
+                    'if': {'column_id': 'transfer_value'},
+                    'backgroundColor': '#3D9970',
+                    'color': 'white', }, {
+                    'if': {'column_id': 'xG+xA/90'},
+                    'backgroundColor': '#3D9970',
+                    'color': 'white', }],
+                        n_fixed_columns=2,
+                        # style_cell={'textAlign': 'right'},
+                        style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
+                                    'maxHeight': '300'},
+                        style_data={'whiteSpace': 'normal'}),
+                    ], className="twelve columns")
+
+            ], className="row "),
+
+        ], className="subpage")
+
+    ], className="page")
 
 
 
