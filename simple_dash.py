@@ -1,6 +1,7 @@
 import dash
 import dash_core_components as dcc
 import dash_html_components as html
+import base64
 from dash.dependencies import Input, Output
 import plotly.graph_objs as go
 
@@ -11,22 +12,24 @@ import pandas as pd
 from flask_functions import create_scrollable_table, generate_table
 import dash_table
 
+image_filename = 'all_shots.png' # replace with your own image
+encoded_image = base64.b64encode(open(image_filename, 'rb').read())
 
 app = dash.Dash(__name__)
 server = app.server
 
 
 #tables
-fact_dict = {'League': 'Argentina Super Liga', 'Clubs': 26, 'Number of Players': 625, 'Number of Goals': 321, 'Number of Shots': 2955, 
+fact_dict = {'League': 'Argentina Super League', 'Clubs': 26, 'Number of Players': 625, 'Number of Goals': 321, 'Number of Shots': 2955, 
            'Updated Week': 13}
-df_facts = pd.DataFrame(['League: Argentina Super Liga', 'Teams: 26', 'Players: 625', 'Goals: 321', 'Shots: 2955', 'Updated Week: 13'] ,index = fact_dict.keys(), columns=['Info'])
+df_facts = pd.DataFrame(['League: Argentina Super League', 'Teams: 26', 'Players: 625', 'Goals: 321', 'Shots: 2955', 'Updated Week: 13'] ,index = fact_dict.keys(), columns=['Info'])
 
 xg_df = pd.read_csv('xgboost_table.csv') #complete table
 xg_df.drop(columns=['Unnamed: 0'], inplace=True)
 
 top_scorers = xg_df.sort_values(by=['goals'], ascending=False).head(20).copy() #top 20 scorers
-top_scorers_dict = {'Top 20 Scorers': {'Shots Per Game': 2.21, 'Average xG/Attempt': 0.16, 'Average Distance/Attempt (yards)': 16.19},
-                    'Rest of League': {'Shots Per Game': 1.5, 'Average xG/Attempt': 0.13, 'Average Distance/Attempt (yards)': 17.99}}
+top_scorers_dict = {'Top 20 Scorers': {'Shots Per Game': 'Shots Per Game: 2.21', 'Avg xG/Attempt': 'Avg xG/Attempt: 0.16', 'Avg Distance/Attempt (yards)': 'Avg Distance/Attempt: 16.19'},
+                    'Rest of League': {'Shots Per Game': 'Shots Per Game: 1.5', 'Avg xG/Attempt': 'Avg xG/Attempt: 0.13', 'Avg Distance/Attempt (yards)': 'Avg Distance/Attempt: 17.99'}}
 top_sc_comp = pd.DataFrame(top_scorers_dict)
 
 
@@ -47,7 +50,7 @@ overview = html.Div([  # page 1
             html.Div([
 
                 html.Div([
-                    html.H6('Product Summary',
+                    html.H6('Model Summary',
                             className="gs-header gs-text-header padded"),
 
                     html.Br([]),
@@ -55,13 +58,13 @@ overview = html.Div([  # page 1
                     html.P("\
                             The xG model is a way to measure each player's contribution \
                             to the rare events that occur in a soccer game. \
-                            While goals and assists are a concrete representation of a \
-                            player's production, the expected goals (xG) and expected \
-                            assists (xA) model tries to better evaluate a player by \
-                            calculating the probability of successful events. By doing so,  \
-                            and comparing these metrics to their proposed transfer value \
-                            (via Transfer Market) and age, high value or high potential players  \
-                            may be identified for a potentially transfer to the MLS"),
+                            xG is calculated by predicting the probability of a shot  \
+                            being goal, based on factors like distance and angle, while xA \
+                            (expected assist) is awarded to any pass directly preceding a   \
+                            shot. A pass leading to a shot with an xG of 0.3 will be valued at \
+                            0.3 xA. By comparing these metrics to a player's proposed transfer value \
+                            and age, high value or high potential players  \
+                            may be identified for a potentially transfer to the MLS."),
 
                 ], className="six columns"),
 
@@ -78,7 +81,7 @@ overview = html.Div([  # page 1
             html.Div([
 
                 html.Div([
-                    html.H6('xG vs Actual Goals', # need to insert static image   
+                    html.H6('xG vs Actual Goals',  
                             className="gs-header gs-text-header padded"),
                     dcc.Graph(
                         id = "graph-1",
@@ -237,11 +240,18 @@ overview = html.Div([  # page 1
                     )
                 ], className="six columns"),
 
-            ], className="row ") #potentially delete this
+            ], className="row "),
 
-            # Row 5 - deleted
+            # Row 5 - d
+            html.Div([
 
-            
+                html.Div([
+                    html.H6('Shot Map',
+                            className="gs-header gs-table-header padded"),
+                    html.Img(src='data:image/png;base64,{}'.format(encoded_image.decode()))
+                ], className="twelve columns"),
+
+            ], className="row "),
 
         ], className="subpage")
 
@@ -262,17 +272,25 @@ top_scorers = html.Div([  # page 2
                     html.Br([]),
 
                     html.P("\
-                            The xG model is a way to measure each player's contribution \
-                            to the rare events that occur in a soccer game. \
-                            While goals and assists are a concrete representation of a \
-                            player's production, the expected goals (xG) and expected \
-                            assists (xA) model tries to better evaluate a player by \
-                            calculating the probability of successful events. By doing so,  \
-                            and comparing these metrics to their proposed transfer value \
-                            (via Transfer Market) and age, high value or high potential players  \
-                            may be identified for a potentially transfer to the MLS"),
+                            South America is famous for producing world class forwards \
+                            which provide an essential stream of revenue for South American  \
+                            clubs. In 2006, Atlético Madrid paid $22 million for the teenage \
+                            Sergio Agüero. Since then, Argentina Superleague has continued to produce \
+                            top young attackers; Lautaro Martínez moved to Inter Milan in 2018  \
+                            for $16 million while Lucas Alario moved to Germany in 2017 for  \
+                            $27 million. Because of this consistent exodus of top talent, \
+                            the top goal scorers of the Argentina Super League are mostly composed of \
+                            older players with a few up-and-coming stars."),
 
                 ], className="six columns"),
+
+            #     html.Div([
+            #         html.H6(["League and Model Facts"],
+            #                 className="gs-header gs-table-header padded"),
+            #         html.Table(make_dash_table(top_sc_comp))
+            #     ], className="six columns"),
+
+            # ], className="row "),
 
                 html.Div([
                     html.H6(["Comparing Top 20 Scorers vs Rest of League"],
@@ -290,36 +308,63 @@ top_scorers = html.Div([  # page 2
 
             ], className="row "),
 
+            #next row
             html.Div([
 
                 html.Div([
-                    html.H6("Top Goal Scorers",
+                    html.H6("Top xG + xA Contributors",
                             className="gs-header gs-table-header padded"),
                     dash_table.DataTable(
-                        id = 'Top 5 Scorers',
+                        id = 'Top Contributors',
                         columns=[{"name": i, "id": i} for i in top_scorers.columns],
                         data=top_scorers.to_dict("rows"),
-                        n_fixed_columns=2,
-                        style_data_conditional=[{
-                    'if': {'column_id': 'goals'},
-                    'backgroundColor': '#3D9970',
-                    'color': 'white', }],
                         css=[{
                         'selector': '.dash-cell div.dash-cell-value',
                         'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
                     }],
+                        style_data_conditional=[{
+                    'if': {'column_id': 'total_xG+xA'},
+                    'backgroundColor': '#3D9970',
+                    'color': 'white', }],
+                        n_fixed_columns=2,
                         # style_cell={'textAlign': 'right'},
                         style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
                                     'maxHeight': '300'},
-                        style_data={'whiteSpace': 'normal'},
-                        # css=[{
-                        #     'selector': '.dash-cell div.dash-cell-value',
-                        #     'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
-                        # }]
-                    )
-                ], className="twelve columns")
+                        style_data={'whiteSpace': 'normal'}),
+                    ], className="twelve columns")
 
             ], className="row "),
+
+            # html.Div([
+
+            #     html.Div([
+            #         html.H6("Top Goal Scorers",
+            #                 className="gs-header gs-table-header padded"),
+            #         dash_table.DataTable(
+            #             id = 'Top 5 Scorers',
+            #             columns=[{"name": i, "id": i} for i in top_scorers.columns],
+            #             data=top_scorers.to_dict("rows"),
+            #             n_fixed_columns=2,
+            #             style_data_conditional=[{
+            #         'if': {'column_id': 'goals'},
+            #         'backgroundColor': '#3D9970',
+            #         'color': 'white', }],
+            #             css=[{
+            #             'selector': '.dash-cell div.dash-cell-value',
+            #             'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
+            #         }],
+            #             # style_cell={'textAlign': 'right'},
+            #             style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
+            #                         'maxHeight': '300'},
+            #             style_data={'whiteSpace': 'normal'},
+            #             # css=[{
+            #             #     'selector': '.dash-cell div.dash-cell-value',
+            #             #     'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
+            #             # }]
+            #         )
+            #     ], className="twelve columns"),
+
+            # ], className="row "),
 
         ], className="subpage")
 
@@ -518,6 +563,8 @@ def display_page(pathname):
     #     return transfers
     elif pathname == '/argentina_superliga/about':
         return about
+    elif pathname == '/argentina_superliga/full-view':
+        return overview,top_scorers,total_contributions,per_90,gems
     else:
         return 'noPage'
 
@@ -527,7 +574,7 @@ def display_page(pathname):
 
 external_css = ["https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css",
                 "https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css",
-                "//fonts.googleapis.com/css?family=Raleway:400,300,600",
+                "https://fonts.googleapis.com/css?family=Raleway:400,300,600",
                 "https://codepen.io/chriddyp/pen/bWLwgP.css",
                 "https://codepen.io/bcd/pen/KQrXdb.css",
                 "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"]
