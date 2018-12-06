@@ -218,3 +218,7 @@ def stage_score_plot(estimator, X_train, y_train, X_test, y_test):
     # stage_score_plot(gdbr_model_2, X_train, y_train, X_test, y_test)
     # ax.legend()
     # plt.show()
+
+def add_xg_shotdf(shot_df, model_pred):
+    """add predicted xG to shot_df"""
+    shot_df['xG'] = model_pred[:, 1]
