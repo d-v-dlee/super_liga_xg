@@ -1,0 +1,287 @@
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
+from dash.dependencies import Input, Output
+import plotly.graph_objs as go
+
+from components import Header, make_dash_table, print_button
+
+import pandas as pd
+
+
+app = dash.Dash(__name__)
+server = app.server
+
+
+#tables
+fact_dict = {'League': 'Argentina Super Liga', 'Clubs': 26, 'Number of Players': 625, 'Number of Goals': 321, 'Number of Shots': 2955, 
+           'Updated Week': 13}
+df_facts = pd.DataFrame(['League: Argentina Super Liga', 'Teams: 26', 'Players: 625', 'Goals: 321', 'Shots: 2955', 'Updated Week: 13'] ,index = fact_dict.keys(), columns=['Info'])
+
+
+## Page layouts
+
+overview = html.Div([  # page 1
+
+        # print_button(),
+
+        html.Div([
+            Header(),
+
+            # Row 3
+            html.Div([
+
+                html.Div([
+                    html.H6('Product Summary',
+                            className="gs-header gs-text-header padded"),
+
+                    html.Br([]),
+
+                    html.P("\
+                            The xG model is a way to measure each player's contribution \
+                            to the rare events that occur in a soccer game. \
+                            While goals and assists are a concrete representation of a \
+                            player's production, the expected goals (xG) and expected \
+                            assists (xA) model tries to better evaluate a player by \
+                            calculating the probability of successful events. By doing so,  \
+                            and comparing these metrics to their proposed transfer value \
+                            (via Transfer Market) and age, high value or high potential players  \
+                            may beidentified for a potentially transfer to the MLS"),
+
+                ], className="six columns"),
+
+                html.Div([
+                    html.H6(["League and Model Facts"],
+                            className="gs-header gs-table-header padded"),
+                    html.Table(make_dash_table(df_facts))
+                ], className="six columns"),
+
+            ], className="row "),
+
+            # Row 4
+
+            html.Div([
+
+                html.Div([
+                    html.H6('Shots and Goals', # need to insert static image   
+                            className="gs-header gs-text-header padded"),
+                    dcc.Graph(
+                        id = "graph-1",
+                        figure={
+                            'data': [
+                                go.Bar(
+                                    x = ["XG Boost", "Random Forest", "Gradient Boosting", "Ensemble"],
+                                    y = ["382", "325", "316", "341"],
+                                    marker = {
+                                      "color": "rgb(53, 83, 255)",
+                                      "line": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "width": 2
+                                      }
+                                    },
+                                    name = "xG Predicted by Different Models"
+                                ),
+                                go.Bar(
+                                    x = ["XG Boost", "Random Forest", "Gradient Boosting", "Ensemble"],
+                                    y = ["321", "321", "321", "321"],
+                                    marker = {
+                                      "color": "rgb(255, 225, 53)",
+                                      "line": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "width": 2
+                                        }
+                                    },
+                                    name = "Actual Goals"
+                                ),
+                            ],
+                            'layout': go.Layout(
+                                autosize = False,
+                                bargap = 0.35,
+                                font = {
+                                  "family": "Raleway",
+                                  "size": 10
+                                },
+                                height = 200,
+                                hovermode = "closest",
+                                legend = {
+                                  "x": -0.0228945952895,
+                                  "y": -0.189563896463,
+                                  "orientation": "h",
+                                  "yanchor": "top"
+                                },
+                                margin = {
+                                  "r": 0,
+                                  "t": 20,
+                                  "b": 10,
+                                  "l": 10
+                                },
+                                showlegend = True,
+                                title = "",
+                                width = 340,
+                                xaxis = {
+                                  "autorange": True,
+                                  "range": [-0.5, 4.5],
+                                  "showline": True,
+                                  "title": "",
+                                  "type": "category"
+                                },
+                                yaxis = {
+                                  "autorange": True,
+                                  "range": [0, 400],
+                                  "showgrid": True,
+                                  "showline": True,
+                                  "title": "",
+                                  "type": "linear",
+                                  "zeroline": False
+                                }
+                            )
+                        },
+                        config={
+                            'displayModeBar': False
+                        }
+                    )
+                ], className="six columns"),
+
+                html.Div([
+                    html.H6("Shot Data",  #input static image of makes and misses    
+                            className="gs-header gs-table-header padded"),
+                    dcc.Graph(
+                        id="grpah-2",
+                        figure={
+                            'data': [
+                                go.Scatter(
+                                    x = ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"],
+                                    y = ["10000", "7500", "9000", "10000", "10500", "11000", "14000", "18000", "19000", "20500", "24000"],
+                                    line = {"color": "rgb(53, 83, 255)"},
+                                    mode = "lines",
+                                    name = "500 Index Fund Inv"
+                                )
+                            ],
+                            'layout': go.Layout(
+                                autosize = False,
+                                title = "",
+                                font = {
+                                  "family": "Raleway",
+                                  "size": 10
+                                },
+                                height = 200,
+                                width = 340,
+                                hovermode = "closest",
+                                legend = {
+                                  "x": -0.0277108433735,
+                                  "y": -0.142606516291,
+                                  "orientation": "h"
+                                },
+                                margin = {
+                                  "r": 20,
+                                  "t": 20,
+                                  "b": 20,
+                                  "l": 50
+                                },
+                                showlegend = True,
+                                xaxis = {
+                                  "autorange": True,
+                                  "linecolor": "rgb(0, 0, 0)",
+                                  "linewidth": 1,
+                                  "range": [2008, 2018],
+                                  "showgrid": False,
+                                  "showline": True,
+                                  "title": "",
+                                  "type": "linear"
+                                },
+                                yaxis = {
+                                  "autorange": False,
+                                  "gridcolor": "rgba(127, 127, 127, 0.2)",
+                                  "mirror": False,
+                                  "nticks": 4,
+                                  "range": [0, 30000],
+                                  "showgrid": True,
+                                  "showline": True,
+                                  "ticklen": 10,
+                                  "ticks": "outside",
+                                  "title": "$",
+                                  "type": "linear",
+                                  "zeroline": False,
+                                  "zerolinewidth": 4
+                                }
+                            )
+                        },
+                        config={
+                            'displayModeBar': False
+                        }
+                    )
+                ], className="six columns"),
+
+            ], className="row ") #potentially delete this
+
+            # Row 5 - deleted
+
+            
+
+        ], className="subpage")
+
+    ], className="page")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Describe the layout, or the UI, of the app
+app.layout = html.Div([
+    dcc.Location(id='url', refresh=False),
+    html.Div(id='page-content')
+])
+
+# Update page
+# # # # # # # # #
+# detail in depth what the callback below is doing
+# # # # # # # # #
+@app.callback(dash.dependencies.Output('page-content', 'children'),
+              [dash.dependencies.Input('url', 'pathname')])
+def display_page(pathname):
+    if pathname == '/argentina_superliga' or pathname == '/argentina_superliga/overview':
+        return overview
+    elif pathname == '/argentina_superliga/top_scorers':
+        return top_scorers
+    elif pathname == '/argentina_superliga/total_contributions':
+        return total_contributions
+    elif pathname == '/argentina_superliga/per_90':
+        return per_90
+    elif pathname == '/argentina_superliga/gems':
+        return gems
+    elif pathname == '/argentina_superliga/about':
+        return about
+    else:
+        return noPage
+
+# # # # # # # # #
+# detail the way that external_css and external_js work and link to alternative method locally hosted
+# # # # # # # # #
+
+external_css = ["https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css",
+                "https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css",
+                "//fonts.googleapis.com/css?family=Raleway:400,300,600",
+                "https://codepen.io/bcd/pen/KQrXdb.css",
+                "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"]
+
+for css in external_css:
+    app.css.append_css({"external_url": css})
+
+# external_js = ["https://code.jquery.com/jquery-3.2.1.min.js",
+#                "https://codepen.io/bcd/pen/YaXojL.js"]
+
+# for js in external_js:
+#     app.scripts.append_script({"external_url": js})
+
+
+if __name__ == '__main__':
+    app.run_server(debug=True)
