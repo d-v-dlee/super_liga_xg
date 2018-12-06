@@ -266,7 +266,7 @@ top_scorers = html.Div([  # page 2
             html.Div([
 
                 html.Div([
-                    html.H6('Top Scorers',
+                    html.H6('Striker Factory',
                             className="gs-header gs-text-header padded"),
 
                     html.Br([]),
@@ -293,7 +293,7 @@ top_scorers = html.Div([  # page 2
             # ], className="row "),
 
                 html.Div([
-                    html.H6(["Comparing Top 20 Scorers vs Rest of League"],
+                    html.H6(["Top 20 vs. Rest of League"],
                             className="gs-header gs-table-header padded"),
                     dash_table.DataTable(
                         id='Top 20 Scorer Comparison',
@@ -312,7 +312,7 @@ top_scorers = html.Div([  # page 2
             html.Div([
 
                 html.Div([
-                    html.H6("Top xG + xA Contributors",
+                    html.H6("Top 20 Goal Leaders",
                             className="gs-header gs-table-header padded"),
                     dash_table.DataTable(
                         id = 'Top Contributors',
@@ -323,7 +323,7 @@ top_scorers = html.Div([  # page 2
                         'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
                     }],
                         style_data_conditional=[{
-                    'if': {'column_id': 'total_xG+xA'},
+                    'if': {'column_id': 'goals'},
                     'backgroundColor': '#3D9970',
                     'color': 'white', }],
                         n_fixed_columns=2,

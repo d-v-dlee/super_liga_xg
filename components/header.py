@@ -29,7 +29,7 @@ def get_header():
 
         html.Div([
             html.H5(
-                'Expected Goals (xG) for Argentina Super Liga')
+                'Expected Goals (xG) for Argentina Super League')
         ], className="twelve columns padded")
 
     ], className="row gs-header gs-text-header")
@@ -41,13 +41,13 @@ def get_menu():
 
         dcc.Link('Overview   ', href='/argentina_superliga/overview', className="tab first"),
 
-        dcc.Link('Top Scorers   ', href='/argentina_superliga/top_scorers', className="tab"),
+        dcc.Link('Top Goal Scorers   ', href='/argentina_superliga/top_scorers', className="tab"),
 
-        dcc.Link('Total Contributions   ', href='/argentina_superliga/total_contributions', className="tab"),
+        dcc.Link('Total xG + xA Leaders   ', href='/argentina_superliga/total_contributions', className="tab"),
 
-        dcc.Link('Per 90   ', href='/argentina_superliga/per_90', className="tab"),
+        dcc.Link('Best xG + xA/90 Minutes   ', href='/argentina_superliga/per_90', className="tab"),
 
-        dcc.Link('Gems   ', href='/argentina_superliga/gems', className="tab"),
+        dcc.Link('Potential Transfer Gems   ', href='/argentina_superliga/gems', className="tab"),
 
         dcc.Link('About   ', href='/argentina_superliga/about', className="tab")
 
