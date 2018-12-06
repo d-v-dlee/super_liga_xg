@@ -351,7 +351,7 @@ per_90 = html.Div([ # page 4
 
     ], className="page")
 
-gems = html.Div([ # page 4
+gems = html.Div([ # page 5
 
         html.Div([
 
@@ -362,10 +362,10 @@ gems = html.Div([ # page 4
             html.Div([
 
                 html.Div([
-                    html.H6("Top xG+xA/90",
+                    html.H6("Top Youngsters by xG+xA/90 with Transfer Value Under $8 Million",
                             className="gs-header gs-table-header padded"),
                     dash_table.DataTable(
-                        id = 'Top Contributors',
+                        id = 'Top Youngsters',
                         columns=[{"name": i, "id": i} for i in young_top_20.columns],
                         data=young_top_20.to_dict("rows"),
                         css=[{
@@ -373,9 +373,11 @@ gems = html.Div([ # page 4
                         'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
                     }],
                         style_data_conditional=[{
-                    'if': {'column_id': 'transfer_value'},
+                    'if': {'column_id': 'transfer_value(USD)'},
                     'backgroundColor': '#3D9970',
-                    'color': 'white', }, {
+                    'color': 'white', 
+                    }, 
+                    {
                     'if': {'column_id': 'xG+xA/90'},
                     'backgroundColor': '#3D9970',
                     'color': 'white', }],
@@ -387,6 +389,42 @@ gems = html.Div([ # page 4
                     ], className="twelve columns")
 
             ], className="row "),
+
+            #Row 2
+            html.Div([
+
+                html.Div([
+                    html.Strong([""]),
+                    dcc.Graph(
+                        id='xG+xA/90 vs. transfer_value',
+                        figure={
+                            'data': [
+                                go.Scatter(
+                                    x=young_top_20[young_top_20['player_name'] == i]['transfer_value(USD)'],
+                                    y=young_top_20[young_top_20['player_name'] == i]['xG+xA/90'],
+                                    text= young_top_20[young_top_20['player_name'] == i]['player_name'],
+                                    mode='markers',
+                                    opacity=0.7,
+                                    marker={
+                                        'size': 15,
+                                        'line': {'width': 0.5, 'color': 'white'}
+                                    },
+                                    name=i
+                                ) for i in young_top_20.player_name.unique()
+                            ],
+                            'layout': go.Layout(
+                                xaxis={'title': 'Transfer Value (M)'},
+                                yaxis={'title': 'xG + xA per 90 minutes'},
+                                margin={'l': 40, 'b': 40, 't': 10, 'r': 10},
+                                # legend={'x': 0, 'y': 1},
+                                hovermode='closest'
+                            )
+                        }
+                    )
+                    
+                    ], className="twelve columns")
+                
+            ], className='row')
 
         ], className="subpage")
 
