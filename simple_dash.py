@@ -8,6 +8,9 @@ from components import Header, make_dash_table, print_button
 
 import pandas as pd
 
+from flask_functions import create_scrollable_table, generate_table
+import dash_table
+
 
 app = dash.Dash(__name__)
 server = app.server
@@ -18,6 +21,10 @@ fact_dict = {'League': 'Argentina Super Liga', 'Clubs': 26, 'Number of Players':
            'Updated Week': 13}
 df_facts = pd.DataFrame(['League: Argentina Super Liga', 'Teams: 26', 'Players: 625', 'Goals: 321', 'Shots: 2955', 'Updated Week: 13'] ,index = fact_dict.keys(), columns=['Info'])
 
+xg_df = pd.read_csv('xgboost_table.csv') #complete table
+xg_df.drop(columns=['Unnamed: 0'], inplace=True)
+
+top_scorers = xg_df.sort_values(by=['goals'], ascending=False).copy() #top 20 scorers
 
 ## Page layouts
 
@@ -146,7 +153,7 @@ overview = html.Div([  # page 1
                     html.H6("Shot Data",  #input static image of makes and misses    
                             className="gs-header gs-table-header padded"),
                     dcc.Graph(
-                        id="grpah-2",
+                        id="graph-2",
                         figure={
                             'data': [
                                 go.Scatter(
@@ -222,6 +229,90 @@ overview = html.Div([  # page 1
 
     ], className="page")
 
+####################################################
+top_scorers = html.Div([  # page 2
+
+        html.Div([
+            Header(),
+
+            # Row 1
+
+            # html.Div([
+
+            #     html.Div([
+            #         html.H6(["Top Five Scorers"],
+            #                 className="gs-header gs-table-header padded"),
+            #         html.Table(generate_table(top_scorers.head(5)))
+
+            #     ], className="twelve columns"),
+
+            #     # html.Div([
+            #     #     html.H6(["Top Scorer Transfer Value"],
+            #     #             className="gs-header gs-table-header padded"),
+            #     #     html.Table(make_dash_table(df_hist_prices))
+            #     # ], className="six columns"),
+
+            # ], className="row "),
+
+            # Row 2
+
+            html.Div([
+
+                html.Div([
+                    html.H6("Top Goal Scorers",
+                            className="gs-header gs-table-header padded"),
+                    dash_table.DataTable(
+                        id = 'Top 5 Scorers',
+                        columns=[{"name": i, "id": i} for i in top_scorers.columns],
+                        data=top_scorers.to_dict("rows"),
+                        n_fixed_rows=1,
+                        style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
+                                    'maxHeight': '300'}
+                    )
+                ], className="twelve columns")
+
+            ], className="row "),
+
+            # # Row 3
+
+            # html.Div([
+
+            #     html.Div([
+            #         html.H6(["Top 20 Scorers in League"], className="gs-header gs-table-header tiny-header"),
+            #         html.Table(make_dash_table(top_scorers), className="tiny-header")
+            #     ], className=" twelve columns"),
+
+            # ], className="row "),
+
+            # Row 4 DELETE THIS      
+
+            # html.Div([
+
+            #     html.Div([
+            #         html.H6(["After-tax returns--updated quarterly as of 12/31/2017"], className="gs-header gs-table-header tiny-header"),
+            #         html.Table(make_dash_table(df_after_tax), className="tiny-header")
+            #     ], className=" twelve columns"),
+
+            # ], className="row "),
+
+            # # Row 5
+
+            # html.Div([
+
+            #     html.Div([
+            #         html.H6(["Recent investment returns"], className="gs-header gs-table-header tiny-header"),
+            #         html.Table(make_dash_table(df_recent_returns), className="tiny-header")
+            #     ], className=" twelve columns"),
+
+            # ], className="row "),
+
+        ], className="subpage")
+
+    ], className="page")
+
+
+
+
 
 
 
@@ -270,6 +361,7 @@ def display_page(pathname):
 external_css = ["https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css",
                 "https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css",
                 "//fonts.googleapis.com/css?family=Raleway:400,300,600",
+                "https://codepen.io/chriddyp/pen/bWLwgP.css",
                 "https://codepen.io/bcd/pen/KQrXdb.css",
                 "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"]
 
