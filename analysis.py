@@ -1,4 +1,6 @@
 import numpy as np  
+import matplotlib.image as mpimg
+import matplotlib.pyplot as plt
 
 def shots_per_game(subset_df, shots_df):
     """
@@ -25,4 +27,12 @@ def shots_df_average(subset_df, shots_df, category, subset=True):
     else:
         mean_val = shots_df[~shots_df['player_id'].isin(unique_players)][category].mean()
         return round(mean_val, 2)
+
+def plot_shot_map(df):
+    """input shot df and show shots by color or marks"""
+    img1 = mpimg.imread('data/soccer_field.jpg')
+    imgplot = plt.imshow(img1)
+    ax = plt.gca()
+    ax.scatter((df[df['is_goal']==0]['shot_coord_x1'] * 7.32 + 50), (df[df['is_goal']==0]['shot_coord_y1'] * 6.58 + 250), alpha=0.2, color='blue', linewidths=0.1)
+    ax.scatter(df[df['is_goal']==1]['shot_coord_x1'] * 7.32 + 50, df[df['is_goal']==1]['shot_coord_y1'] * 6.58 + 250, alpha=0.5, color='red', linewidths=0.1)
 
