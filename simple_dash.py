@@ -25,6 +25,9 @@ xg_df = pd.read_csv('xgboost_table.csv') #complete table
 xg_df.drop(columns=['Unnamed: 0'], inplace=True)
 
 top_scorers = xg_df.sort_values(by=['goals'], ascending=False).copy() #top 20 scorers
+top_contributors = xg_df.sort_values(by=['total_xG+xA'], ascending=False).copy() #top 20 total xG + xA
+top_per_90 = xg_df[xg_df['total_minutes_played'] > 500].sort_values(by=['xG+xA/90'], ascending=False).copy() #per 90
+young_top_20 = xg_df[(xg_df['transfer_value(USD)'] < 8) & (xg_df['total_minutes_played'] >= 300 ) & (xg_df['age'] <= 25)].sort_values(by=['xG+xA/90'], ascending=False).head(20).copy()
 
 ## Page layouts
 
@@ -235,27 +238,6 @@ top_scorers = html.Div([  # page 2
         html.Div([
             Header(),
 
-            # Row 1
-
-            # html.Div([
-
-            #     html.Div([
-            #         html.H6(["Top Five Scorers"],
-            #                 className="gs-header gs-table-header padded"),
-            #         html.Table(generate_table(top_scorers.head(5)))
-
-            #     ], className="twelve columns"),
-
-            #     # html.Div([
-            #     #     html.H6(["Top Scorer Transfer Value"],
-            #     #             className="gs-header gs-table-header padded"),
-            #     #     html.Table(make_dash_table(df_hist_prices))
-            #     # ], className="six columns"),
-
-            # ], className="row "),
-
-            # Row 2
-
             html.Div([
 
                 html.Div([
@@ -265,46 +247,65 @@ top_scorers = html.Div([  # page 2
                         id = 'Top 5 Scorers',
                         columns=[{"name": i, "id": i} for i in top_scorers.columns],
                         data=top_scorers.to_dict("rows"),
-                        n_fixed_rows=1,
+                        n_fixed_columns=2,
+                        style_data_conditional=[{
+                    'if': {'column_id': 'goals'},
+                    'backgroundColor': '#3D9970',
+                    'color': 'white', }],
+                        css=[{
+                        'selector': '.dash-cell div.dash-cell-value',
+                        'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
+                    }],
+                        # style_cell={'textAlign': 'right'},
                         style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
-                                    'maxHeight': '300'}
+                                    'maxHeight': '300'},
+                        style_data={'whiteSpace': 'normal'},
+                        # css=[{
+                        #     'selector': '.dash-cell div.dash-cell-value',
+                        #     'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
+                        # }]
                     )
                 ], className="twelve columns")
 
             ], className="row "),
 
-            # # Row 3
+        ], className="subpage")
 
-            # html.Div([
+    ], className="page")
 
-            #     html.Div([
-            #         html.H6(["Top 20 Scorers in League"], className="gs-header gs-table-header tiny-header"),
-            #         html.Table(make_dash_table(top_scorers), className="tiny-header")
-            #     ], className=" twelve columns"),
+total_contributions = html.Div([ # page 3
 
-            # ], className="row "),
+        html.Div([
 
-            # Row 4 DELETE THIS      
+            Header(),
 
-            # html.Div([
+            # Row 1
 
-            #     html.Div([
-            #         html.H6(["After-tax returns--updated quarterly as of 12/31/2017"], className="gs-header gs-table-header tiny-header"),
-            #         html.Table(make_dash_table(df_after_tax), className="tiny-header")
-            #     ], className=" twelve columns"),
+            html.Div([
 
-            # ], className="row "),
+                html.Div([
+                    html.H6("Top xG + xA Contributors",
+                            className="gs-header gs-table-header padded"),
+                    dash_table.DataTable(
+                        id = 'Top Contributors',
+                        columns=[{"name": i, "id": i} for i in top_contributors.columns],
+                        data=top_contributors.to_dict("rows"),
+                        css=[{
+                        'selector': '.dash-cell div.dash-cell-value',
+                        'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
+                    }],
+                        style_data_conditional=[{
+                    'if': {'column_id': 'total_xG+xA'},
+                    'backgroundColor': '#3D9970',
+                    'color': 'white', }],
+                        n_fixed_columns=2,
+                        # style_cell={'textAlign': 'right'},
+                        style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
+                                    'maxHeight': '300'},
+                        style_data={'whiteSpace': 'normal'}),
+                    ], className="twelve columns")
 
-            # # Row 5
-
-            # html.Div([
-
-            #     html.Div([
-            #         html.H6(["Recent investment returns"], className="gs-header gs-table-header tiny-header"),
-            #         html.Table(make_dash_table(df_recent_returns), className="tiny-header")
-            #     ], className=" twelve columns"),
-
-            # ], className="row "),
+            ], className="row "),
 
         ], className="subpage")
 
@@ -312,8 +313,43 @@ top_scorers = html.Div([  # page 2
 
 
 
+per_90 = html.Div([ # page 4
 
+        html.Div([
 
+            Header(),
+
+            # Row 1
+
+            html.Div([
+
+                html.Div([
+                    html.H6("Top xG+xA/90",
+                            className="gs-header gs-table-header padded"),
+                    dash_table.DataTable(
+                        id = 'Top Contributors',
+                        columns=[{"name": i, "id": i} for i in top_per_90.columns],
+                        data=top_per_90.to_dict("rows"),
+                        css=[{
+                        'selector': '.dash-cell div.dash-cell-value',
+                        'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
+                    }],
+                        style_data_conditional=[{
+                    'if': {'column_id': 'xG+xA/90'},
+                    'backgroundColor': '#3D9970',
+                    'color': 'white', }],
+                        n_fixed_columns=2,
+                        # style_cell={'textAlign': 'right'},
+                        style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
+                                    'maxHeight': '300'},
+                        style_data={'whiteSpace': 'normal'}),
+                    ], className="twelve columns")
+
+            ], className="row "),
+
+        ], className="subpage")
+
+    ], className="page")
 
 
 
@@ -352,7 +388,7 @@ def display_page(pathname):
     elif pathname == '/argentina_superliga/about':
         return about
     else:
-        return noPage
+        return 'noPage'
 
 # # # # # # # # #
 # detail the way that external_css and external_js work and link to alternative method locally hosted
