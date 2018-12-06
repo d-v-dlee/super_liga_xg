@@ -1,471 +1,471 @@
 ,player_id,player_name,club,birthday,age,foot,squad_num,total_xG,total_xA,total_xG+xA,goals,xG+xA/90,transfer_value(USD),total_minutes_played
-0,24256.0,Emmanuel Gigliotti,Squad Club Atlético Independiente,"May 20, 1987 (31)",31,right,9.0,6.239999771118164,2.84,9.08,12.0,0.8356113023620437,3.43,977.9666666666667
-1,488.0,Lisandro López,Squad Racing Club,"Mar 2, 1983 (35)",35,right,15.0,5.260000228881836,1.27,6.53,9.0,0.626902289859195,2.01,937.4666666666666
-2,16081.0,Luis Rodríguez,Squad Club Atlético Tucumán,"Jan 1, 1985 (33)",33,right,7.0,5.010000228881836,1.55,6.56,7.0,0.7131296050247615,1.71,827.9
-3,101.0,Darío Cvitanich,Squad Club Atlético Banfield,"May 16, 1984 (34)",34,right,20.0,4.730000019073486,1.17,5.9,5.0,0.5479404935936022,1.71,969.0833333333334
-4,93853.0,Franco Soldano,Squad Club Atlético Unión (Santa Fe),"Sep 14, 1994 (24)",24,right,27.0,4.25,2.27,6.52,2.0,0.5534021785259584,5.71,1060.35
-5,17217.0,Jonatan Cristaldo,Squad Racing Club,"Mar 5, 1989 (29)",29,right,9.0,4.21999979019165,1.16,5.38,3.0,0.6188782140042178,1.37,782.3833333333333
-6,20195.0,Sebastián Ribas,Squad Club Atlético Lanús,"Mar 11, 1988 (30)",30,right,37.0,3.880000114440918,0.77,4.65,3.0,0.44916285060103034,1.71,931.7333333333333
-7,15113.0,Claudio Bieler,Squad Club Atlético San Martín (Tucumán),"Mar 1, 1984 (34)",34,right,9.0,3.869999885559082,0.98,4.85,3.0,0.37339074150639423,0.57,1169.0166666666667
-8,30266.0,Cristian Chávez,Squad Club Atlético Aldosivi,"Jun 4, 1987 (31)",31,right,11.0,3.869999885559082,1.12,4.99,4.0,0.4498797916388407,0.57,998.2666666666667
-9,98292.0,Facundo Barceló,Squad Club Atlético Patronato de la Juventud Católica,"Mar 31, 1993 (25)",25,right,31.0,3.859999895095825,1.42,5.28,6.0,0.7934325866147212,0.57,598.9166666666666
-10,135386.0,Leonardo Sequeira,Squad Club Atlético Belgrano,"Apr 26, 1995 (23)",23,right,26.0,3.7899999618530273,0.36,4.15,2.0,0.41004153477393734,1.71,910.8833333333334
-11,3148.0,Santiago Silva,Squad Club de Gimnasia y Esgrima La Plata,"Dec 9, 1980 (37)",37,right,9.0,3.759999990463257,2.25,6.01,4.0,0.5046179680940386,0.34,1071.9
-12,31939.0,Santiago García,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Sep 14, 1990 (28)",28,right,18.0,3.740000009536743,1.26,5.0,3.0,0.44544899608994765,6.86,1010.2166666666667
-13,39414.0,Fernando Zampedri,Squad Club Atlético Rosario Central,"Feb 14, 1988 (30)",30,right,20.0,3.609999895095825,2.29,5.9,4.0,0.6061182558404993,3.43,876.0666666666666
-14,172565.0,Nicolás Reniero,Squad Club Atlético San Lorenzo de Almagro,"Mar 18, 1995 (23)",23,right,15.0,3.359999895095825,2.31,5.67,3.0,0.5816489361702128,2.29,877.3333333333333
-15,47913.0,Javier Correa,Squad Club Atlético Colón,"Oct 23, 1992 (26)",26,right,11.0,3.0,0.37,3.37,3.0,0.34360484875948794,4.57,882.7
-16,9146.0,Germán Herrera,Squad Club Atlético Rosario Central,"Jul 19, 1983 (35)",35,right,17.0,2.9600000381469727,2.39,5.35,2.0,1.311810380057213,0.34,367.05
-17,114108.0,Nicolás Fernández,Squad Club Social y Deportivo Defensa y Justicia,"Feb 8, 1996 (22)",22,right,29.0,2.950000047683716,1.73,4.68,3.0,0.558830683501758,3.43,753.7166666666666
-18,17266.0,Mauricio Sperduti,Squad Club Atlético Patronato de la Juventud Católica,"Feb 16, 1986 (32)",32,right,14.0,2.930000066757202,0.68,3.61,3.0,0.3311757810509149,0.57,981.05
-19,193188.0,Gastón Togni,Squad Club Social y Deportivo Defensa y Justicia,"Sep 20, 1997 (21)",21,left,7.0,2.8299999237060547,0.73,3.56,2.0,0.3765719882468168,0.17,850.8333333333334
-20,144.0,Carlos Tevez,Squad Club Atlético Boca Juniors,"Feb 5, 1984 (34)",34,right,32.0,2.819999933242798,1.73,4.55,3.0,0.6281959500920433,2.86,651.8666666666667
-21,167990.0,Luís Leal,Squad Club Atlético Newell's Old Boys,"May 29, 1987 (31)",31,right,7.0,2.75,1.71,4.46,1.0,0.4763355155159115,1.37,842.6833333333333
-22,203.0,Mariano Pavone,Squad Club Estudiantes de La Plata,"May 27, 1982 (36)",36,both,16.0,2.690000057220459,1.71,4.4,2.0,0.5614234068193096,0.46,705.35
-23,36681.0,Víctor Figueroa,Squad Club Atlético Newell's Old Boys,"Sep 29, 1983 (35)",35,right,16.0,2.640000104904175,0.16,2.8,1.0,0.4066593152416556,0.23,619.6833333333334
-24,121341.0,Héctor Fértoli,Squad Club Atlético Newell's Old Boys,"Dec 3, 1994 (24)",24,right,26.0,2.509999990463257,0.87,3.38,3.0,0.35573399859671007,0.8,855.1333333333333
-25,150346.0,Pablo Alvarenga,Squad Club Atlético San Martín (SJ),"Jun 22, 1988 (30)",30,-,33.0,2.450000047683716,0.8,3.25,1.0,0.5578335081529512,,524.35
-26,55210.0,Nicolás Blandi,Squad Club Atlético San Lorenzo de Almagro,"Jan 13, 1990 (28)",28,right,9.0,2.4200000762939453,0.98,3.4,4.0,0.7235467980295567,6.29,422.91666666666663
-27,185745.0,Lucas Robertone,Squad Club Atlético Vélez Sarsfield,"Mar 18, 1997 (21)",21,right,16.0,2.4000000953674316,1.1,3.5,2.0,0.3573454339194555,3.43,881.5
-28,87323.0,Ricardo Centurión,Squad Racing Club,"Jan 19, 1993 (25)",25,right,10.0,2.380000114440918,0.74,3.12,2.0,0.4623363793529266,5.71,607.35
-29,66503.0,Augusto Solari,Squad Racing Club,"Jan 3, 1992 (26)",26,right,18.0,2.369999885559082,1.77,4.14,3.0,0.4814264487369984,4.0,773.95
-30,618.0,Mauro Zárate,Squad Club Atlético Boca Juniors,"Mar 18, 1987 (31)",31,right,19.0,2.359999895095825,0.5,2.86,1.0,0.44007522653445025,2.29,584.9000000000001
-31,31807.0,Mauro Matos,Squad Club Atlético Tucumán,"Aug 6, 1982 (36)",36,right,18.0,2.3299999237060547,1.17,3.5,3.0,0.4514295268349774,0.29,697.7833333333334
-32,163041.0,Alexander Barboza,Squad Club Social y Deportivo Defensa y Justicia,"Mar 16, 1995 (23)",23,left,6.0,2.299999952316284,1.01,3.31,1.0,0.3486589290939237,2.86,854.4166666666666
-33,17135.0,Matías Suárez,Squad Club Atlético Belgrano,"May 9, 1988 (30)",30,both,10.0,2.2899999618530273,1.29,3.58,1.0,0.34124126244439734,2.86,944.2
-34,77944.0,Washington Camacho,Squad Club Atlético Rosario Central,"Apr 8, 1986 (32)",32,left,15.0,2.2899999618530273,0.58,2.87,2.0,0.2895415312184733,0.57,892.0999999999999
-35,209887.0,Gastón Verón,Squad Asociación Atlética Argentinos Juniors,"Apr 23, 2001 (17)",17,right,16.0,2.2699999809265137,0.25,2.52,1.0,0.39282930631332813,,577.35
-36,84739.0,Braian Romero,Squad Club Atlético Independiente,"Jun 15, 1991 (27)",27,right,17.0,2.259999990463257,0.96,3.22,3.0,1.043008817707396,2.86,277.85
-37,117606.0,Junior Arias,Squad Club Atlético Talleres,"May 17, 1993 (25)",25,right,9.0,2.2300000190734863,0.78,3.01,3.0,0.33512020122881525,2.29,808.3666666666667
-38,193168.0,Tomás Belmonte,Squad Club Atlético Lanús,"May 27, 1998 (20)",20,right,13.0,2.2200000286102295,1.32,3.54,2.0,0.295,0.46,1080.0
-39,172801.0,Nahuel Bustos,Squad Club Atlético Talleres,"Jul 4, 1998 (20)",20,right,7.0,2.180000066757202,0.83,3.01,4.0,0.3921067232769643,0.06,690.8833333333333
-40,99085.0,Lucas Acevedo,Squad Club Atlético San Martín (Tucumán),"Nov 8, 1991 (27)",27,right,2.0,2.1700000762939453,1.23,3.4,1.0,0.26153846153846155,0.29,1170.0
-41,8611.0,Diego Vera,Squad Club Atlético Tigre,"Jan 5, 1985 (33)",33,right,19.0,2.1700000762939453,0.71,2.88,2.0,0.4119735099337748,0.86,629.1666666666667
-42,77919.0,Gonzalo Martínez,Squad Club Atlético River Plate,"Jun 13, 1993 (25)",25,left,10.0,2.109999895095825,0.52,2.63,2.0,0.7357786757848928,17.14,321.7
-43,1325.0,Martín Bravo,Squad Club Atlético San Martín (SJ),"Sep 19, 1986 (32)",32,left,23.0,2.0799999237060547,1.54,3.62,3.0,0.44382889837435296,0.91,734.0666666666666
-44,118855.0,Nazareno Solís,Squad Club Atlético San Martín (SJ),"Apr 22, 1994 (24)",24,left,7.0,2.069999933242798,0.56,2.63,1.0,0.3964492086089942,0.69,597.0500000000001
-45,44918.0,Gabriel Carabajal,Squad Club Atlético Patronato de la Juventud Católica,"Dec 9, 1991 (26)",26,right,30.0,2.009999990463257,1.07,3.08,1.0,0.26587377709572224,0.57,1042.6
-46,55267.0,Fernando Gaibor,Squad Club Atlético Independiente,"Oct 8, 1991 (27)",27,right,10.0,2.0,0.31,2.31,2.0,0.2633256633805493,2.29,789.5166666666665
-47,95766.0,Adrián Balboa,Squad Club Atlético Belgrano,"Jan 19, 1994 (24)",24,right,11.0,1.9900000095367432,1.18,3.17,1.0,0.47106414595888707,0.86,605.6500000000001
-48,172730.0,Nicolás Leguizamón,Squad Club Atlético Colón,"Jan 26, 1995 (23)",23,right,9.0,1.9600000381469727,1.45,3.41,0.0,0.7303375242930235,1.71,420.2166666666667
-49,177285.0,Matías Vargas,Squad Club Atlético Vélez Sarsfield,"May 8, 1997 (21)",21,right,26.0,1.909999966621399,0.43,2.34,2.0,0.20551688244096022,10.29,1024.7333333333333
-50,131511.0,Francisco Illarregui,Squad Asociación Atlética Argentinos Juniors,"May 6, 1997 (21)",21,-,27.0,1.899999976158142,1.35,3.25,1.0,0.7567917205692108,0.17,386.5
-51,43746.0,Edwin Cardona,Squad Club Atlético Boca Juniors,"Dec 8, 1992 (25)",25,right,10.0,1.8899999856948853,0.34,2.23,2.0,0.31365092595004296,6.29,639.8833333333333
-52,39578.0,Lucas Gamba,Squad Club Atlético Huracán,"Jun 24, 1987 (31)",31,right,21.0,1.8899999856948853,1.14,3.03,4.0,0.3303785966683493,2.01,825.4166666666666
-53,72225.0,Andrés Chávez,Squad Club Atlético Huracán,"Mar 21, 1991 (27)",27,left,9.0,1.8600000143051147,0.6,2.46,2.0,0.33716591791669837,2.86,656.65
-54,175369.0,Franco Troyansky,Squad Club Atlético Unión (Santa Fe),"Jun 3, 1997 (21)",21,left,22.0,1.840000033378601,1.4,3.24,1.0,0.49374911810357003,1.44,590.5833333333333
-55,186085.0,Matías Zaracho,Squad Racing Club,"Mar 10, 1998 (20)",20,right,28.0,1.8200000524520874,0.93,2.75,0.0,0.34961742201294876,4.0,707.9166666666667
-56,17090.0,Mauro Formica,Squad Club Atlético Newell's Old Boys,"Apr 4, 1988 (30)",30,right,33.0,1.809999942779541,0.68,2.49,1.0,0.339134382566586,2.06,660.8
-57,81286.0,Guillermo Fernández,Squad Racing Club,"Oct 11, 1991 (27)",27,right,8.0,1.7400000095367432,1.22,2.96,3.0,0.3114211121069243,4.57,855.4333333333334
-58,89135.0,Gabriel Ávalos,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Oct 12, 1990 (28)",28,right,9.0,1.7300000190734863,0.7,2.43,2.0,1.4235192015621607,0.23,153.63333333333335
-59,89025.0,Fabián Noguera,Squad Club Estudiantes de La Plata,"Mar 20, 1993 (25)",25,right,18.0,1.7100000381469727,0.6,2.31,2.0,0.24319582001091786,0.69,854.8666666666667
-60,185878.0,Juan Brunetta,Squad Club Atlético Belgrano,"May 12, 1997 (21)",21,left,17.0,1.7000000476837158,0.76,2.46,1.0,0.3058926474313215,1.44,723.7833333333333
-61,103537.0,David Barbona,Squad Club Atlético Tucumán,"Feb 22, 1995 (23)",23,right,19.0,1.690000057220459,0.5,2.19,1.0,0.3495300585210144,2.29,563.9
-62,68605.0,Lucas Menossi,Squad Club Atlético Tigre,"Jul 20, 1992 (26)",26,right,5.0,1.6200000047683716,0.58,2.2,3.0,0.21547893276259225,1.71,918.8833333333334
-63,136659.0,Ángel González,Squad Club Deportivo Godoy Cruz Antonio Tomba,"May 16, 1994 (24)",24,right,8.0,1.600000023841858,0.56,2.16,3.0,0.26492833942807825,2.86,733.7833333333333
-64,8907.0,Federico González,Squad Club Atlético Tigre,"Jan 6, 1987 (31)",31,right,9.0,1.559999942779541,0.42,1.98,3.0,0.3030955890690554,0.91,587.9333333333334
-65,70297.0,Juan Ramírez,Squad Club Atlético Talleres,"May 25, 1993 (25)",25,left,20.0,1.5499999523162842,0.36,1.91,1.0,0.16535205848403234,2.29,1039.6
-66,19754.0,Enzo Kalinski,Squad Club Atlético Banfield,"Mar 10, 1987 (31)",31,right,23.0,1.5499999523162842,1.01,2.56,2.0,0.24642150483965844,0.91,934.9833333333333
-67,94725.0,Horacio Tijanovich,Squad Club de Gimnasia y Esgrima La Plata,"Feb 28, 1996 (22)",22,right,11.0,1.5499999523162842,0.72,2.27,0.0,0.24478303412744376,0.57,834.6166666666667
-68,172756.0,Agustín Bouzat,Squad Club Atlético Vélez Sarsfield,"Mar 28, 1994 (24)",24,left,10.0,1.5199999809265137,0.62,2.14,0.0,0.19992041935539678,2.01,963.3833333333333
-69,68341.0,Diego Zabala,Squad Club Atlético Unión (Santa Fe),"Sep 19, 1991 (27)",27,right,11.0,1.5199999809265137,0.99,2.51,3.0,0.21164896939412867,2.29,1067.3333333333333
-70,119431.0,Matías Rojas,Squad Club Social y Deportivo Defensa y Justicia,"Nov 3, 1995 (23)",23,left,26.0,1.4900000095367432,0.55,2.04,5.0,0.2583368509919797,0.34,710.7
-71,49584.0,Gervasio Núñez,Squad Club Atlético Tucumán,"Jan 29, 1988 (30)",30,left,10.0,1.4800000190734863,0.39,1.87,0.0,0.24648506151142358,1.14,682.8
-72,42505.0,Jhonathan Ramis,Squad Club Atlético Vélez Sarsfield,"Nov 6, 1989 (29)",29,right,11.0,1.4600000381469727,0.42,1.88,1.0,0.3415651705807146,0.8,495.3666666666667
-73,28126.0,Lucas Pratto,Squad Club Atlético River Plate,"Jun 4, 1988 (30)",30,right,27.0,1.4600000381469727,0.71,2.17,0.0,0.26996267797078743,6.86,723.4333333333333
-74,30012.0,Rodrigo Salinas,Squad Club Atlético Vélez Sarsfield,"Jun 4, 1986 (32)",32,right,9.0,1.440000057220459,0.31,1.75,2.0,0.5605647170482856,0.46,280.9666666666667
-75,44574.0,Marco Ruben,Squad Club Atlético Rosario Central,"Oct 26, 1986 (32)",32,right,9.0,1.4299999475479126,0.48,1.91,0.0,0.2446336661843884,2.86,702.6833333333334
-76,54702.0,Rodrigo Mora,Squad Club Atlético River Plate,"Oct 29, 1987 (31)",31,right,7.0,1.4199999570846558,0.57,1.99,2.0,0.513229534817079,2.01,348.9666666666667
-77,29128.0,Denis Stracqualursi,Squad Club Atlético Aldosivi,"Oct 20, 1987 (31)",31,right,22.0,1.3899999856948853,0.7,2.09,1.0,0.35268749999999993,0.57,533.3333333333334
-78,122082.0,Franco Cristaldo,Squad Club Atlético San Martín (SJ),"Aug 15, 1996 (22)",22,right,32.0,1.3799999952316284,1.1,2.48,0.0,0.45364316926933373,0.46,492.01666666666665
-79,121814.0,Leonardo Heredia,Squad Club Atlético Colón,"Jan 11, 1996 (22)",22,right,21.0,1.3799999952316284,0.46,1.84,3.0,0.20677599267460253,0.06,800.8666666666666
-80,193955.0,Nicolás Domínguez,Squad Club Atlético Vélez Sarsfield,"Jun 28, 1998 (20)",20,right,28.0,1.3600000143051147,0.29,1.65,2.0,0.13088313061872026,4.57,1134.6
-81,71946.0,Franco Fragapane,Squad Club Atlético Unión (Santa Fe),"Jun 2, 1993 (25)",25,right,7.0,1.350000023841858,0.23,1.58,2.0,0.16526876513317193,1.14,860.4166666666666
-82,40397.0,Matías Pisano,Squad Club Atlético Aldosivi,"Dec 13, 1991 (26)",26,left,10.0,1.350000023841858,0.55,1.9,3.0,0.21265130160835682,1.44,804.1333333333333
-83,77892.0,Joel Amoroso,Squad Club Atlético Newell's Old Boys,"Jan 8, 1988 (30)",30,right,15.0,1.3300000429153442,0.46,1.79,0.0,0.22386918961484123,0.46,719.6166666666667
-84,189736.0,Alexis Mac Allister,Squad Asociación Atlética Argentinos Juniors,"Dec 24, 1998 (19)",19,right,10.0,1.3300000429153442,0.84,2.17,1.0,0.425412960609911,4.57,459.08333333333337
-85,69105.0,Miguel Araujo,Squad Club Atlético Talleres,"Oct 24, 1994 (24)",24,right,4.0,1.3200000524520874,0.49,1.81,0.0,0.24133333333333334,0.57,675.0
-86,179961.0,Gonzalo Maroni,Squad Club Atlético Talleres,"Mar 18, 1999 (19)",19,right,10.0,1.3200000524520874,0.13,1.45,2.0,0.19154557463672392,0.86,681.3
-87,147570.0,Tomás Cardona,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Oct 10, 1995 (23)",23,left,6.0,1.309999942779541,0.39,1.7,1.0,0.14166666666666666,3.43,1080.0
-88,85349.0,Juan Ignacio Cavallaro,Squad Club Atlético Tigre,"Jun 28, 1994 (24)",24,right,15.0,1.2899999618530273,0.27,1.56,2.0,0.28743005322778764,1.44,488.4666666666667
-89,199230.0,Ignacio Huguenet,Squad Club Social y Deportivo Defensa y Justicia,"May 5, 1998 (20)",20,right,30.0,1.2899999618530273,0.77,2.06,0.0,0.5351679014721447,,346.4333333333334
-90,175890.0,Kevin Mac Allister,Squad Asociación Atlética Argentinos Juniors,"Nov 7, 1997 (21)",21,right,4.0,1.2899999618530273,0.9,2.19,0.0,0.27375,1.71,720.0
-91,70018.0,Nicolás Royón,Squad Club Atlético Patronato de la Juventud Católica,"Jan 28, 1991 (27)",27,right,32.0,1.2899999618530273,0.78,2.07,0.0,0.3098372924577986,0.34,601.2833333333333
-92,29345.0,Fernando Telechea,Squad Club Atlético Aldosivi,"Oct 6, 1981 (37)",37,right,9.0,1.2799999713897705,0.72,2.0,0.0,0.40522287257991896,0.23,444.2
-93,81291.0,Diego Mendoza,Squad Club Atlético Huracán,"Sep 30, 1992 (26)",26,right,16.0,1.2699999809265137,0.0,1.27,3.0,0.4787100376937038,0.34,238.76666666666665
-94,123767.0,Victorio Ramis,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Jul 7, 1994 (24)",24,right,11.0,1.2699999809265137,0.55,1.82,0.0,0.3865486725663717,3.15,423.75
-95,99008.0,Andrés Roa,Squad Club Atlético Huracán,"Apr 17, 1993 (25)",25,right,10.0,1.2599999904632568,0.45,1.71,3.0,0.24637139807897543,0.34,624.6666666666667
-96,199203.0,Francisco Apaolaza,Squad Club Estudiantes de La Plata,"Jun 19, 1997 (21)",21,right,19.0,1.25,0.0,1.25,1.0,0.183953779909522,0.17,611.5666666666666
-97,8904.0,Silvio Romero,Squad Club Atlético Independiente,"Jul 22, 1988 (30)",30,right,18.0,1.25,0.8,2.05,2.0,0.38591598396374405,4.0,478.08333333333337
-98,162738.0,Lucas Rodríguez,Squad Club Estudiantes de La Plata,"Apr 27, 1997 (21)",21,right,9.0,1.2300000190734863,0.39,1.62,0.0,0.13617471708099188,3.43,1070.6833333333334
-99,65598.0,Lorenzo Faravelli,Squad Club de Gimnasia y Esgrima La Plata,"Mar 29, 1993 (25)",25,right,8.0,1.2200000286102295,0.23,1.45,1.0,0.15237020316027086,0.91,856.4666666666667
-100,70512.0,Matías García,Squad Club Atlético San Martín (Tucumán),"Oct 22, 1991 (27)",27,left,10.0,1.2200000286102295,0.3,1.52,1.0,0.11692307692307692,0.2,1170.0
-101,49043.0,Raúl Bobadilla,Squad Asociación Atlética Argentinos Juniors,"Jun 18, 1987 (31)",31,right,25.0,1.2100000381469727,0.15,1.36,0.0,0.2158857075665824,2.01,566.9666666666667
-102,19622.0,Marcelo Estigarribia,Squad Club Atlético Colón,"Sep 21, 1987 (31)",31,left,28.0,1.2100000381469727,0.43,1.64,1.0,0.1426086956521739,1.14,1035.0
-103,33777.0,Fabricio Fontanini,Squad Club Atlético Newell's Old Boys,"Mar 30, 1990 (28)",28,right,24.0,1.190000057220459,0.23,1.42,2.0,0.11833333333333333,0.69,1080.0
-104,16278.0,Renzo Vera,Squad Club Atlético Patronato de la Juventud Católica,"Jun 1, 1983 (35)",35,right,33.0,1.190000057220459,0.2,1.39,1.0,0.14919202560076325,0.2,838.5166666666667
-105,111421.0,Cristian Pavón,Squad Club Atlético Boca Juniors,"Jan 21, 1996 (22)",22,right,7.0,1.1799999475479126,0.48,1.66,2.0,0.2697075460344205,22.86,553.9333333333334
-106,166900.0,Nicolás De La Cruz,Squad Club Atlético River Plate,"Jun 1, 1997 (21)",21,right,11.0,1.1799999475479126,0.74,1.92,1.0,0.6861681005956319,4.57,251.83333333333334
-107,39796.0,Federico Lértora,Squad Club Atlético Belgrano,"Jul 1, 1990 (28)",28,right,14.0,1.1699999570846558,0.24,1.41,0.0,0.1175,1.44,1080.0
-108,97738.0,Emanuel Brítez,Squad Club Atlético Independiente,"Mar 26, 1992 (26)",26,right,23.0,1.1699999570846558,0.66,1.83,1.0,0.2199470275323288,1.14,748.8166666666667
-109,63200.0,Ezequiel Rescaldani,Squad Club Atlético Patronato de la Juventud Católica,"Jun 11, 1992 (26)",26,right,29.0,1.159999966621399,0.72,1.88,0.0,0.3554248503308476,0.57,476.05
-110,34544.0,Emmanuel Mas,Squad Club Atlético Boca Juniors,"Jan 15, 1989 (29)",29,left,3.0,1.159999966621399,0.77,1.93,0.0,0.21444444444444444,2.86,810.0
-111,116885.0,Marcelino Moreno,Squad Club Atlético Lanús,"Jun 25, 1995 (23)",23,right,25.0,1.149999976158142,0.56,1.71,0.0,0.2179989612351858,1.14,705.9666666666667
-112,29111.0,Jonatan Schunke,Squad Club Estudiantes de La Plata,"Feb 22, 1987 (31)",31,right,6.0,1.1399999856948853,0.32,1.46,0.0,0.13272727272727272,2.06,990.0
-113,204671.0,Tomás Chancalay,Squad Club Atlético Colón,"Jan 1, 1999 (19)",19,right,12.0,1.1399999856948853,0.47,1.61,2.0,0.27418083194045856,3.15,528.4833333333333
-114,17271.0,Diego Morales,Squad Club Atlético Tigre,"Nov 29, 1986 (32)",32,right,11.0,1.1200000047683716,0.55,1.67,1.0,0.20256519688223007,0.86,741.9833333333333
-115,215760.0,Matías Pellegrini,Squad Club Estudiantes de La Plata,"Mar 11, 2000 (18)",18,left,8.0,1.1100000143051147,0.27,1.38,2.0,0.22917243288126207,,541.95
-116,60730.0,Gastón Giménez,Squad Club Atlético Vélez Sarsfield,"Jul 27, 1991 (27)",27,left,30.0,1.100000023841858,0.94,2.04,0.0,0.16298992409782945,2.29,1126.45
-117,214.0,Marcos Gelabert,Squad Club Atlético San Martín (SJ),"Sep 16, 1981 (37)",37,right,5.0,1.100000023841858,0.49,1.59,2.0,0.16860419448590055,0.11,848.7333333333333
-118,37152.0,Rubén Botta,Squad Club Atlético San Lorenzo de Almagro,"Jan 31, 1990 (28)",28,left,19.0,1.090000033378601,0.61,1.7,1.0,0.2191663085517834,2.86,698.1
-119,2439.0,Juan Fernando Quintero,Squad Club Atlético River Plate,"Jan 18, 1993 (25)",25,left,8.0,1.090000033378601,0.82,1.91,1.0,0.37392596889388385,7.43,459.7166666666667
-120,47487.0,Facundo Erpen,Squad Club Atlético San Martín (SJ),"May 19, 1983 (35)",35,right,3.0,1.0700000524520874,0.3,1.37,1.0,0.22833333333333336,0.91,540.0
-121,15339.0,Sebastián Prediger,Squad Club Atlético Tigre,"Sep 4, 1986 (32)",32,right,21.0,1.0499999523162842,0.71,1.76,0.0,0.16556625960315663,0.23,956.7166666666667
-122,220307.0,Pedro de la Vega,Squad Club Atlético Lanús,"Feb 7, 2001 (17)",17,right,39.0,1.0299999713897705,0.65,1.68,0.0,0.3998237108858528,,378.16666666666663
-123,184545.0,Jan Carlos Hurtado,Squad Club de Gimnasia y Esgrima La Plata,"Mar 5, 2000 (18)",18,right,17.0,1.0299999713897705,0.71,1.74,0.0,0.6455070074196207,0.4,242.6
-124,163302.0,Mauro Pittón,Squad Club Atlético Unión (Santa Fe),"Aug 8, 1994 (24)",24,right,30.0,1.0199999809265137,0.0,1.02,1.0,0.10575833797354121,2.29,868.0166666666667
-125,46638.0,Claudio Mosca,Squad Club Atlético San Martín (SJ),"Apr 2, 1991 (27)",27,left,10.0,1.0099999904632568,0.18,1.19,0.0,0.110835144365104,0.69,966.3
-126,64709.0,Matías Garrido,Squad Club Atlético Patronato de la Juventud Católica,"Feb 2, 1986 (32)",32,right,10.0,1.0099999904632568,0.13,1.14,1.0,0.2784764317379896,0.23,368.4333333333334
-127,24363.0,Alfonso Parot,Squad Club Atlético Rosario Central,"Oct 15, 1989 (29)",29,left,24.0,1.0099999904632568,0.26,1.27,0.0,0.10583333333333333,1.14,1080.0
-128,172675.0,Luciano Gómez,Squad Club Atlético Banfield,"Mar 22, 1996 (22)",22,right,24.0,1.0099999904632568,0.14,1.15,1.0,0.15247495580436063,0.34,678.8
-129,52418.0,Gonzalo Rodríguez,Squad Club Atlético San Martín (Tucumán),"Sep 18, 1990 (28)",28,right,7.0,1.0,0.39,1.39,0.0,0.2000266489007328,,625.4166666666667
-130,31207.0,Damián Martínez,Squad Club Atlético Unión (Santa Fe),"Jan 31, 1990 (28)",28,right,4.0,1.0,0.69,1.69,2.0,0.15363636363636363,0.46,990.0
-131,1692.0,Mariano González,Squad Club Atlético Colón,"May 5, 1981 (37)",37,right,15.0,0.9900000095367432,0.84,1.83,0.0,0.4384594906380335,0.17,375.6333333333333
-132,30105.0,Walter Andrade,Squad Club Atlético Patronato de la Juventud Católica,"Dec 1, 1984 (34)",34,right,2.0,0.9800000190734863,0.31,1.29,0.0,0.19463537300922046,0.17,596.5
-133,130207.0,Francisco Fydriszewski,Squad Club Atlético Newell's Old Boys,"Apr 13, 1993 (25)",25,both,9.0,0.9700000286102295,0.2,1.17,1.0,1.2946721311475409,0.23,81.33333333333334
-134,1080.0,Gonzalo Rodríguez,Squad Club Atlético San Lorenzo de Almagro,"Apr 10, 1984 (34)",34,right,2.0,0.9599999785423279,0.58,1.54,1.0,0.25666666666666665,0.57,540.0
-135,657.0,Ignacio Scocco,Squad Club Atlético River Plate,"May 29, 1985 (33)",33,right,32.0,0.9599999785423279,0.13,1.09,2.0,0.37072494803804246,4.57,264.6166666666667
-136,60772.0,Lisandro Magallán,Squad Club Atlético Boca Juniors,"Sep 27, 1993 (25)",25,right,6.0,0.949999988079071,0.16,1.11,1.0,0.17329709725916503,5.14,576.4666666666667
-137,60771.0,Juan Garro,Squad Club Atlético Huracán,"Nov 24, 1992 (26)",26,left,24.0,0.9399999976158142,0.61,1.55,1.0,0.3730278990997415,4.0,373.9666666666667
-138,120432.0,Andrés Cubas,Squad Club Atlético Talleres,"May 22, 1996 (22)",22,right,8.0,0.9300000071525574,0.19,1.12,1.0,0.11436135009927202,2.51,881.4166666666666
-139,86727.0,Rodrigo Gómez,Squad Club Atlético Unión (Santa Fe),"Jan 2, 1993 (25)",25,right,10.0,0.9300000071525574,0.54,1.47,0.0,0.3774607703281026,1.14,350.50000000000006
-140,8513.0,Lautaro Acosta,Squad Club Atlético Lanús,"Mar 14, 1988 (30)",30,right,7.0,0.9300000071525574,0.39,1.32,0.0,0.1247309570056171,6.86,952.45
-141,85272.0,Rodrigo Aliendro,Squad Club Atlético Tucumán,"Feb 16, 1991 (27)",27,right,29.0,0.9100000262260437,0.33,1.24,4.0,0.11913954771097628,0.86,936.7166666666667
-142,89000.0,Lautaro Comas,Squad Club Atlético Patronato de la Juventud Católica,"Jan 15, 1995 (23)",23,-,7.0,0.9100000262260437,0.48,1.39,0.0,0.1783490947108302,0.17,701.4333333333333
-143,8995.0,Javier Toledo,Squad Club Atlético Tucumán,"Apr 24, 1986 (32)",32,right,12.0,0.9100000262260437,0.62,1.53,0.0,1.044236602628918,0.34,131.86666666666667
-144,58422.0,Diego Viera,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Apr 30, 1991 (27)",27,right,5.0,0.8999999761581421,0.0,0.9,1.0,0.075,1.71,1080.0
-145,156.0,Pablo Ledesma,Squad Club Atlético Patronato de la Juventud Católica,"Feb 4, 1984 (34)",34,right,27.0,0.8999999761581421,0.83,1.73,1.0,0.3119719485723827,0.29,499.0833333333333
-146,52684.0,Carlos Auzqui,Squad Club Atlético Huracán,"Sep 18, 1991 (27)",27,right,11.0,0.8999999761581421,0.55,1.45,1.0,0.21591065765889972,2.29,604.4166666666667
-147,97535.0,Cristian Espinoza,Squad Club Atlético Boca Juniors,"Apr 3, 1995 (23)",23,right,11.0,0.8999999761581421,0.54,1.44,2.0,0.43621676203298543,1.71,297.1
-148,215475.0,Thiago Almada,Squad Club Atlético Vélez Sarsfield,"Apr 26, 2001 (17)",17,right,23.0,0.8899999856948853,0.07,0.96,2.0,0.2586052080215504,,334.1
-149,87415.0,Marcelo Ortiz,Squad Club Atlético Rosario Central,"Jan 13, 1994 (24)",24,right,6.0,0.8899999856948853,0.77,1.66,0.0,0.33199999999999996,0.06,450.0
-150,17376.0,Jonathan Sandoval,Squad Asociación Atlética Argentinos Juniors,"Jun 25, 1987 (31)",31,right,15.0,0.8799999952316284,0.49,1.37,0.0,0.12584414921666356,0.34,979.7833333333333
-151,40071.0,Darío Benedetto,Squad Club Atlético Boca Juniors,"May 17, 1990 (28)",28,right,9.0,0.8799999952316284,0.45,1.33,0.0,0.3913256688279846,11.43,305.8833333333333
-152,66596.0,Gustavo Villarruel,Squad Club Atlético San Martín (SJ),"Apr 2, 1992 (26)",26,right,27.0,0.8799999952316284,0.08,0.96,1.0,0.19498251024937,0.4,443.1166666666667
-153,33058.0,Gustavo Bou,Squad Racing Club,"Feb 18, 1990 (28)",28,right,7.0,0.8600000143051147,0.53,1.39,1.0,0.4284246575342465,5.71,292.0
-154,117605.0,Kevin Ramírez,Squad Club Atlético Tigre,"Apr 1, 1994 (24)",24,left,27.0,0.8600000143051147,0.0,0.86,0.0,0.4185669220369535,1.55,184.91666666666669
-155,25625.0,Carlos Quintana,Squad Club Atlético Talleres,"Feb 11, 1988 (30)",30,right,2.0,0.8500000238418579,0.5,1.35,0.0,0.15424654056112733,1.71,787.7
-156,70151.0,Teodoro Paredes,Squad Club Atlético Newell's Old Boys,"Apr 1, 1993 (25)",25,right,13.0,0.8500000238418579,0.23,1.08,0.0,0.18000000000000002,0.23,540.0
-157,145349.0,Tomás Pochettino,Squad Club Atlético Talleres,"Feb 1, 1996 (22)",22,right,32.0,0.8399999737739563,0.26,1.1,0.0,0.16727211286643576,2.29,591.85
-158,28146.0,Rolando García Guerreño,Squad Club Atlético Lanús,"Feb 10, 1990 (28)",28,right,23.0,0.8399999737739563,0.3,1.14,0.0,0.15796361396936182,1.71,649.5166666666667
-159,39742.0,Guillermo Acosta,Squad Club Atlético Tucumán,"Oct 31, 1988 (30)",30,right,8.0,0.8299999833106995,0.41,1.24,2.0,0.10536751168389745,0.57,1059.15
-160,126.0,Jesús Dátolo,Squad Club Atlético Banfield,"May 19, 1984 (34)",34,left,10.0,0.8299999833106995,0.14,0.97,2.0,0.14125832636660285,0.86,618.0166666666667
-161,193905.0,Julián Carranza,Squad Club Atlético Banfield,"May 22, 2000 (18)",18,right,21.0,0.8100000023841858,0.34,1.15,1.0,0.3753172972319594,2.29,275.76666666666665
-162,37080.0,Leonardo Sigali,Squad Racing Club,"May 29, 1987 (31)",31,right,30.0,0.800000011920929,0.21,1.01,0.0,0.09066276576292036,3.43,1002.6166666666667
-163,114498.0,Iván Colman,Squad Club Atlético Aldosivi,"May 6, 1995 (23)",23,right,28.0,0.7900000214576721,0.29,1.08,1.0,0.10951907006441193,0.57,887.5166666666668
-164,96298.0,Iván Ramírez,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Dec 8, 1994 (23)",23,right,15.0,0.7799999713897705,0.69,1.47,0.0,0.252208171824363,0.29,524.5666666666666
-165,69929.0,Jonás Aguirre,Squad Club Atlético Belgrano,"Mar 5, 1992 (26)",26,left,20.0,0.7799999713897705,0.44,1.22,2.0,0.3151097718467499,0.69,348.45
-166,100778.0,Rodrigo Moreira,Squad Club Atlético San Martín (Tucumán),"Jul 15, 1996 (22)",22,right,4.0,0.7799999713897705,0.65,1.43,0.0,0.20428571428571426,0.46,630.0
-167,85311.0,Lucas Albertengo,Squad Club Estudiantes de La Plata,"Jan 30, 1991 (27)",27,right,7.0,0.7699999809265137,0.07,0.84,1.0,0.20471161657189274,2.06,369.3
-168,215457.0,Adolfo Gaich,Squad Club Atlético San Lorenzo de Almagro,"Feb 26, 1999 (19)",19,right,38.0,0.7699999809265137,0.4,1.17,1.0,0.2978924041680418,,353.48333333333335
-169,186030.0,Emiliano Purita,Squad Club Atlético San Martín (Tucumán),"Mar 25, 1997 (21)",21,right,30.0,0.7599999904632568,0.13,0.89,0.0,0.1383300233140489,0.23,579.05
-170,69646.0,Alan Ruiz,Squad Club Atlético Colón,"Aug 19, 1993 (25)",25,left,10.0,0.75,0.47,1.22,0.0,0.22885330183763505,4.57,479.7833333333333
-171,61919.0,Alberto Costa,Squad Club Atlético San Martín (Tucumán),"Jan 9, 1985 (33)",33,left,8.0,0.75,0.24,0.99,2.0,0.20146216460657218,0.57,442.26666666666665
-172,57885.0,Federico Carrizo,Squad Club Atlético Rosario Central,"May 17, 1991 (27)",27,right,8.0,0.7400000095367432,0.34,1.08,0.0,0.1262446965105204,1.71,769.9333333333334
-173,46612.0,Sebastián Bértoli,Squad Club Atlético Patronato de la Juventud Católica,"Oct 16, 1977 (41)",41,right,1.0,0.7400000095367432,0.0,0.74,0.0,0.05692307692307692,0.11,1170.0
-174,52390.0,Carlos Izquierdoz,Squad Club Atlético Boca Juniors,"Nov 3, 1988 (30)",30,right,24.0,0.7400000095367432,0.74,1.48,1.0,0.4042284153558242,3.43,329.51666666666665
-175,17276.0,Adrián Calello,Squad Club Atlético Banfield,"May 14, 1987 (31)",31,right,7.0,0.7300000190734863,0.29,1.02,1.0,0.10220440881763526,0.34,898.2
-176,35300.0,Mathías Abero,Squad Club Atlético Tucumán,"Apr 9, 1990 (28)",28,left,16.0,0.7300000190734863,0.13,0.86,1.0,0.07818181818181819,0.23,990.0
-177,728.0,Fernando Gago,Squad Club Atlético Boca Juniors,"Apr 10, 1986 (32)",32,right,5.0,0.7300000190734863,0.67,1.4,0.0,0.19999999999999998,2.29,630.0
-178,122008.0,Yeimar Gómez Andrade,Squad Club Atlético Unión (Santa Fe),"Jun 30, 1992 (26)",26,right,28.0,0.7200000286102295,0.57,1.29,1.0,0.1075,2.29,1080.0
-179,44771.0,Lucas Orban,Squad Racing Club,"Feb 3, 1989 (29)",29,left,6.0,0.7200000286102295,0.72,1.44,0.0,0.1309090909090909,0.57,990.0
-180,603.0,Walter Montillo,Squad Club Atlético Tigre,"Apr 14, 1984 (34)",34,right,14.0,0.7099999785423279,0.22,0.93,0.0,0.2889694458829622,,289.65000000000003
-181,87424.0,Fernando Zuqui,Squad Club Estudiantes de La Plata,"Nov 27, 1991 (27)",27,right,5.0,0.6899999976158142,0.29,0.98,1.0,0.11238532110091742,1.71,784.8000000000001
-182,118186.0,Mauro Ortiz,Squad Club Atlético Talleres,"Dec 27, 1994 (23)",23,right,19.0,0.6899999976158142,0.18,0.87,1.0,0.40133264992311635,0.17,195.1
-183,30896.0,Gastón Díaz,Squad Club Atlético Vélez Sarsfield,"Mar 13, 1988 (30)",30,right,24.0,0.6899999976158142,0.28,0.97,0.0,0.09738050530777669,0.57,896.4833333333333
-184,85468.0,Erik Godoy,Squad Club Atlético Colón,"Aug 16, 1993 (25)",25,right,27.0,0.6899999976158142,0.36,1.05,0.0,0.10103169936387447,1.71,935.35
-185,99779.0,Luis Abram,Squad Club Atlético Vélez Sarsfield,"Feb 27, 1996 (22)",22,left,29.0,0.6800000071525574,0.6,1.28,1.0,0.10666666666666667,0.51,1080.0
-186,95256.0,Marcelo Herrera,Squad Club Atlético Lanús,"Feb 26, 1992 (26)",26,right,2.0,0.6800000071525574,0.0,0.68,0.0,0.22666666666666668,3.43,270.0
-187,52937.0,Luciano Pons,Squad Club Atlético San Martín (Tucumán),"Apr 18, 1990 (28)",28,right,27.0,0.6700000166893005,0.58,1.25,1.0,0.33478821545481596,,336.03333333333336
-188,104594.0,Leonardo Godoy,Squad Club Atlético Talleres,"Apr 28, 1995 (23)",23,right,25.0,0.6700000166893005,0.58,1.25,0.0,0.10691036951391417,2.01,1052.2833333333335
-189,163289.0,Emiliano Ozuna,Squad Club Atlético Aldosivi,"Feb 9, 1996 (22)",22,left,36.0,0.6700000166893005,0.6,1.27,1.0,0.5246729400963968,0.31,217.84999999999997
-190,70941.0,Gonzalo Bueno,Squad Club Atlético Colón,"Jan 16, 1993 (25)",25,left,7.0,0.6700000166893005,0.11,0.78,2.0,0.48071216617210677,0.74,146.03333333333336
-191,134676.0,Guido Mainero,Squad Club Atlético Vélez Sarsfield,"Mar 23, 1995 (23)",23,right,7.0,0.6700000166893005,0.57,1.24,0.0,0.478730249517409,0.46,233.11666666666667
-192,98969.0,Renzo Saravia,Squad Racing Club,"Jun 16, 1993 (25)",25,right,26.0,0.6499999761581421,0.05,0.7,0.0,0.07420057711559978,2.86,849.05
-193,6365.0,Martín Galmarini,Squad Club Atlético Tigre,"Feb 28, 1982 (36)",36,right,8.0,0.6399999856948853,0.15,0.79,0.0,0.06789425938599143,0.11,1047.2166666666667
-194,176537.0,Maximiliano Comba,Squad Club de Gimnasia y Esgrima La Plata,"Jan 16, 1994 (24)",24,right,30.0,0.6399999856948853,0.0,0.64,1.0,0.13906885034807454,,414.18333333333334
-195,133281.0,Saúl Salcedo,Squad Club Atlético Huracán,"Aug 29, 1997 (21)",21,right,6.0,0.6299999952316284,0.1,0.73,0.0,0.06636363636363636,2.01,990.0
-196,79877.0,Martín Benítez,Squad Club Atlético Independiente,"Jun 17, 1994 (24)",24,right,7.0,0.6200000047683716,0.19,0.81,2.0,0.18538611511401207,6.86,393.2333333333333
-197,48268.0,Pablo Pérez,Squad Club Atlético Boca Juniors,"Aug 10, 1985 (33)",33,right,8.0,0.6200000047683716,0.49,1.11,0.0,0.303986205497515,2.29,328.6333333333333
-198,582.0,Jonathan Bottinelli,Squad Club Atlético Unión (Santa Fe),"Sep 14, 1984 (34)",34,left,33.0,0.6200000047683716,0.16,0.78,0.0,0.065,0.51,1080.0
-199,94781.0,Franco Costa,Squad Club Atlético San Martín (Tucumán),"Dec 10, 1991 (26)",26,-,11.0,0.6100000143051147,0.15,0.76,1.0,0.38398203592814373,0.09,178.13333333333333
-200,70402.0,,Squad Club Atlético Banfield,"Jan 24, 1990 (28)",28,right,34.0,0.6100000143051147,0.33,0.94,0.0,0.1214499342026558,0.31,696.5833333333334
-201,51413.0,Camilo Mayada,Squad Club Atlético River Plate,"Jan 8, 1991 (27)",27,right,18.0,0.6100000143051147,0.07,0.68,1.0,0.11333333333333334,1.71,540.0
+0,24256.0,Emmanuel Gigliotti,Squad Club Atlético Independiente,"May 20, 1987 (31)",31,right,9.0,6.239999771118164,2.84,9.08,12.0,0.84,3.43,977.97
+1,488.0,Lisandro López,Squad Racing Club,"Mar 2, 1983 (35)",35,right,15.0,5.260000228881836,1.27,6.53,9.0,0.63,2.01,937.47
+2,16081.0,Luis Rodríguez,Squad Club Atlético Tucumán,"Jan 1, 1985 (33)",33,right,7.0,5.010000228881836,1.55,6.56,7.0,0.71,1.71,827.9
+3,101.0,Darío Cvitanich,Squad Club Atlético Banfield,"May 16, 1984 (34)",34,right,20.0,4.730000019073486,1.17,5.9,5.0,0.55,1.71,969.08
+4,93853.0,Franco Soldano,Squad Club Atlético Unión (Santa Fe),"Sep 14, 1994 (24)",24,right,27.0,4.25,2.27,6.52,2.0,0.55,5.71,1060.35
+5,17217.0,Jonatan Cristaldo,Squad Racing Club,"Mar 5, 1989 (29)",29,right,9.0,4.2199997901916495,1.16,5.38,3.0,0.62,1.37,782.38
+6,20195.0,Sebastián Ribas,Squad Club Atlético Lanús,"Mar 11, 1988 (30)",30,right,37.0,3.880000114440918,0.77,4.65,3.0,0.45,1.71,931.73
+7,15113.0,Claudio Bieler,Squad Club Atlético San Martín (Tucumán),"Mar 1, 1984 (34)",34,right,9.0,3.869999885559082,0.98,4.85,3.0,0.37,0.57,1169.02
+8,30266.0,Cristian Chávez,Squad Club Atlético Aldosivi,"Jun 4, 1987 (31)",31,right,11.0,3.869999885559082,1.12,4.99,4.0,0.45,0.57,998.27
+9,98292.0,Facundo Barceló,Squad Club Atlético Patronato de la Juventud Católica,"Mar 31, 1993 (25)",25,right,31.0,3.859999895095825,1.42,5.28,6.0,0.79,0.57,598.92
+10,135386.0,Leonardo Sequeira,Squad Club Atlético Belgrano,"Apr 26, 1995 (23)",23,right,26.0,3.7899999618530273,0.36,4.15,2.0,0.41,1.71,910.88
+11,3148.0,Santiago Silva,Squad Club de Gimnasia y Esgrima La Plata,"Dec 9, 1980 (37)",37,right,9.0,3.759999990463257,2.25,6.01,4.0,0.5,0.34,1071.9
+12,31939.0,Santiago García,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Sep 14, 1990 (28)",28,right,18.0,3.740000009536743,1.26,5.0,3.0,0.45,6.86,1010.22
+13,39414.0,Fernando Zampedri,Squad Club Atlético Rosario Central,"Feb 14, 1988 (30)",30,right,20.0,3.609999895095825,2.29,5.9,4.0,0.61,3.43,876.07
+14,172565.0,Nicolás Reniero,Squad Club Atlético San Lorenzo de Almagro,"Mar 18, 1995 (23)",23,right,15.0,3.359999895095825,2.31,5.67,3.0,0.58,2.29,877.33
+15,47913.0,Javier Correa,Squad Club Atlético Colón,"Oct 23, 1992 (26)",26,right,11.0,3.0,0.37,3.37,3.0,0.34,4.57,882.7
+16,9146.0,Germán Herrera,Squad Club Atlético Rosario Central,"Jul 19, 1983 (35)",35,right,17.0,2.9600000381469727,2.39,5.35,2.0,1.31,0.34,367.05
+17,114108.0,Nicolás Fernández,Squad Club Social y Deportivo Defensa y Justicia,"Feb 8, 1996 (22)",22,right,29.0,2.9500000476837163,1.73,4.68,3.0,0.56,3.43,753.72
+18,17266.0,Mauricio Sperduti,Squad Club Atlético Patronato de la Juventud Católica,"Feb 16, 1986 (32)",32,right,14.0,2.9300000667572017,0.68,3.61,3.0,0.33,0.57,981.05
+19,193188.0,Gastón Togni,Squad Club Social y Deportivo Defensa y Justicia,"Sep 20, 1997 (21)",21,left,7.0,2.8299999237060547,0.73,3.56,2.0,0.38,0.17,850.83
+20,144.0,Carlos Tevez,Squad Club Atlético Boca Juniors,"Feb 5, 1984 (34)",34,right,32.0,2.8199999332427983,1.73,4.55,3.0,0.63,2.86,651.87
+21,167990.0,Luís Leal,Squad Club Atlético Newell's Old Boys,"May 29, 1987 (31)",31,right,7.0,2.75,1.71,4.46,1.0,0.48,1.37,842.68
+22,203.0,Mariano Pavone,Squad Club Estudiantes de La Plata,"May 27, 1982 (36)",36,both,16.0,2.690000057220459,1.71,4.4,2.0,0.56,0.46,705.35
+23,36681.0,Víctor Figueroa,Squad Club Atlético Newell's Old Boys,"Sep 29, 1983 (35)",35,right,16.0,2.640000104904175,0.16,2.8,1.0,0.41,0.23,619.68
+24,121341.0,Héctor Fértoli,Squad Club Atlético Newell's Old Boys,"Dec 3, 1994 (24)",24,right,26.0,2.509999990463257,0.87,3.38,3.0,0.36,0.8,855.13
+25,150346.0,Pablo Alvarenga,Squad Club Atlético San Martín (SJ),"Jun 22, 1988 (30)",30,-,33.0,2.450000047683716,0.8,3.25,1.0,0.56,,524.35
+26,55210.0,Nicolás Blandi,Squad Club Atlético San Lorenzo de Almagro,"Jan 13, 1990 (28)",28,right,9.0,2.4200000762939453,0.98,3.4,4.0,0.72,6.29,422.92
+27,185745.0,Lucas Robertone,Squad Club Atlético Vélez Sarsfield,"Mar 18, 1997 (21)",21,right,16.0,2.400000095367432,1.1,3.5,2.0,0.36,3.43,881.5
+28,87323.0,Ricardo Centurión,Squad Racing Club,"Jan 19, 1993 (25)",25,right,10.0,2.380000114440918,0.74,3.12,2.0,0.46,5.71,607.35
+29,66503.0,Augusto Solari,Squad Racing Club,"Jan 3, 1992 (26)",26,right,18.0,2.369999885559082,1.77,4.14,3.0,0.48,4.0,773.95
+30,618.0,Mauro Zárate,Squad Club Atlético Boca Juniors,"Mar 18, 1987 (31)",31,right,19.0,2.359999895095825,0.5,2.86,1.0,0.44,2.29,584.9
+31,31807.0,Mauro Matos,Squad Club Atlético Tucumán,"Aug 6, 1982 (36)",36,right,18.0,2.3299999237060547,1.17,3.5,3.0,0.45,0.29,697.78
+32,163041.0,Alexander Barboza,Squad Club Social y Deportivo Defensa y Justicia,"Mar 16, 1995 (23)",23,left,6.0,2.299999952316284,1.01,3.31,1.0,0.35,2.86,854.42
+33,17135.0,Matías Suárez,Squad Club Atlético Belgrano,"May 9, 1988 (30)",30,both,10.0,2.289999961853028,1.29,3.58,1.0,0.34,2.86,944.2
+34,77944.0,Washington Camacho,Squad Club Atlético Rosario Central,"Apr 8, 1986 (32)",32,left,15.0,2.289999961853028,0.58,2.87,2.0,0.29,0.57,892.1
+35,209887.0,Gastón Verón,Squad Asociación Atlética Argentinos Juniors,"Apr 23, 2001 (17)",17,right,16.0,2.2699999809265137,0.25,2.52,1.0,0.39,,577.35
+36,84739.0,Braian Romero,Squad Club Atlético Independiente,"Jun 15, 1991 (27)",27,right,17.0,2.259999990463257,0.96,3.22,3.0,1.04,2.86,277.85
+37,117606.0,Junior Arias,Squad Club Atlético Talleres,"May 17, 1993 (25)",25,right,9.0,2.2300000190734863,0.78,3.01,3.0,0.34,2.29,808.37
+38,193168.0,Tomás Belmonte,Squad Club Atlético Lanús,"May 27, 1998 (20)",20,right,13.0,2.220000028610229,1.32,3.54,2.0,0.3,0.46,1080.0
+39,172801.0,Nahuel Bustos,Squad Club Atlético Talleres,"Jul 4, 1998 (20)",20,right,7.0,2.1800000667572017,0.83,3.01,4.0,0.39,0.06,690.88
+40,99085.0,Lucas Acevedo,Squad Club Atlético San Martín (Tucumán),"Nov 8, 1991 (27)",27,right,2.0,2.1700000762939453,1.23,3.4,1.0,0.26,0.29,1170.0
+41,8611.0,Diego Vera,Squad Club Atlético Tigre,"Jan 5, 1985 (33)",33,right,19.0,2.1700000762939453,0.71,2.88,2.0,0.41,0.86,629.17
+42,77919.0,Gonzalo Martínez,Squad Club Atlético River Plate,"Jun 13, 1993 (25)",25,left,10.0,2.1099998950958248,0.52,2.63,2.0,0.74,17.14,321.7
+43,1325.0,Martín Bravo,Squad Club Atlético San Martín (SJ),"Sep 19, 1986 (32)",32,left,23.0,2.0799999237060547,1.54,3.62,3.0,0.44,0.91,734.07
+44,118855.0,Nazareno Solís,Squad Club Atlético San Martín (SJ),"Apr 22, 1994 (24)",24,left,7.0,2.0699999332427983,0.56,2.63,1.0,0.4,0.69,597.05
+45,44918.0,Gabriel Carabajal,Squad Club Atlético Patronato de la Juventud Católica,"Dec 9, 1991 (26)",26,right,30.0,2.009999990463257,1.07,3.08,1.0,0.27,0.57,1042.6
+46,55267.0,Fernando Gaibor,Squad Club Atlético Independiente,"Oct 8, 1991 (27)",27,right,10.0,2.0,0.31,2.31,2.0,0.26,2.29,789.52
+47,95766.0,Adrián Balboa,Squad Club Atlético Belgrano,"Jan 19, 1994 (24)",24,right,11.0,1.9900000095367432,1.18,3.17,1.0,0.47,0.86,605.65
+48,172730.0,Nicolás Leguizamón,Squad Club Atlético Colón,"Jan 26, 1995 (23)",23,right,9.0,1.9600000381469729,1.45,3.41,0.0,0.73,1.71,420.22
+49,177285.0,Matías Vargas,Squad Club Atlético Vélez Sarsfield,"May 8, 1997 (21)",21,right,26.0,1.9099999666213991,0.43,2.34,2.0,0.21,10.29,1024.73
+50,131511.0,Francisco Illarregui,Squad Asociación Atlética Argentinos Juniors,"May 6, 1997 (21)",21,-,27.0,1.8999999761581419,1.35,3.25,1.0,0.76,0.17,386.5
+51,43746.0,Edwin Cardona,Squad Club Atlético Boca Juniors,"Dec 8, 1992 (25)",25,right,10.0,1.8899999856948853,0.34,2.23,2.0,0.31,6.29,639.88
+52,39578.0,Lucas Gamba,Squad Club Atlético Huracán,"Jun 24, 1987 (31)",31,right,21.0,1.8899999856948853,1.14,3.03,4.0,0.33,2.01,825.42
+53,72225.0,Andrés Chávez,Squad Club Atlético Huracán,"Mar 21, 1991 (27)",27,left,9.0,1.8600000143051147,0.6,2.46,2.0,0.34,2.86,656.65
+54,175369.0,Franco Troyansky,Squad Club Atlético Unión (Santa Fe),"Jun 3, 1997 (21)",21,left,22.0,1.8400000333786009,1.4,3.24,1.0,0.49,1.44,590.58
+55,186085.0,Matías Zaracho,Squad Racing Club,"Mar 10, 1998 (20)",20,right,28.0,1.8200000524520876,0.93,2.75,0.0,0.35,4.0,707.92
+56,17090.0,Mauro Formica,Squad Club Atlético Newell's Old Boys,"Apr 4, 1988 (30)",30,right,33.0,1.809999942779541,0.68,2.49,1.0,0.34,2.06,660.8
+57,81286.0,Guillermo Fernández,Squad Racing Club,"Oct 11, 1991 (27)",27,right,8.0,1.7400000095367432,1.22,2.96,3.0,0.31,4.57,855.43
+58,89135.0,Gabriel Ávalos,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Oct 12, 1990 (28)",28,right,9.0,1.7300000190734863,0.7,2.43,2.0,1.42,0.23,153.63
+59,89025.0,Fabián Noguera,Squad Club Estudiantes de La Plata,"Mar 20, 1993 (25)",25,right,18.0,1.7100000381469729,0.6,2.31,2.0,0.24,0.69,854.87
+60,185878.0,Juan Brunetta,Squad Club Atlético Belgrano,"May 12, 1997 (21)",21,left,17.0,1.7000000476837158,0.76,2.46,1.0,0.31,1.44,723.78
+61,103537.0,David Barbona,Squad Club Atlético Tucumán,"Feb 22, 1995 (23)",23,right,19.0,1.690000057220459,0.5,2.19,1.0,0.35,2.29,563.9
+62,68605.0,Lucas Menossi,Squad Club Atlético Tigre,"Jul 20, 1992 (26)",26,right,5.0,1.6200000047683716,0.58,2.2,3.0,0.22,1.71,918.88
+63,136659.0,Ángel González,Squad Club Deportivo Godoy Cruz Antonio Tomba,"May 16, 1994 (24)",24,right,8.0,1.6000000238418581,0.56,2.16,3.0,0.26,2.86,733.78
+64,8907.0,Federico González,Squad Club Atlético Tigre,"Jan 6, 1987 (31)",31,right,9.0,1.559999942779541,0.42,1.98,3.0,0.3,0.91,587.93
+65,70297.0,Juan Ramírez,Squad Club Atlético Talleres,"May 25, 1993 (25)",25,left,20.0,1.5499999523162842,0.36,1.91,1.0,0.17,2.29,1039.6
+66,19754.0,Enzo Kalinski,Squad Club Atlético Banfield,"Mar 10, 1987 (31)",31,right,23.0,1.5499999523162842,1.01,2.56,2.0,0.25,0.91,934.98
+67,94725.0,Horacio Tijanovich,Squad Club de Gimnasia y Esgrima La Plata,"Feb 28, 1996 (22)",22,right,11.0,1.5499999523162842,0.72,2.27,0.0,0.24,0.57,834.62
+68,172756.0,Agustín Bouzat,Squad Club Atlético Vélez Sarsfield,"Mar 28, 1994 (24)",24,left,10.0,1.5199999809265137,0.62,2.14,0.0,0.2,2.01,963.38
+69,68341.0,Diego Zabala,Squad Club Atlético Unión (Santa Fe),"Sep 19, 1991 (27)",27,right,11.0,1.5199999809265137,0.99,2.51,3.0,0.21,2.29,1067.33
+70,119431.0,Matías Rojas,Squad Club Social y Deportivo Defensa y Justicia,"Nov 3, 1995 (23)",23,left,26.0,1.4900000095367432,0.55,2.04,5.0,0.26,0.34,710.7
+71,49584.0,Gervasio Núñez,Squad Club Atlético Tucumán,"Jan 29, 1988 (30)",30,left,10.0,1.4800000190734863,0.39,1.87,0.0,0.25,1.14,682.8
+72,42505.0,Jhonathan Ramis,Squad Club Atlético Vélez Sarsfield,"Nov 6, 1989 (29)",29,right,11.0,1.4600000381469729,0.42,1.88,1.0,0.34,0.8,495.37
+73,28126.0,Lucas Pratto,Squad Club Atlético River Plate,"Jun 4, 1988 (30)",30,right,27.0,1.4600000381469729,0.71,2.17,0.0,0.27,6.86,723.43
+74,30012.0,Rodrigo Salinas,Squad Club Atlético Vélez Sarsfield,"Jun 4, 1986 (32)",32,right,9.0,1.440000057220459,0.31,1.75,2.0,0.56,0.46,280.97
+75,44574.0,Marco Ruben,Squad Club Atlético Rosario Central,"Oct 26, 1986 (32)",32,right,9.0,1.4299999475479126,0.48,1.91,0.0,0.24,2.86,702.68
+76,54702.0,Rodrigo Mora,Squad Club Atlético River Plate,"Oct 29, 1987 (31)",31,right,7.0,1.4199999570846558,0.57,1.99,2.0,0.51,2.01,348.97
+77,29128.0,Denis Stracqualursi,Squad Club Atlético Aldosivi,"Oct 20, 1987 (31)",31,right,22.0,1.3899999856948853,0.7,2.09,1.0,0.35,0.57,533.33
+78,122082.0,Franco Cristaldo,Squad Club Atlético San Martín (SJ),"Aug 15, 1996 (22)",22,right,32.0,1.3799999952316284,1.1,2.48,0.0,0.45,0.46,492.02
+79,121814.0,Leonardo Heredia,Squad Club Atlético Colón,"Jan 11, 1996 (22)",22,right,21.0,1.3799999952316284,0.46,1.84,3.0,0.21,0.06,800.87
+80,193955.0,Nicolás Domínguez,Squad Club Atlético Vélez Sarsfield,"Jun 28, 1998 (20)",20,right,28.0,1.3600000143051147,0.29,1.65,2.0,0.13,4.57,1134.6
+81,71946.0,Franco Fragapane,Squad Club Atlético Unión (Santa Fe),"Jun 2, 1993 (25)",25,right,7.0,1.350000023841858,0.23,1.58,2.0,0.17,1.14,860.42
+82,40397.0,Matías Pisano,Squad Club Atlético Aldosivi,"Dec 13, 1991 (26)",26,left,10.0,1.350000023841858,0.55,1.9,3.0,0.21,1.44,804.13
+83,77892.0,Joel Amoroso,Squad Club Atlético Newell's Old Boys,"Jan 8, 1988 (30)",30,right,15.0,1.3300000429153442,0.46,1.79,0.0,0.22,0.46,719.62
+84,189736.0,Alexis Mac Allister,Squad Asociación Atlética Argentinos Juniors,"Dec 24, 1998 (19)",19,right,10.0,1.3300000429153442,0.84,2.17,1.0,0.43,4.57,459.08
+85,69105.0,Miguel Araujo,Squad Club Atlético Talleres,"Oct 24, 1994 (24)",24,right,4.0,1.3200000524520874,0.49,1.81,0.0,0.24,0.57,675.0
+86,179961.0,Gonzalo Maroni,Squad Club Atlético Talleres,"Mar 18, 1999 (19)",19,right,10.0,1.3200000524520874,0.13,1.45,2.0,0.19,0.86,681.3
+87,147570.0,Tomás Cardona,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Oct 10, 1995 (23)",23,left,6.0,1.309999942779541,0.39,1.7,1.0,0.14,3.43,1080.0
+88,85349.0,Juan Ignacio Cavallaro,Squad Club Atlético Tigre,"Jun 28, 1994 (24)",24,right,15.0,1.2899999618530271,0.27,1.56,2.0,0.29,1.44,488.47
+89,199230.0,Ignacio Huguenet,Squad Club Social y Deportivo Defensa y Justicia,"May 5, 1998 (20)",20,right,30.0,1.2899999618530271,0.77,2.06,0.0,0.54,,346.43
+90,175890.0,Kevin Mac Allister,Squad Asociación Atlética Argentinos Juniors,"Nov 7, 1997 (21)",21,right,4.0,1.2899999618530271,0.9,2.19,0.0,0.27,1.71,720.0
+91,70018.0,Nicolás Royón,Squad Club Atlético Patronato de la Juventud Católica,"Jan 28, 1991 (27)",27,right,32.0,1.2899999618530271,0.78,2.07,0.0,0.31,0.34,601.28
+92,29345.0,Fernando Telechea,Squad Club Atlético Aldosivi,"Oct 6, 1981 (37)",37,right,9.0,1.2799999713897705,0.72,2.0,0.0,0.41,0.23,444.2
+93,81291.0,Diego Mendoza,Squad Club Atlético Huracán,"Sep 30, 1992 (26)",26,right,16.0,1.2699999809265137,0.0,1.27,3.0,0.48,0.34,238.77
+94,123767.0,Victorio Ramis,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Jul 7, 1994 (24)",24,right,11.0,1.2699999809265137,0.55,1.82,0.0,0.39,3.15,423.75
+95,99008.0,Andrés Roa,Squad Club Atlético Huracán,"Apr 17, 1993 (25)",25,right,10.0,1.2599999904632568,0.45,1.71,3.0,0.25,0.34,624.67
+96,199203.0,Francisco Apaolaza,Squad Club Estudiantes de La Plata,"Jun 19, 1997 (21)",21,right,19.0,1.25,0.0,1.25,1.0,0.18,0.17,611.57
+97,8904.0,Silvio Romero,Squad Club Atlético Independiente,"Jul 22, 1988 (30)",30,right,18.0,1.25,0.8,2.05,2.0,0.39,4.0,478.08
+98,162738.0,Lucas Rodríguez,Squad Club Estudiantes de La Plata,"Apr 27, 1997 (21)",21,right,9.0,1.2300000190734863,0.39,1.62,0.0,0.14,3.43,1070.68
+99,65598.0,Lorenzo Faravelli,Squad Club de Gimnasia y Esgrima La Plata,"Mar 29, 1993 (25)",25,right,8.0,1.2200000286102295,0.23,1.45,1.0,0.15,0.91,856.47
+100,70512.0,Matías García,Squad Club Atlético San Martín (Tucumán),"Oct 22, 1991 (27)",27,left,10.0,1.2200000286102295,0.3,1.52,1.0,0.12,0.2,1170.0
+101,49043.0,Raúl Bobadilla,Squad Asociación Atlética Argentinos Juniors,"Jun 18, 1987 (31)",31,right,25.0,1.2100000381469729,0.15,1.36,0.0,0.22,2.01,566.97
+102,19622.0,Marcelo Estigarribia,Squad Club Atlético Colón,"Sep 21, 1987 (31)",31,left,28.0,1.2100000381469729,0.43,1.64,1.0,0.14,1.14,1035.0
+103,33777.0,Fabricio Fontanini,Squad Club Atlético Newell's Old Boys,"Mar 30, 1990 (28)",28,right,24.0,1.190000057220459,0.23,1.42,2.0,0.12,0.69,1080.0
+104,16278.0,Renzo Vera,Squad Club Atlético Patronato de la Juventud Católica,"Jun 1, 1983 (35)",35,right,33.0,1.190000057220459,0.2,1.39,1.0,0.15,0.2,838.52
+105,111421.0,Cristian Pavón,Squad Club Atlético Boca Juniors,"Jan 21, 1996 (22)",22,right,7.0,1.1799999475479126,0.48,1.66,2.0,0.27,22.86,553.93
+106,166900.0,Nicolás De La Cruz,Squad Club Atlético River Plate,"Jun 1, 1997 (21)",21,right,11.0,1.1799999475479126,0.74,1.92,1.0,0.69,4.57,251.83
+107,39796.0,Federico Lértora,Squad Club Atlético Belgrano,"Jul 1, 1990 (28)",28,right,14.0,1.1699999570846558,0.24,1.41,0.0,0.12,1.44,1080.0
+108,97738.0,Emanuel Brítez,Squad Club Atlético Independiente,"Mar 26, 1992 (26)",26,right,23.0,1.1699999570846558,0.66,1.83,1.0,0.22,1.14,748.82
+109,63200.0,Ezequiel Rescaldani,Squad Club Atlético Patronato de la Juventud Católica,"Jun 11, 1992 (26)",26,right,29.0,1.1599999666213991,0.72,1.88,0.0,0.36,0.57,476.05
+110,34544.0,Emmanuel Mas,Squad Club Atlético Boca Juniors,"Jan 15, 1989 (29)",29,left,3.0,1.1599999666213991,0.77,1.93,0.0,0.21,2.86,810.0
+111,116885.0,Marcelino Moreno,Squad Club Atlético Lanús,"Jun 25, 1995 (23)",23,right,25.0,1.149999976158142,0.56,1.71,0.0,0.22,1.14,705.97
+112,29111.0,Jonatan Schunke,Squad Club Estudiantes de La Plata,"Feb 22, 1987 (31)",31,right,6.0,1.1399999856948853,0.32,1.46,0.0,0.13,2.06,990.0
+113,204671.0,Tomás Chancalay,Squad Club Atlético Colón,"Jan 1, 1999 (19)",19,right,12.0,1.1399999856948853,0.47,1.61,2.0,0.27,3.15,528.48
+114,17271.0,Diego Morales,Squad Club Atlético Tigre,"Nov 29, 1986 (32)",32,right,11.0,1.1200000047683716,0.55,1.67,1.0,0.2,0.86,741.98
+115,215760.0,Matías Pellegrini,Squad Club Estudiantes de La Plata,"Mar 11, 2000 (18)",18,left,8.0,1.1100000143051147,0.27,1.38,2.0,0.23,,541.95
+116,60730.0,Gastón Giménez,Squad Club Atlético Vélez Sarsfield,"Jul 27, 1991 (27)",27,left,30.0,1.100000023841858,0.94,2.04,0.0,0.16,2.29,1126.45
+117,214.0,Marcos Gelabert,Squad Club Atlético San Martín (SJ),"Sep 16, 1981 (37)",37,right,5.0,1.100000023841858,0.49,1.59,2.0,0.17,0.11,848.73
+118,37152.0,Rubén Botta,Squad Club Atlético San Lorenzo de Almagro,"Jan 31, 1990 (28)",28,left,19.0,1.0900000333786009,0.61,1.7,1.0,0.22,2.86,698.1
+119,2439.0,Juan Fernando Quintero,Squad Club Atlético River Plate,"Jan 18, 1993 (25)",25,left,8.0,1.0900000333786009,0.82,1.91,1.0,0.37,7.43,459.72
+120,47487.0,Facundo Erpen,Squad Club Atlético San Martín (SJ),"May 19, 1983 (35)",35,right,3.0,1.0700000524520874,0.3,1.37,1.0,0.23,0.91,540.0
+121,15339.0,Sebastián Prediger,Squad Club Atlético Tigre,"Sep 4, 1986 (32)",32,right,21.0,1.0499999523162842,0.71,1.76,0.0,0.17,0.23,956.72
+122,220307.0,Pedro de la Vega,Squad Club Atlético Lanús,"Feb 7, 2001 (17)",17,right,39.0,1.0299999713897705,0.65,1.68,0.0,0.4,,378.17
+123,184545.0,Jan Carlos Hurtado,Squad Club de Gimnasia y Esgrima La Plata,"Mar 5, 2000 (18)",18,right,17.0,1.0299999713897705,0.71,1.74,0.0,0.65,0.4,242.6
+124,163302.0,Mauro Pittón,Squad Club Atlético Unión (Santa Fe),"Aug 8, 1994 (24)",24,right,30.0,1.0199999809265137,0.0,1.02,1.0,0.11,2.29,868.02
+125,46638.0,Claudio Mosca,Squad Club Atlético San Martín (SJ),"Apr 2, 1991 (27)",27,left,10.0,1.0099999904632568,0.18,1.19,0.0,0.11,0.69,966.3
+126,64709.0,Matías Garrido,Squad Club Atlético Patronato de la Juventud Católica,"Feb 2, 1986 (32)",32,right,10.0,1.0099999904632568,0.13,1.14,1.0,0.28,0.23,368.43
+127,24363.0,Alfonso Parot,Squad Club Atlético Rosario Central,"Oct 15, 1989 (29)",29,left,24.0,1.0099999904632568,0.26,1.27,0.0,0.11,1.14,1080.0
+128,172675.0,Luciano Gómez,Squad Club Atlético Banfield,"Mar 22, 1996 (22)",22,right,24.0,1.0099999904632568,0.14,1.15,1.0,0.15,0.34,678.8
+129,52418.0,Gonzalo Rodríguez,Squad Club Atlético San Martín (Tucumán),"Sep 18, 1990 (28)",28,right,7.0,1.0,0.39,1.39,0.0,0.2,,625.42
+130,31207.0,Damián Martínez,Squad Club Atlético Unión (Santa Fe),"Jan 31, 1990 (28)",28,right,4.0,1.0,0.69,1.69,2.0,0.15,0.46,990.0
+131,1692.0,Mariano González,Squad Club Atlético Colón,"May 5, 1981 (37)",37,right,15.0,0.9900000095367432,0.84,1.83,0.0,0.44,0.17,375.63
+132,30105.0,Walter Andrade,Squad Club Atlético Patronato de la Juventud Católica,"Dec 1, 1984 (34)",34,right,2.0,0.9800000190734864,0.31,1.29,0.0,0.19,0.17,596.5
+133,130207.0,Francisco Fydriszewski,Squad Club Atlético Newell's Old Boys,"Apr 13, 1993 (25)",25,both,9.0,0.9700000286102296,0.2,1.17,1.0,1.29,0.23,81.33
+134,1080.0,Gonzalo Rodríguez,Squad Club Atlético San Lorenzo de Almagro,"Apr 10, 1984 (34)",34,right,2.0,0.959999978542328,0.58,1.54,1.0,0.26,0.57,540.0
+135,657.0,Ignacio Scocco,Squad Club Atlético River Plate,"May 29, 1985 (33)",33,right,32.0,0.959999978542328,0.13,1.09,2.0,0.37,4.57,264.62
+136,60772.0,Lisandro Magallán,Squad Club Atlético Boca Juniors,"Sep 27, 1993 (25)",25,right,6.0,0.9499999880790709,0.16,1.11,1.0,0.17,5.14,576.47
+137,60771.0,Juan Garro,Squad Club Atlético Huracán,"Nov 24, 1992 (26)",26,left,24.0,0.9399999976158142,0.61,1.55,1.0,0.37,4.0,373.97
+138,120432.0,Andrés Cubas,Squad Club Atlético Talleres,"May 22, 1996 (22)",22,right,8.0,0.9300000071525574,0.19,1.12,1.0,0.11,2.51,881.42
+139,86727.0,Rodrigo Gómez,Squad Club Atlético Unión (Santa Fe),"Jan 2, 1993 (25)",25,right,10.0,0.9300000071525574,0.54,1.47,0.0,0.38,1.14,350.5
+140,8513.0,Lautaro Acosta,Squad Club Atlético Lanús,"Mar 14, 1988 (30)",30,right,7.0,0.9300000071525574,0.39,1.32,0.0,0.12,6.86,952.45
+141,85272.0,Rodrigo Aliendro,Squad Club Atlético Tucumán,"Feb 16, 1991 (27)",27,right,29.0,0.9100000262260436,0.33,1.24,4.0,0.12,0.86,936.72
+142,89000.0,Lautaro Comas,Squad Club Atlético Patronato de la Juventud Católica,"Jan 15, 1995 (23)",23,-,7.0,0.9100000262260436,0.48,1.39,0.0,0.18,0.17,701.43
+143,8995.0,Javier Toledo,Squad Club Atlético Tucumán,"Apr 24, 1986 (32)",32,right,12.0,0.9100000262260436,0.62,1.53,0.0,1.04,0.34,131.87
+144,58422.0,Diego Viera,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Apr 30, 1991 (27)",27,right,5.0,0.8999999761581421,0.0,0.9,1.0,0.08,1.71,1080.0
+145,156.0,Pablo Ledesma,Squad Club Atlético Patronato de la Juventud Católica,"Feb 4, 1984 (34)",34,right,27.0,0.8999999761581421,0.83,1.73,1.0,0.31,0.29,499.08
+146,52684.0,Carlos Auzqui,Squad Club Atlético Huracán,"Sep 18, 1991 (27)",27,right,11.0,0.8999999761581421,0.55,1.45,1.0,0.22,2.29,604.42
+147,97535.0,Cristian Espinoza,Squad Club Atlético Boca Juniors,"Apr 3, 1995 (23)",23,right,11.0,0.8999999761581421,0.54,1.44,2.0,0.44,1.71,297.1
+148,215475.0,Thiago Almada,Squad Club Atlético Vélez Sarsfield,"Apr 26, 2001 (17)",17,right,23.0,0.8899999856948853,0.07,0.96,2.0,0.26,,334.1
+149,87415.0,Marcelo Ortiz,Squad Club Atlético Rosario Central,"Jan 13, 1994 (24)",24,right,6.0,0.8899999856948853,0.77,1.66,0.0,0.33,0.06,450.0
+150,17376.0,Jonathan Sandoval,Squad Asociación Atlética Argentinos Juniors,"Jun 25, 1987 (31)",31,right,15.0,0.8799999952316284,0.49,1.37,0.0,0.13,0.34,979.78
+151,40071.0,Darío Benedetto,Squad Club Atlético Boca Juniors,"May 17, 1990 (28)",28,right,9.0,0.8799999952316284,0.45,1.33,0.0,0.39,11.43,305.88
+152,66596.0,Gustavo Villarruel,Squad Club Atlético San Martín (SJ),"Apr 2, 1992 (26)",26,right,27.0,0.8799999952316284,0.08,0.96,1.0,0.19,0.4,443.12
+153,33058.0,Gustavo Bou,Squad Racing Club,"Feb 18, 1990 (28)",28,right,7.0,0.8600000143051147,0.53,1.39,1.0,0.43,5.71,292.0
+154,117605.0,Kevin Ramírez,Squad Club Atlético Tigre,"Apr 1, 1994 (24)",24,left,27.0,0.8600000143051147,0.0,0.86,0.0,0.42,1.55,184.92
+155,25625.0,Carlos Quintana,Squad Club Atlético Talleres,"Feb 11, 1988 (30)",30,right,2.0,0.8500000238418579,0.5,1.35,0.0,0.15,1.71,787.7
+156,70151.0,Teodoro Paredes,Squad Club Atlético Newell's Old Boys,"Apr 1, 1993 (25)",25,right,13.0,0.8500000238418579,0.23,1.08,0.0,0.18,0.23,540.0
+157,145349.0,Tomás Pochettino,Squad Club Atlético Talleres,"Feb 1, 1996 (22)",22,right,32.0,0.8399999737739563,0.26,1.1,0.0,0.17,2.29,591.85
+158,28146.0,Rolando García Guerreño,Squad Club Atlético Lanús,"Feb 10, 1990 (28)",28,right,23.0,0.8399999737739563,0.3,1.14,0.0,0.16,1.71,649.52
+159,39742.0,Guillermo Acosta,Squad Club Atlético Tucumán,"Oct 31, 1988 (30)",30,right,8.0,0.8299999833106995,0.41,1.24,2.0,0.11,0.57,1059.15
+160,126.0,Jesús Dátolo,Squad Club Atlético Banfield,"May 19, 1984 (34)",34,left,10.0,0.8299999833106995,0.14,0.97,2.0,0.14,0.86,618.02
+161,193905.0,Julián Carranza,Squad Club Atlético Banfield,"May 22, 2000 (18)",18,right,21.0,0.8100000023841858,0.34,1.15,1.0,0.38,2.29,275.77
+162,37080.0,Leonardo Sigali,Squad Racing Club,"May 29, 1987 (31)",31,right,30.0,0.8000000119209291,0.21,1.01,0.0,0.09,3.43,1002.62
+163,114498.0,Iván Colman,Squad Club Atlético Aldosivi,"May 6, 1995 (23)",23,right,28.0,0.7900000214576721,0.29,1.08,1.0,0.11,0.57,887.52
+164,96298.0,Iván Ramírez,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Dec 8, 1994 (23)",23,right,15.0,0.7799999713897705,0.69,1.47,0.0,0.25,0.29,524.57
+165,69929.0,Jonás Aguirre,Squad Club Atlético Belgrano,"Mar 5, 1992 (26)",26,left,20.0,0.7799999713897705,0.44,1.22,2.0,0.32,0.69,348.45
+166,100778.0,Rodrigo Moreira,Squad Club Atlético San Martín (Tucumán),"Jul 15, 1996 (22)",22,right,4.0,0.7799999713897705,0.65,1.43,0.0,0.2,0.46,630.0
+167,85311.0,Lucas Albertengo,Squad Club Estudiantes de La Plata,"Jan 30, 1991 (27)",27,right,7.0,0.7699999809265137,0.07,0.84,1.0,0.2,2.06,369.3
+168,215457.0,Adolfo Gaich,Squad Club Atlético San Lorenzo de Almagro,"Feb 26, 1999 (19)",19,right,38.0,0.7699999809265137,0.4,1.17,1.0,0.3,,353.48
+169,186030.0,Emiliano Purita,Squad Club Atlético San Martín (Tucumán),"Mar 25, 1997 (21)",21,right,30.0,0.7599999904632568,0.13,0.89,0.0,0.14,0.23,579.05
+170,69646.0,Alan Ruiz,Squad Club Atlético Colón,"Aug 19, 1993 (25)",25,left,10.0,0.75,0.47,1.22,0.0,0.23,4.57,479.78
+171,61919.0,Alberto Costa,Squad Club Atlético San Martín (Tucumán),"Jan 9, 1985 (33)",33,left,8.0,0.75,0.24,0.99,2.0,0.2,0.57,442.27
+172,57885.0,Federico Carrizo,Squad Club Atlético Rosario Central,"May 17, 1991 (27)",27,right,8.0,0.7400000095367432,0.34,1.08,0.0,0.13,1.71,769.93
+173,46612.0,Sebastián Bértoli,Squad Club Atlético Patronato de la Juventud Católica,"Oct 16, 1977 (41)",41,right,1.0,0.7400000095367432,0.0,0.74,0.0,0.06,0.11,1170.0
+174,52390.0,Carlos Izquierdoz,Squad Club Atlético Boca Juniors,"Nov 3, 1988 (30)",30,right,24.0,0.7400000095367432,0.74,1.48,1.0,0.4,3.43,329.52
+175,17276.0,Adrián Calello,Squad Club Atlético Banfield,"May 14, 1987 (31)",31,right,7.0,0.7300000190734863,0.29,1.02,1.0,0.1,0.34,898.2
+176,35300.0,Mathías Abero,Squad Club Atlético Tucumán,"Apr 9, 1990 (28)",28,left,16.0,0.7300000190734863,0.13,0.86,1.0,0.08,0.23,990.0
+177,728.0,Fernando Gago,Squad Club Atlético Boca Juniors,"Apr 10, 1986 (32)",32,right,5.0,0.7300000190734863,0.67,1.4,0.0,0.2,2.29,630.0
+178,122008.0,Yeimar Gómez Andrade,Squad Club Atlético Unión (Santa Fe),"Jun 30, 1992 (26)",26,right,28.0,0.7200000286102295,0.57,1.29,1.0,0.11,2.29,1080.0
+179,44771.0,Lucas Orban,Squad Racing Club,"Feb 3, 1989 (29)",29,left,6.0,0.7200000286102295,0.72,1.44,0.0,0.13,0.57,990.0
+180,603.0,Walter Montillo,Squad Club Atlético Tigre,"Apr 14, 1984 (34)",34,right,14.0,0.7099999785423279,0.22,0.93,0.0,0.29,,289.65
+181,87424.0,Fernando Zuqui,Squad Club Estudiantes de La Plata,"Nov 27, 1991 (27)",27,right,5.0,0.6899999976158142,0.29,0.98,1.0,0.11,1.71,784.8
+182,118186.0,Mauro Ortiz,Squad Club Atlético Talleres,"Dec 27, 1994 (23)",23,right,19.0,0.6899999976158142,0.18,0.87,1.0,0.4,0.17,195.1
+183,30896.0,Gastón Díaz,Squad Club Atlético Vélez Sarsfield,"Mar 13, 1988 (30)",30,right,24.0,0.6899999976158142,0.28,0.97,0.0,0.1,0.57,896.48
+184,85468.0,Erik Godoy,Squad Club Atlético Colón,"Aug 16, 1993 (25)",25,right,27.0,0.6899999976158142,0.36,1.05,0.0,0.1,1.71,935.35
+185,99779.0,Luis Abram,Squad Club Atlético Vélez Sarsfield,"Feb 27, 1996 (22)",22,left,29.0,0.6800000071525574,0.6,1.28,1.0,0.11,0.51,1080.0
+186,95256.0,Marcelo Herrera,Squad Club Atlético Lanús,"Feb 26, 1992 (26)",26,right,2.0,0.6800000071525574,0.0,0.68,0.0,0.23,3.43,270.0
+187,52937.0,Luciano Pons,Squad Club Atlético San Martín (Tucumán),"Apr 18, 1990 (28)",28,right,27.0,0.6700000166893005,0.58,1.25,1.0,0.33,,336.03
+188,104594.0,Leonardo Godoy,Squad Club Atlético Talleres,"Apr 28, 1995 (23)",23,right,25.0,0.6700000166893005,0.58,1.25,0.0,0.11,2.01,1052.28
+189,163289.0,Emiliano Ozuna,Squad Club Atlético Aldosivi,"Feb 9, 1996 (22)",22,left,36.0,0.6700000166893005,0.6,1.27,1.0,0.52,0.31,217.85
+190,70941.0,Gonzalo Bueno,Squad Club Atlético Colón,"Jan 16, 1993 (25)",25,left,7.0,0.6700000166893005,0.11,0.78,2.0,0.48,0.74,146.03
+191,134676.0,Guido Mainero,Squad Club Atlético Vélez Sarsfield,"Mar 23, 1995 (23)",23,right,7.0,0.6700000166893005,0.57,1.24,0.0,0.48,0.46,233.12
+192,98969.0,Renzo Saravia,Squad Racing Club,"Jun 16, 1993 (25)",25,right,26.0,0.6499999761581421,0.05,0.7,0.0,0.07,2.86,849.05
+193,6365.0,Martín Galmarini,Squad Club Atlético Tigre,"Feb 28, 1982 (36)",36,right,8.0,0.6399999856948853,0.15,0.79,0.0,0.07,0.11,1047.22
+194,176537.0,Maximiliano Comba,Squad Club de Gimnasia y Esgrima La Plata,"Jan 16, 1994 (24)",24,right,30.0,0.6399999856948853,0.0,0.64,1.0,0.14,,414.18
+195,133281.0,Saúl Salcedo,Squad Club Atlético Huracán,"Aug 29, 1997 (21)",21,right,6.0,0.6299999952316284,0.1,0.73,0.0,0.07,2.01,990.0
+196,79877.0,Martín Benítez,Squad Club Atlético Independiente,"Jun 17, 1994 (24)",24,right,7.0,0.6200000047683716,0.19,0.81,2.0,0.19,6.86,393.23
+197,48268.0,Pablo Pérez,Squad Club Atlético Boca Juniors,"Aug 10, 1985 (33)",33,right,8.0,0.6200000047683716,0.49,1.11,0.0,0.3,2.29,328.63
+198,582.0,Jonathan Bottinelli,Squad Club Atlético Unión (Santa Fe),"Sep 14, 1984 (34)",34,left,33.0,0.6200000047683716,0.16,0.78,0.0,0.06,0.51,1080.0
+199,94781.0,Franco Costa,Squad Club Atlético San Martín (Tucumán),"Dec 10, 1991 (26)",26,-,11.0,0.6100000143051147,0.15,0.76,1.0,0.38,0.09,178.13
+200,70402.0,,Squad Club Atlético Banfield,"Jan 24, 1990 (28)",28,right,34.0,0.6100000143051147,0.33,0.94,0.0,0.12,0.31,696.58
+201,51413.0,Camilo Mayada,Squad Club Atlético River Plate,"Jan 8, 1991 (27)",27,right,18.0,0.6100000143051147,0.07,0.68,1.0,0.11,1.71,540.0
 202,45401.0,Danilo Ortiz,Squad Club Atlético Banfield,"May 28, 1992 (26)",26,left,6.0,0.6100000143051147,0.16,0.77,0.0,0.11,0.57,630.0
-203,173015.0,Nicolás Thaller,Squad Club Atlético Lanús,"Sep 7, 1998 (20)",20,right,29.0,0.6000000238418579,0.14,0.74,1.0,0.12333333333333334,0.17,540.0
-204,69857.0,Juan Ignacio Sills,Squad Club Atlético Newell's Old Boys,"May 4, 1987 (31)",31,right,21.0,0.6000000238418579,0.45,1.05,0.0,0.20326223337515686,0.23,464.91666666666663
-205,100786.0,Matías Romero,Squad Asociación Atlética Argentinos Juniors,"Feb 1, 1996 (22)",22,right,26.0,0.5899999737739563,0.26,0.85,0.0,0.2210024555828398,,346.15000000000003
-206,407.0,Fernando Belluschi,Squad Club Atlético San Lorenzo de Almagro,"Sep 10, 1983 (35)",35,both,16.0,0.5899999737739563,0.12,0.71,0.0,0.17806883098787793,2.58,358.85
-207,34042.0,Ricardo Noir,Squad Club Atlético Tucumán,"Feb 26, 1987 (31)",31,right,22.0,0.5799999833106995,0.0,0.58,1.0,0.24819716300816227,0.29,210.31666666666666
-208,34042.0,Ricardo Noir,Squad Club Atlético Tucumán,"Mar 12, 1995 (23)",23,right,22.0,0.5799999833106995,0.0,0.58,1.0,0.24819716300816227,0.46,210.31666666666666
-209,172760.0,Lisandro Martínez,Squad Club Social y Deportivo Defensa y Justicia,"Jan 18, 1998 (20)",20,left,24.0,0.5799999833106995,0.21,0.79,1.0,0.07552313847679071,2.29,941.4333333333333
-210,198280.0,Juan Ignacio Méndez,Squad Asociación Atlética Argentinos Juniors,"Apr 28, 1997 (21)",21,right,14.0,0.5799999833106995,0.37,0.95,0.0,0.15537921007996125,0.11,550.2666666666667
-211,36117.0,Fabián Rinaudo,Squad Club de Gimnasia y Esgrima La Plata,"May 8, 1987 (31)",31,right,21.0,0.5799999833106995,0.29,0.87,0.0,0.0725,0.86,1080.0
-212,36816.0,Marco Torsiglieri,Squad Club Atlético Lanús,"Jan 12, 1988 (30)",30,left,18.0,0.5799999833106995,0.43,1.01,0.0,0.11222222222222222,0.57,810.0
-213,37792.0,Pablo Hernández,Squad Club Atlético Independiente,"Oct 24, 1986 (32)",32,left,19.0,0.5699999928474426,0.0,0.57,1.0,0.08788008565310493,5.71,583.75
-214,85466.0,Maximiliano Meza,Squad Club Atlético Independiente,"Jan 15, 1992 (26)",26,right,8.0,0.5699999928474426,0.22,0.79,0.0,0.09366354893953366,16.0,759.1
-215,138026.0,Franco Zuculini,Squad Club Atlético Colón,"Sep 5, 1990 (28)",28,right,18.0,0.5699999928474426,0.24,0.81,0.0,0.12310030395136778,0.69,592.2
-216,116196.0,Juan Cruz Komar,Squad Club Atlético Talleres,"Aug 13, 1996 (22)",22,right,6.0,0.5699999928474426,0.0,0.57,0.0,0.07125,4.0,720.0
-217,32264.0,Mauro Guevgeozian,Squad Club de Gimnasia y Esgrima La Plata,"May 10, 1986 (32)",32,right,18.0,0.5600000023841858,0.11,0.67,1.0,0.1540557802852885,0.69,391.41666666666663
-218,146048.0,Braian Cufré,Squad Club Atlético Vélez Sarsfield,"Dec 15, 1996 (21)",21,left,3.0,0.5600000023841858,0.3,0.86,2.0,0.09555555555555556,0.91,810.0
-219,4818.0,Andrés Lamas,Squad Club Atlético Tucumán,"Jan 16, 1984 (34)",34,left,39.0,0.550000011920929,0.39,0.94,0.0,0.20429025636897813,0.11,414.1166666666667
-220,66623.0,Oscar Benítez,Squad Asociación Atlética Argentinos Juniors,"Jan 14, 1993 (25)",25,right,9.0,0.550000011920929,0.39,0.94,0.0,0.16298484459285895,1.71,519.0666666666667
-221,140.0,Pablo Álvarez,Squad Club Atlético Huracán,"Apr 17, 1984 (34)",34,right,3.0,0.550000011920929,0.0,0.55,0.0,0.08088015032270364,0.34,612.0166666666667
-222,173030.0,Gastón Lodico,Squad Club Atlético Lanús,"May 28, 1998 (20)",20,right,16.0,0.5400000214576721,0.08,0.62,0.0,0.2239315095980202,1.14,249.18333333333334
-223,213070.0,Matías Gómez,Squad Club de Gimnasia y Esgrima La Plata,"Aug 10, 1998 (20)",20,-,33.0,0.5400000214576721,0.05,0.59,0.0,0.05119552641727729,,1037.1999999999998
-224,144877.0,Matías Escudero,Squad Club Atlético Patronato de la Juventud Católica,"Dec 15, 1988 (29)",29,right,6.0,0.5400000214576721,0.4,0.94,0.0,0.22185314685314686,0.57,381.3333333333333
-225,179703.0,Sebastián Villa,Squad Club Atlético Boca Juniors,"May 19, 1996 (22)",22,right,22.0,0.5400000214576721,0.32,0.86,2.0,0.1943584163388298,0.91,398.23333333333335
-226,27793.0,Gonzalo Castillejos,Squad Club Atlético San Martín (SJ),"Mar 5, 1986 (32)",32,right,20.0,0.5400000214576721,0.46,1.0,0.0,0.4758967127875209,0.29,189.11666666666667
-227,172566.0,Bautista Merlini,Squad Club Atlético San Lorenzo de Almagro,"Jul 4, 1995 (23)",23,right,11.0,0.5400000214576721,0.19,0.73,0.0,0.1848881384550443,2.86,355.35
-228,126644.0,Gabriel Alanís,Squad Club Atlético Belgrano,"Mar 16, 1994 (24)",24,left,22.0,0.5299999713897705,0.0,0.53,0.0,0.06587942821628341,0.23,724.05
-229,103961.0,Emanuel Cecchini,Squad Club Atlético Banfield,"Dec 24, 1996 (21)",21,right,5.0,0.5299999713897705,0.2,0.73,0.0,0.14718291453533958,1.71,446.3833333333333
-230,42356.0,Maximiliano Coronel,Squad Club de Gimnasia y Esgrima La Plata,"Apr 28, 1989 (29)",29,right,23.0,0.5299999713897705,0.45,0.98,0.0,0.07869261996460915,0.34,1120.8166666666666
-231,1655.0,Fabricio Coloccini,Squad Club Atlético San Lorenzo de Almagro,"Jan 22, 1982 (36)",36,right,32.0,0.5299999713897705,0.53,1.06,0.0,0.17666666666666667,0.69,540.0
-232,206572.0,Valentín Burgoa,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Jan 8, 2000 (18)",18,left,39.0,0.5199999809265137,0.24,0.76,1.0,0.20344024190750012,,336.2166666666667
-233,47808.0,Leonel Galeano,Squad Club Atlético Aldosivi,"Aug 2, 1991 (27)",27,right,6.0,0.5099999904632568,0.2,0.71,0.0,0.08856344274791526,0.69,721.5166666666667
-234,98359.0,Adrián Arregui,Squad Club Atlético San Martín (Tucumán),"Aug 12, 1992 (26)",26,right,13.0,0.5,0.23,0.73,0.0,0.07974107413775665,0.29,823.9166666666667
-235,28823.0,Diego Cardozo,Squad Club Atlético San Martín (SJ),"Jun 2, 1987 (31)",31,left,30.0,0.49000000953674316,0.08,0.57,1.0,0.18551108968177432,0.34,276.53333333333336
-236,51.0,Leonardo Pisculichi,Squad Asociación Atlética Argentinos Juniors,"Jan 18, 1984 (34)",34,left,18.0,0.47999998927116394,0.05,0.53,0.0,0.08328725664231879,0.57,572.7166666666666
-237,31274.0,Mariano Bíttolo,Squad Club Atlético Newell's Old Boys,"Apr 24, 1990 (28)",28,left,28.0,0.47999998927116394,0.42,0.9,0.0,0.09,0.69,900.0
-238,44271.0,Maximiliano Lugo,Squad Club Atlético Belgrano,"Dec 4, 1989 (28)",28,left,16.0,0.47999998927116394,0.09,0.57,1.0,0.11765155569146091,0.4,436.0333333333333
-239,55627.0,Nahuel Yeri,Squad Club Atlético Aldosivi,"Nov 12, 1991 (27)",27,right,25.0,0.4699999988079071,0.07,0.54,0.0,0.055576732484562026,0.37,874.4666666666667
-240,193561.0,Tomás Cuello,Squad Club Atlético Tucumán,"Mar 5, 2000 (18)",18,right,28.0,0.4699999988079071,0.25,0.72,0.0,0.6012061233957012,0.06,107.78333333333333
-241,151431.0,Joaquín Torres,Squad Club Atlético Newell's Old Boys,"Jan 28, 1997 (21)",21,right,18.0,0.46000000834465027,0.09,0.55,0.0,0.3087960074859638,1.71,160.3
-242,78833.0,Nicolás Pasquini,Squad Club Atlético Lanús,"Jan 2, 1991 (27)",27,left,21.0,0.46000000834465027,0.31,0.77,0.0,0.06416666666666666,2.86,1080.0
-243,8951.0,Matías Caruzzo,Squad Club Atlético Rosario Central,"Aug 15, 1984 (34)",34,right,2.0,0.46000000834465027,0.3,0.76,1.0,0.08444444444444445,0.86,810.0
-244,137870.0,Alejandro Altuna,Squad Club Atlético San Martín (Tucumán),"Jan 19, 1992 (26)",26,right,5.0,0.46000000834465027,0.0,0.46,0.0,0.14223545579477784,,291.06666666666666
-245,24754.0,Gastón Fernández,Squad Club Estudiantes de La Plata,"Oct 12, 1983 (35)",35,right,10.0,0.46000000834465027,0.0,0.46,2.0,0.11932555123216602,0.34,346.95
+203,173015.0,Nicolás Thaller,Squad Club Atlético Lanús,"Sep 7, 1998 (20)",20,right,29.0,0.6000000238418579,0.14,0.74,1.0,0.12,0.17,540.0
+204,69857.0,Juan Ignacio Sills,Squad Club Atlético Newell's Old Boys,"May 4, 1987 (31)",31,right,21.0,0.6000000238418579,0.45,1.05,0.0,0.2,0.23,464.92
+205,100786.0,Matías Romero,Squad Asociación Atlética Argentinos Juniors,"Feb 1, 1996 (22)",22,right,26.0,0.5899999737739563,0.26,0.85,0.0,0.22,,346.15
+206,407.0,Fernando Belluschi,Squad Club Atlético San Lorenzo de Almagro,"Sep 10, 1983 (35)",35,both,16.0,0.5899999737739563,0.12,0.71,0.0,0.18,2.58,358.85
+207,34042.0,Ricardo Noir,Squad Club Atlético Tucumán,"Feb 26, 1987 (31)",31,right,22.0,0.5799999833106995,0.0,0.58,1.0,0.25,0.29,210.32
+208,34042.0,Ricardo Noir,Squad Club Atlético Tucumán,"Mar 12, 1995 (23)",23,right,22.0,0.5799999833106995,0.0,0.58,1.0,0.25,0.46,210.32
+209,172760.0,Lisandro Martínez,Squad Club Social y Deportivo Defensa y Justicia,"Jan 18, 1998 (20)",20,left,24.0,0.5799999833106995,0.21,0.79,1.0,0.08,2.29,941.43
+210,198280.0,Juan Ignacio Méndez,Squad Asociación Atlética Argentinos Juniors,"Apr 28, 1997 (21)",21,right,14.0,0.5799999833106995,0.37,0.95,0.0,0.16,0.11,550.27
+211,36117.0,Fabián Rinaudo,Squad Club de Gimnasia y Esgrima La Plata,"May 8, 1987 (31)",31,right,21.0,0.5799999833106995,0.29,0.87,0.0,0.07,0.86,1080.0
+212,36816.0,Marco Torsiglieri,Squad Club Atlético Lanús,"Jan 12, 1988 (30)",30,left,18.0,0.5799999833106995,0.43,1.01,0.0,0.11,0.57,810.0
+213,37792.0,Pablo Hernández,Squad Club Atlético Independiente,"Oct 24, 1986 (32)",32,left,19.0,0.5699999928474426,0.0,0.57,1.0,0.09,5.71,583.75
+214,85466.0,Maximiliano Meza,Squad Club Atlético Independiente,"Jan 15, 1992 (26)",26,right,8.0,0.5699999928474426,0.22,0.79,0.0,0.09,16.0,759.1
+215,138026.0,Franco Zuculini,Squad Club Atlético Colón,"Sep 5, 1990 (28)",28,right,18.0,0.5699999928474426,0.24,0.81,0.0,0.12,0.69,592.2
+216,116196.0,Juan Cruz Komar,Squad Club Atlético Talleres,"Aug 13, 1996 (22)",22,right,6.0,0.5699999928474426,0.0,0.57,0.0,0.07,4.0,720.0
+217,32264.0,Mauro Guevgeozian,Squad Club de Gimnasia y Esgrima La Plata,"May 10, 1986 (32)",32,right,18.0,0.5600000023841858,0.11,0.67,1.0,0.15,0.69,391.42
+218,146048.0,Braian Cufré,Squad Club Atlético Vélez Sarsfield,"Dec 15, 1996 (21)",21,left,3.0,0.5600000023841858,0.3,0.86,2.0,0.1,0.91,810.0
+219,4818.0,Andrés Lamas,Squad Club Atlético Tucumán,"Jan 16, 1984 (34)",34,left,39.0,0.550000011920929,0.39,0.94,0.0,0.2,0.11,414.12
+220,66623.0,Oscar Benítez,Squad Asociación Atlética Argentinos Juniors,"Jan 14, 1993 (25)",25,right,9.0,0.550000011920929,0.39,0.94,0.0,0.16,1.71,519.07
+221,140.0,Pablo Álvarez,Squad Club Atlético Huracán,"Apr 17, 1984 (34)",34,right,3.0,0.550000011920929,0.0,0.55,0.0,0.08,0.34,612.02
+222,173030.0,Gastón Lodico,Squad Club Atlético Lanús,"May 28, 1998 (20)",20,right,16.0,0.5400000214576721,0.08,0.62,0.0,0.22,1.14,249.18
+223,213070.0,Matías Gómez,Squad Club de Gimnasia y Esgrima La Plata,"Aug 10, 1998 (20)",20,-,33.0,0.5400000214576721,0.05,0.59,0.0,0.05,,1037.2
+224,144877.0,Matías Escudero,Squad Club Atlético Patronato de la Juventud Católica,"Dec 15, 1988 (29)",29,right,6.0,0.5400000214576721,0.4,0.94,0.0,0.22,0.57,381.33
+225,179703.0,Sebastián Villa,Squad Club Atlético Boca Juniors,"May 19, 1996 (22)",22,right,22.0,0.5400000214576721,0.32,0.86,2.0,0.19,0.91,398.23
+226,27793.0,Gonzalo Castillejos,Squad Club Atlético San Martín (SJ),"Mar 5, 1986 (32)",32,right,20.0,0.5400000214576721,0.46,1.0,0.0,0.48,0.29,189.12
+227,172566.0,Bautista Merlini,Squad Club Atlético San Lorenzo de Almagro,"Jul 4, 1995 (23)",23,right,11.0,0.5400000214576721,0.19,0.73,0.0,0.18,2.86,355.35
+228,126644.0,Gabriel Alanís,Squad Club Atlético Belgrano,"Mar 16, 1994 (24)",24,left,22.0,0.5299999713897705,0.0,0.53,0.0,0.07,0.23,724.05
+229,103961.0,Emanuel Cecchini,Squad Club Atlético Banfield,"Dec 24, 1996 (21)",21,right,5.0,0.5299999713897705,0.2,0.73,0.0,0.15,1.71,446.38
+230,42356.0,Maximiliano Coronel,Squad Club de Gimnasia y Esgrima La Plata,"Apr 28, 1989 (29)",29,right,23.0,0.5299999713897705,0.45,0.98,0.0,0.08,0.34,1120.82
+231,1655.0,Fabricio Coloccini,Squad Club Atlético San Lorenzo de Almagro,"Jan 22, 1982 (36)",36,right,32.0,0.5299999713897705,0.53,1.06,0.0,0.18,0.69,540.0
+232,206572.0,Valentín Burgoa,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Jan 8, 2000 (18)",18,left,39.0,0.5199999809265137,0.24,0.76,1.0,0.2,,336.22
+233,47808.0,Leonel Galeano,Squad Club Atlético Aldosivi,"Aug 2, 1991 (27)",27,right,6.0,0.5099999904632568,0.2,0.71,0.0,0.09,0.69,721.52
+234,98359.0,Adrián Arregui,Squad Club Atlético San Martín (Tucumán),"Aug 12, 1992 (26)",26,right,13.0,0.5,0.23,0.73,0.0,0.08,0.29,823.92
+235,28823.0,Diego Cardozo,Squad Club Atlético San Martín (SJ),"Jun 2, 1987 (31)",31,left,30.0,0.4900000095367432,0.08,0.57,1.0,0.19,0.34,276.53
+236,51.0,Leonardo Pisculichi,Squad Asociación Atlética Argentinos Juniors,"Jan 18, 1984 (34)",34,left,18.0,0.479999989271164,0.05,0.53,0.0,0.08,0.57,572.72
+237,31274.0,Mariano Bíttolo,Squad Club Atlético Newell's Old Boys,"Apr 24, 1990 (28)",28,left,28.0,0.479999989271164,0.42,0.9,0.0,0.09,0.69,900.0
+238,44271.0,Maximiliano Lugo,Squad Club Atlético Belgrano,"Dec 4, 1989 (28)",28,left,16.0,0.479999989271164,0.09,0.57,1.0,0.12,0.4,436.03
+239,55627.0,Nahuel Yeri,Squad Club Atlético Aldosivi,"Nov 12, 1991 (27)",27,right,25.0,0.4699999988079071,0.07,0.54,0.0,0.06,0.37,874.47
+240,193561.0,Tomás Cuello,Squad Club Atlético Tucumán,"Mar 5, 2000 (18)",18,right,28.0,0.4699999988079071,0.25,0.72,0.0,0.6,0.06,107.78
+241,151431.0,Joaquín Torres,Squad Club Atlético Newell's Old Boys,"Jan 28, 1997 (21)",21,right,18.0,0.4600000083446503,0.09,0.55,0.0,0.31,1.71,160.3
+242,78833.0,Nicolás Pasquini,Squad Club Atlético Lanús,"Jan 2, 1991 (27)",27,left,21.0,0.4600000083446503,0.31,0.77,0.0,0.06,2.86,1080.0
+243,8951.0,Matías Caruzzo,Squad Club Atlético Rosario Central,"Aug 15, 1984 (34)",34,right,2.0,0.4600000083446503,0.3,0.76,1.0,0.08,0.86,810.0
+244,137870.0,Alejandro Altuna,Squad Club Atlético San Martín (Tucumán),"Jan 19, 1992 (26)",26,right,5.0,0.4600000083446503,0.0,0.46,0.0,0.14,,291.07
+245,24754.0,Gastón Fernández,Squad Club Estudiantes de La Plata,"Oct 12, 1983 (35)",35,right,10.0,0.4600000083446503,0.0,0.46,2.0,0.12,0.34,346.95
 246,30027.0,Juan Mattia,Squad Club Atlético San Martín (SJ),"Jun 24, 1988 (30)",30,right,2.0,0.44999998807907104,0.0,0.45,1.0,0.09,0.4,450.0
-247,51466.0,Santiago Zurbriggen,Squad Club Atlético Unión (Santa Fe),"Jan 27, 1990 (28)",28,right,20.0,0.44999998807907104,0.41,0.86,1.0,0.344,0.4,225.0
-248,105543.0,Nicolás Figal,Squad Club Atlético Independiente,"Apr 3, 1994 (24)",24,right,4.0,0.44999998807907104,0.0,0.45,0.0,0.06460875807609476,5.14,626.85
-249,45616.0,Fernando Godoy,Squad Club Atlético Aldosivi,"May 1, 1990 (28)",28,right,15.0,0.4399999976158142,0.24,0.68,0.0,0.06491991089423996,0.57,942.6999999999999
-250,16225.0,Federico Mancinelli,Squad Club Atlético Huracán,"May 8, 1982 (36)",36,right,2.0,0.4399999976158142,0.17,0.61,0.0,0.061,0.17,900.0
-251,126700.0,Nicolás Giménez,Squad Club Atlético San Martín (Tucumán),"Jan 16, 1996 (22)",22,right,31.0,0.4399999976158142,0.23,0.67,1.0,0.1584895742071141,0.46,380.46666666666664
-252,124151.0,Alfio Oviedo,Squad Club Atlético Newell's Old Boys,"Dec 18, 1995 (22)",22,right,19.0,0.4399999976158142,0.44,0.88,1.0,0.3068181818181818,0.29,258.1333333333333
-253,101036.0,Joel Soñora,Squad Club Atlético Talleres,"Sep 15, 1996 (22)",22,right,21.0,0.4399999976158142,0.32,0.76,0.0,0.2937933996706994,0.17,232.81666666666666
-254,172568.0,Domingo Blanco,Squad Club Social y Deportivo Defensa y Justicia,"Apr 22, 1995 (23)",23,right,8.0,0.4399999976158142,0.2,0.64,0.0,0.07343348277840342,0.4,784.3833333333333
-255,103166.0,Federico Álvarez,Squad Club Atlético Belgrano,"Aug 7, 1994 (24)",24,left,24.0,0.4399999976158142,0.0,0.44,0.0,1.1715976331360947,0.51,33.8
-256,43831.0,Ciro Rius,Squad Club Social y Deportivo Defensa y Justicia,"Oct 27, 1988 (30)",30,right,12.0,0.4399999976158142,0.21,0.65,0.0,0.0935925125989921,0.69,625.05
-257,593.0,Jorge Ortiz,Squad Club Atlético Tigre,"Jun 20, 1984 (34)",34,right,22.0,0.4300000071525574,0.32,0.75,0.0,0.13485166317051245,0.34,500.54999999999995
-258,17110.0,Pablo Mouche,Squad Club Atlético San Lorenzo de Almagro,"Oct 11, 1987 (31)",31,left,37.0,0.4300000071525574,0.27,0.7,0.0,0.103840448327015,1.14,606.6999999999999
-259,37104.0,Ramón Ábila,Squad Club Atlético Boca Juniors,"Oct 14, 1989 (29)",29,right,17.0,0.4300000071525574,0.08,0.51,1.0,0.17481274596927765,6.86,262.56666666666666
-260,8670.0,Guillermo Burdisso,Squad Club Atlético Independiente,"Sep 26, 1988 (30)",30,right,3.0,0.4300000071525574,0.43,0.86,0.0,0.2380073800738008,2.06,325.19999999999993
-261,106093.0,Gonzalo Piovi,Squad Club de Gimnasia y Esgrima La Plata,"Sep 8, 1994 (24)",24,left,3.0,0.4300000071525574,0.27,0.7,0.0,0.07777777777777778,0.57,810.0
-262,4298.0,Marcelo Díaz,Squad Racing Club,"Dec 30, 1986 (31)",31,right,21.0,0.4300000071525574,0.16,0.59,0.0,0.06943596896521664,2.86,764.7333333333332
-263,375.0,Matías Fritzler,Squad Club Atlético Colón,"Aug 23, 1986 (32)",32,right,5.0,0.4300000071525574,0.2,0.63,0.0,0.06143566591422122,0.57,922.9166666666667
-264,105873.0,Francisco Grahl,Squad Club Atlético San Martín (SJ),"Mar 5, 1992 (26)",26,left,26.0,0.4300000071525574,0.39,0.82,0.0,0.42264006872196236,0.34,174.61666666666667
-265,24111.0,Víctor Ayala,Squad Club de Gimnasia y Esgrima La Plata,"Jan 1, 1988 (30)",30,right,16.0,0.41999998688697815,0.22,0.64,0.0,0.2408698076386953,0.57,239.13333333333333
-266,57549.0,Nicolás Domingo,Squad Club Atlético Independiente,"Aug 4, 1985 (33)",33,right,5.0,0.41999998688697815,0.21,0.63,0.0,0.06631061905504444,0.86,855.0666666666666
-267,126560.0,Jorge Rodríguez,Squad Club Atlético Banfield,"Sep 15, 1995 (23)",23,right,30.0,0.41999998688697815,0.04,0.46,0.0,0.06571428571428571,0.8,630.0
-268,209194.0,Elías Pereyra,Squad Club Atlético San Lorenzo de Almagro,"Feb 15, 1999 (19)",19,left,21.0,0.41999998688697815,0.42,0.84,0.0,0.10952553422672945,,690.25
-269,172559.0,Marcos Senesi,Squad Club Atlético San Lorenzo de Almagro,"May 10, 1997 (21)",21,left,6.0,0.4099999964237213,0.16,0.57,0.0,0.05181818181818181,2.06,990.0
-270,101432.0,Manuel De Iriondo,Squad Club Atlético Unión (Santa Fe),"May 6, 1993 (25)",25,right,23.0,0.4099999964237213,0.13,0.54,0.0,0.1550074420582607,0.29,313.5333333333333
-271,147633.0,Nahuel Estévez,Squad Club Estudiantes de La Plata,"Nov 14, 1995 (23)",23,right,24.0,0.4099999964237213,0.35,0.76,1.0,0.1912216941571149,,357.7
-272,146440.0,Diego Valoyes,Squad Club Atlético Talleres,"Sep 22, 1996 (22)",22,right,18.0,0.4099999964237213,0.05,0.46,0.0,0.299349240780911,0.57,138.3
-273,51618.0,Marcelo Larrondo,Squad Club Social y Deportivo Defensa y Justicia,"Aug 16, 1988 (30)",30,right,16.0,0.4099999964237213,0.28,0.69,1.0,0.48623254600026095,1.14,127.71666666666667
+247,51466.0,Santiago Zurbriggen,Squad Club Atlético Unión (Santa Fe),"Jan 27, 1990 (28)",28,right,20.0,0.44999998807907104,0.41,0.86,1.0,0.34,0.4,225.0
+248,105543.0,Nicolás Figal,Squad Club Atlético Independiente,"Apr 3, 1994 (24)",24,right,4.0,0.44999998807907104,0.0,0.45,0.0,0.06,5.14,626.85
+249,45616.0,Fernando Godoy,Squad Club Atlético Aldosivi,"May 1, 1990 (28)",28,right,15.0,0.4399999976158142,0.24,0.68,0.0,0.06,0.57,942.7
+250,16225.0,Federico Mancinelli,Squad Club Atlético Huracán,"May 8, 1982 (36)",36,right,2.0,0.4399999976158142,0.17,0.61,0.0,0.06,0.17,900.0
+251,126700.0,Nicolás Giménez,Squad Club Atlético San Martín (Tucumán),"Jan 16, 1996 (22)",22,right,31.0,0.4399999976158142,0.23,0.67,1.0,0.16,0.46,380.47
+252,124151.0,Alfio Oviedo,Squad Club Atlético Newell's Old Boys,"Dec 18, 1995 (22)",22,right,19.0,0.4399999976158142,0.44,0.88,1.0,0.31,0.29,258.13
+253,101036.0,Joel Soñora,Squad Club Atlético Talleres,"Sep 15, 1996 (22)",22,right,21.0,0.4399999976158142,0.32,0.76,0.0,0.29,0.17,232.82
+254,172568.0,Domingo Blanco,Squad Club Social y Deportivo Defensa y Justicia,"Apr 22, 1995 (23)",23,right,8.0,0.4399999976158142,0.2,0.64,0.0,0.07,0.4,784.38
+255,103166.0,Federico Álvarez,Squad Club Atlético Belgrano,"Aug 7, 1994 (24)",24,left,24.0,0.4399999976158142,0.0,0.44,0.0,1.17,0.51,33.8
+256,43831.0,Ciro Rius,Squad Club Social y Deportivo Defensa y Justicia,"Oct 27, 1988 (30)",30,right,12.0,0.4399999976158142,0.21,0.65,0.0,0.09,0.69,625.05
+257,593.0,Jorge Ortiz,Squad Club Atlético Tigre,"Jun 20, 1984 (34)",34,right,22.0,0.4300000071525574,0.32,0.75,0.0,0.13,0.34,500.55
+258,17110.0,Pablo Mouche,Squad Club Atlético San Lorenzo de Almagro,"Oct 11, 1987 (31)",31,left,37.0,0.4300000071525574,0.27,0.7,0.0,0.1,1.14,606.7
+259,37104.0,Ramón Ábila,Squad Club Atlético Boca Juniors,"Oct 14, 1989 (29)",29,right,17.0,0.4300000071525574,0.08,0.51,1.0,0.17,6.86,262.57
+260,8670.0,Guillermo Burdisso,Squad Club Atlético Independiente,"Sep 26, 1988 (30)",30,right,3.0,0.4300000071525574,0.43,0.86,0.0,0.24,2.06,325.2
+261,106093.0,Gonzalo Piovi,Squad Club de Gimnasia y Esgrima La Plata,"Sep 8, 1994 (24)",24,left,3.0,0.4300000071525574,0.27,0.7,0.0,0.08,0.57,810.0
+262,4298.0,Marcelo Díaz,Squad Racing Club,"Dec 30, 1986 (31)",31,right,21.0,0.4300000071525574,0.16,0.59,0.0,0.07,2.86,764.73
+263,375.0,Matías Fritzler,Squad Club Atlético Colón,"Aug 23, 1986 (32)",32,right,5.0,0.4300000071525574,0.2,0.63,0.0,0.06,0.57,922.92
+264,105873.0,Francisco Grahl,Squad Club Atlético San Martín (SJ),"Mar 5, 1992 (26)",26,left,26.0,0.4300000071525574,0.39,0.82,0.0,0.42,0.34,174.62
+265,24111.0,Víctor Ayala,Squad Club de Gimnasia y Esgrima La Plata,"Jan 1, 1988 (30)",30,right,16.0,0.41999998688697815,0.22,0.64,0.0,0.24,0.57,239.13
+266,57549.0,Nicolás Domingo,Squad Club Atlético Independiente,"Aug 4, 1985 (33)",33,right,5.0,0.41999998688697815,0.21,0.63,0.0,0.07,0.86,855.07
+267,126560.0,Jorge Rodríguez,Squad Club Atlético Banfield,"Sep 15, 1995 (23)",23,right,30.0,0.41999998688697815,0.04,0.46,0.0,0.07,0.8,630.0
+268,209194.0,Elías Pereyra,Squad Club Atlético San Lorenzo de Almagro,"Feb 15, 1999 (19)",19,left,21.0,0.41999998688697815,0.42,0.84,0.0,0.11,,690.25
+269,172559.0,Marcos Senesi,Squad Club Atlético San Lorenzo de Almagro,"May 10, 1997 (21)",21,left,6.0,0.4099999964237213,0.16,0.57,0.0,0.05,2.06,990.0
+270,101432.0,Manuel De Iriondo,Squad Club Atlético Unión (Santa Fe),"May 6, 1993 (25)",25,right,23.0,0.4099999964237213,0.13,0.54,0.0,0.16,0.29,313.53
+271,147633.0,Nahuel Estévez,Squad Club Estudiantes de La Plata,"Nov 14, 1995 (23)",23,right,24.0,0.4099999964237213,0.35,0.76,1.0,0.19,,357.7
+272,146440.0,Diego Valoyes,Squad Club Atlético Talleres,"Sep 22, 1996 (22)",22,right,18.0,0.4099999964237213,0.05,0.46,0.0,0.3,0.57,138.3
+273,51618.0,Marcelo Larrondo,Squad Club Social y Deportivo Defensa y Justicia,"Aug 16, 1988 (30)",30,right,16.0,0.4099999964237213,0.28,0.69,1.0,0.49,1.14,127.72
 274,49644.0,Mauro Maidana,Squad Asociación Atlética Argentinos Juniors,"Jul 12, 1990 (28)",28,left,3.0,0.4000000059604645,0.4,0.8,0.0,0.4,0.23,180.0
-275,16599.0,Bruno Bianchi,Squad Club Atlético Tucumán,"Feb 17, 1989 (29)",29,right,2.0,0.4000000059604645,0.0,0.4,1.0,0.042559060548144935,0.69,845.8833333333333
-276,57154.0,Marcos Figueroa,Squad Club Atlético San Martín (Tucumán),"Jan 18, 1990 (28)",28,right,19.0,0.4000000059604645,0.36,0.76,0.0,0.24169611307420497,1.71,283.0
-277,376.0,Matías Pérez García,Squad Club Atlético Tigre,"Oct 13, 1984 (34)",34,left,10.0,0.4000000059604645,0.24,0.64,0.0,0.12200374201292055,0.34,472.1166666666666
-278,56334.0,Fabián Espíndola,Squad Club Atlético San Martín (Tucumán),"May 4, 1985 (33)",33,both,14.0,0.38999998569488525,0.18,0.57,0.0,0.16816915259793475,0.57,305.05
-279,146831.0,Stefano Callegari,Squad Club Atlético Newell's Old Boys,"Jan 6, 1997 (21)",21,right,29.0,0.38999998569488525,0.0,0.39,0.0,0.055714285714285716,0.06,630.0
-280,16283.0,Ignacio Canuto,Squad Club Atlético Tigre,"Feb 20, 1986 (32)",32,right,6.0,0.3799999952316284,0.3,0.68,0.0,0.05666666666666667,0.4,1080.0
-281,97643.0,Fabrizio Angileri,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Apr 15, 1994 (24)",24,left,21.0,0.3700000047683716,0.11,0.48,0.0,0.04082275490597537,2.86,1058.2333333333333
+275,16599.0,Bruno Bianchi,Squad Club Atlético Tucumán,"Feb 17, 1989 (29)",29,right,2.0,0.4000000059604645,0.0,0.4,1.0,0.04,0.69,845.88
+276,57154.0,Marcos Figueroa,Squad Club Atlético San Martín (Tucumán),"Jan 18, 1990 (28)",28,right,19.0,0.4000000059604645,0.36,0.76,0.0,0.24,1.71,283.0
+277,376.0,Matías Pérez García,Squad Club Atlético Tigre,"Oct 13, 1984 (34)",34,left,10.0,0.4000000059604645,0.24,0.64,0.0,0.12,0.34,472.12
+278,56334.0,Fabián Espíndola,Squad Club Atlético San Martín (Tucumán),"May 4, 1985 (33)",33,both,14.0,0.3899999856948853,0.18,0.57,0.0,0.17,0.57,305.05
+279,146831.0,Stefano Callegari,Squad Club Atlético Newell's Old Boys,"Jan 6, 1997 (21)",21,right,29.0,0.3899999856948853,0.0,0.39,0.0,0.06,0.06,630.0
+280,16283.0,Ignacio Canuto,Squad Club Atlético Tigre,"Feb 20, 1986 (32)",32,right,6.0,0.3799999952316284,0.3,0.68,0.0,0.06,0.4,1080.0
+281,97643.0,Fabrizio Angileri,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Apr 15, 1994 (24)",24,left,21.0,0.3700000047683716,0.11,0.48,0.0,0.04,2.86,1058.23
 282,479.0,Carlos Araujo,Squad Club Atlético Huracán,"Nov 19, 1981 (37)",37,right,4.0,0.3700000047683716,0.11,0.48,1.0,0.08,0.17,540.0
-283,115360.0,Jonathan Cabral,Squad Club Atlético Tucumán,"May 10, 1992 (26)",26,right,31.0,0.3700000047683716,0.22,0.59,0.0,0.049166666666666664,0.69,1080.0
-284,94965.0,Hernán Petryk,Squad Club Atlético San Martín (Tucumán),"Oct 21, 1994 (24)",24,right,32.0,0.3700000047683716,0.3,0.67,0.0,0.0899910456670978,0.34,670.0666666666667
-285,33562.0,Gastón Bojanich,Squad Asociación Atlética Argentinos Juniors,"Apr 23, 1985 (33)",33,left,23.0,0.3700000047683716,0.18,0.55,0.0,0.04583333333333334,0.23,1080.0
-286,66889.0,Gastón Campi,Squad Club Estudiantes de La Plata,"Apr 6, 1991 (27)",27,left,15.0,0.36000001430511475,0.0,0.36,0.0,0.05558573756898179,1.71,582.8833333333333
-287,16011.0,Clemente Rodríguez,Squad Club Atlético Colón,"Jul 31, 1981 (37)",37,left,3.0,0.36000001430511475,0.32,0.68,1.0,0.17405318291700242,0.34,351.6166666666667
-288,158998.0,Jalil Elías,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Apr 25, 1996 (22)",22,right,10.0,0.36000001430511475,0.08,0.44,0.0,0.03666666666666667,0.97,1080.0
+283,115360.0,Jonathan Cabral,Squad Club Atlético Tucumán,"May 10, 1992 (26)",26,right,31.0,0.3700000047683716,0.22,0.59,0.0,0.05,0.69,1080.0
+284,94965.0,Hernán Petryk,Squad Club Atlético San Martín (Tucumán),"Oct 21, 1994 (24)",24,right,32.0,0.3700000047683716,0.3,0.67,0.0,0.09,0.34,670.07
+285,33562.0,Gastón Bojanich,Squad Asociación Atlética Argentinos Juniors,"Apr 23, 1985 (33)",33,left,23.0,0.3700000047683716,0.18,0.55,0.0,0.05,0.23,1080.0
+286,66889.0,Gastón Campi,Squad Club Estudiantes de La Plata,"Apr 6, 1991 (27)",27,left,15.0,0.36000001430511475,0.0,0.36,0.0,0.06,1.71,582.88
+287,16011.0,Clemente Rodríguez,Squad Club Atlético Colón,"Jul 31, 1981 (37)",37,left,3.0,0.36000001430511475,0.32,0.68,1.0,0.17,0.34,351.62
+288,158998.0,Jalil Elías,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Apr 25, 1996 (22)",22,right,10.0,0.36000001430511475,0.08,0.44,0.0,0.04,0.97,1080.0
 289,137579.0,Emiliano Amor,Squad Club Atlético Aldosivi,"May 16, 1995 (23)",23,right,32.0,0.36000001430511475,0.16,0.52,0.0,0.04,0.91,1170.0
-290,3116.0,Carlos Luna,Squad Club Atlético Tigre,"Jan 17, 1982 (36)",36,right,7.0,0.36000001430511475,0.05,0.41,1.0,0.8713105076741438,0.34,42.35000000000001
-291,127161.0,Mauricio Tévez,Squad Club Social y Deportivo Defensa y Justicia,"Jul 31, 1996 (22)",22,right,32.0,0.3499999940395355,0.25,0.6,0.0,0.2699325168707823,1.71,200.05
-292,173021.0,Leandro Maciel,Squad Club Atlético Lanús,"Dec 29, 1995 (22)",22,right,5.0,0.3499999940395355,0.05,0.4,1.0,0.06649222718177622,0.46,541.4166666666666
-293,44480.0,Jorge Pereyra Díaz,Squad Club Atlético Lanús,"Aug 5, 1990 (28)",28,right,14.0,0.3499999940395355,0.22,0.57,0.0,0.11715449320595286,1.14,437.8833333333333
-294,170137.0,Agustín Almendra,Squad Club Atlético Boca Juniors,"Feb 11, 2000 (18)",18,right,39.0,0.3499999940395355,0.1,0.45,0.0,0.0564407488270544,0.57,717.5666666666666
-295,95547.0,Osmar Leguizamón,Squad Club Deportivo Godoy Cruz Antonio Tomba,"May 11, 1994 (24)",24,right,27.0,0.3499999940395355,0.07,0.42,0.0,0.13088642659279778,,288.8
-296,87515.0,Nicolás Pantaleone,Squad Club Atlético Patronato de la Juventud Católica,"Dec 28, 1996 (21)",21,-,25.0,0.3499999940395355,0.0,0.35,0.0,0.049999999999999996,,630.0
-297,174238.0,José Correia,Squad Club Atlético Newell's Old Boys,"Apr 17, 1990 (28)",28,left,30.0,0.3499999940395355,0.0,0.35,0.0,1.5684647302904566,,20.08333333333333
-298,174238.0,José Correia,Squad Club Atlético Newell's Old Boys,"Oct 22, 1996 (22)",22,left,30.0,0.3499999940395355,0.0,0.35,0.0,1.5684647302904566,0.17,20.08333333333333
-299,629.0,Jonás Gutiérrez,Squad Club Social y Deportivo Defensa y Justicia,"Jul 5, 1983 (35)",35,right,23.0,0.3400000035762787,0.34,0.68,0.0,0.37977040024821596,0.86,161.15
-300,179441.0,Maximiliano Lovera,Squad Club Atlético Rosario Central,"Mar 9, 1999 (19)",19,right,34.0,0.33000001311302185,0.15,0.48,0.0,0.1529203539823009,2.86,282.5
-301,158965.0,Bruno Pittón,Squad Club Atlético Unión (Santa Fe),"Feb 11, 1993 (25)",25,left,14.0,0.33000001311302185,0.16,0.49,0.0,0.060509044341283826,1.44,728.8166666666666
-302,121313.0,Favio Álvarez,Squad Club Atlético Tucumán,"Jan 23, 1993 (25)",25,right,11.0,0.33000001311302185,0.27,0.6,1.0,0.4419588050743419,0.57,122.18333333333332
-303,205120.0,Emanuel Iñíguez,Squad Club Atlético Aldosivi,"Sep 16, 1996 (22)",22,right,21.0,0.3199999928474426,0.09,0.41,0.0,0.043904180217339564,,840.4666666666667
+290,3116.0,Carlos Luna,Squad Club Atlético Tigre,"Jan 17, 1982 (36)",36,right,7.0,0.36000001430511475,0.05,0.41,1.0,0.87,0.34,42.35
+291,127161.0,Mauricio Tévez,Squad Club Social y Deportivo Defensa y Justicia,"Jul 31, 1996 (22)",22,right,32.0,0.3499999940395355,0.25,0.6,0.0,0.27,1.71,200.05
+292,173021.0,Leandro Maciel,Squad Club Atlético Lanús,"Dec 29, 1995 (22)",22,right,5.0,0.3499999940395355,0.05,0.4,1.0,0.07,0.46,541.42
+293,44480.0,Jorge Pereyra Díaz,Squad Club Atlético Lanús,"Aug 5, 1990 (28)",28,right,14.0,0.3499999940395355,0.22,0.57,0.0,0.12,1.14,437.88
+294,170137.0,Agustín Almendra,Squad Club Atlético Boca Juniors,"Feb 11, 2000 (18)",18,right,39.0,0.3499999940395355,0.1,0.45,0.0,0.06,0.57,717.57
+295,95547.0,Osmar Leguizamón,Squad Club Deportivo Godoy Cruz Antonio Tomba,"May 11, 1994 (24)",24,right,27.0,0.3499999940395355,0.07,0.42,0.0,0.13,,288.8
+296,87515.0,Nicolás Pantaleone,Squad Club Atlético Patronato de la Juventud Católica,"Dec 28, 1996 (21)",21,-,25.0,0.3499999940395355,0.0,0.35,0.0,0.05,,630.0
+297,174238.0,José Correia,Squad Club Atlético Newell's Old Boys,"Apr 17, 1990 (28)",28,left,30.0,0.3499999940395355,0.0,0.35,0.0,1.57,,20.08
+298,174238.0,José Correia,Squad Club Atlético Newell's Old Boys,"Oct 22, 1996 (22)",22,left,30.0,0.3499999940395355,0.0,0.35,0.0,1.57,0.17,20.08
+299,629.0,Jonás Gutiérrez,Squad Club Social y Deportivo Defensa y Justicia,"Jul 5, 1983 (35)",35,right,23.0,0.3400000035762787,0.34,0.68,0.0,0.38,0.86,161.15
+300,179441.0,Maximiliano Lovera,Squad Club Atlético Rosario Central,"Mar 9, 1999 (19)",19,right,34.0,0.33000001311302185,0.15,0.48,0.0,0.15,2.86,282.5
+301,158965.0,Bruno Pittón,Squad Club Atlético Unión (Santa Fe),"Feb 11, 1993 (25)",25,left,14.0,0.33000001311302185,0.16,0.49,0.0,0.06,1.44,728.82
+302,121313.0,Favio Álvarez,Squad Club Atlético Tucumán,"Jan 23, 1993 (25)",25,right,11.0,0.33000001311302185,0.27,0.6,1.0,0.44,0.57,122.18
+303,205120.0,Emanuel Iñíguez,Squad Club Atlético Aldosivi,"Sep 16, 1996 (22)",22,right,21.0,0.3199999928474426,0.09,0.41,0.0,0.04,,840.47
 304,153417.0,Lucas Martínez Quarta,Squad Club Atlético River Plate,"May 10, 1996 (22)",22,right,28.0,0.3199999928474426,0.16,0.48,0.0,0.12,7.43,360.0
-305,96440.0,Leonel Miranda,Squad Club Social y Deportivo Defensa y Justicia,"Jan 7, 1994 (24)",24,right,10.0,0.3100000023841858,0.13,0.44,0.0,0.04239980013562226,1.71,933.9666666666667
-306,23123.0,Renato Civelli,Squad Club Atlético Banfield,"Oct 14, 1983 (35)",35,right,2.0,0.30000001192092896,0.07,0.37,0.0,0.03363636363636364,0.57,990.0
-307,535.0,Patricio Toranzo,Squad Club Atlético Huracán,"Mar 19, 1982 (36)",36,right,18.0,0.30000001192092896,0.0,0.3,0.0,0.2833654014343187,0.23,95.28333333333333
-308,10601.0,Hernán Bernardello,Squad Club Atlético Newell's Old Boys,"Aug 3, 1986 (32)",32,right,5.0,0.30000001192092896,0.07,0.37,0.0,0.03158543718481749,0.34,1054.2833333333333
-309,89096.0,Lucas Villalba,Squad Club Atlético Aldosivi,"Aug 19, 1994 (24)",24,left,23.0,0.30000001192092896,0.05,0.35,0.0,0.02949300126398577,1.44,1068.05
-310,119150.0,Nahitan Nández,Squad Club Atlético Boca Juniors,"Dec 28, 1995 (22)",22,right,15.0,0.28999999165534973,0.29,0.58,0.0,0.11820206061063517,10.86,441.6166666666667
-311,52386.0,Gonzalo Verón,Squad Club Atlético Independiente,"Dec 24, 1989 (28)",28,right,30.0,0.28999999165534973,0.07,0.36,0.0,0.1348408129291808,0.86,240.28333333333336
-312,28114.0,Maximiliano Caire,Squad Club Atlético Tigre,"Jul 12, 1988 (30)",30,right,32.0,0.28999999165534973,0.18,0.47,0.0,0.09564725833804409,0.4,442.25
-313,26050.0,Ariel Rojas,Squad Club Atlético San Lorenzo de Almagro,"Jan 16, 1986 (32)",32,left,5.0,0.2800000011920929,0.2,0.48,0.0,0.076593481280104,1.14,564.0166666666668
-314,97571.0,Iván Rossi,Squad Club Atlético Huracán,"Nov 1, 1993 (25)",25,left,15.0,0.2800000011920929,0.0,0.28,0.0,0.025454545454545455,0.57,990.0
-315,63477.0,Ignacio Fernández,Squad Club Atlético River Plate,"Jan 12, 1990 (28)",28,left,26.0,0.2800000011920929,0.12,0.4,0.0,0.07243217866604071,5.14,497.01666666666665
-316,8903.0,Jonatan Maidana,Squad Club Atlético River Plate,"Jul 29, 1985 (33)",33,right,2.0,0.2800000011920929,0.14,0.42,0.0,0.08399999999999999,1.71,450.0
-317,112671.0,Rafael Borré,Squad Club Atlético River Plate,"Sep 15, 1995 (23)",23,right,19.0,0.2800000011920929,0.07,0.35,0.0,0.08835904628330996,3.43,356.5
-318,57586.0,Gustavo Toledo,Squad Club Atlético Colón,"Sep 19, 1989 (29)",29,right,2.0,0.2800000011920929,0.04,0.32,0.0,0.024615384615384615,1.03,1170.0
-319,128296.0,Mariano Bareiro,Squad Club Social y Deportivo Defensa y Justicia,"Mar 8, 1995 (23)",23,right,5.0,0.27000001072883606,0.0,0.27,0.0,0.048139465777396244,1.14,504.7833333333333
-320,209302.0,Walter Pérez,Squad Club Atlético Huracán,"Oct 23, 1998 (20)",20,left,13.0,0.27000001072883606,0.0,0.27,0.0,0.05256895619253651,,462.25
-321,136947.0,Nicolás Da Campo,Squad Club Atlético San Martín (SJ),"Aug 6, 1994 (24)",24,right,21.0,0.27000001072883606,0.08,0.35,0.0,0.1869251310453961,0.69,168.51666666666665
-322,89354.0,Nery Domínguez,Squad Racing Club,"Apr 9, 1990 (28)",28,right,23.0,0.25999999046325684,0.17,0.43,0.0,0.08212492042158874,1.14,471.23333333333335
-323,126587.0,Denis Rodríguez,Squad Club Atlético Belgrano,"Mar 21, 1996 (22)",22,right,30.0,0.25999999046325684,0.13,0.39,0.0,0.07466496490108489,0.57,470.09999999999997
+305,96440.0,Leonel Miranda,Squad Club Social y Deportivo Defensa y Justicia,"Jan 7, 1994 (24)",24,right,10.0,0.3100000023841858,0.13,0.44,0.0,0.04,1.71,933.97
+306,23123.0,Renato Civelli,Squad Club Atlético Banfield,"Oct 14, 1983 (35)",35,right,2.0,0.30000001192092896,0.07,0.37,0.0,0.03,0.57,990.0
+307,535.0,Patricio Toranzo,Squad Club Atlético Huracán,"Mar 19, 1982 (36)",36,right,18.0,0.30000001192092896,0.0,0.3,0.0,0.28,0.23,95.28
+308,10601.0,Hernán Bernardello,Squad Club Atlético Newell's Old Boys,"Aug 3, 1986 (32)",32,right,5.0,0.30000001192092896,0.07,0.37,0.0,0.03,0.34,1054.28
+309,89096.0,Lucas Villalba,Squad Club Atlético Aldosivi,"Aug 19, 1994 (24)",24,left,23.0,0.30000001192092896,0.05,0.35,0.0,0.03,1.44,1068.05
+310,119150.0,Nahitan Nández,Squad Club Atlético Boca Juniors,"Dec 28, 1995 (22)",22,right,15.0,0.2899999916553497,0.29,0.58,0.0,0.12,10.86,441.62
+311,52386.0,Gonzalo Verón,Squad Club Atlético Independiente,"Dec 24, 1989 (28)",28,right,30.0,0.2899999916553497,0.07,0.36,0.0,0.13,0.86,240.28
+312,28114.0,Maximiliano Caire,Squad Club Atlético Tigre,"Jul 12, 1988 (30)",30,right,32.0,0.2899999916553497,0.18,0.47,0.0,0.1,0.4,442.25
+313,26050.0,Ariel Rojas,Squad Club Atlético San Lorenzo de Almagro,"Jan 16, 1986 (32)",32,left,5.0,0.2800000011920929,0.2,0.48,0.0,0.08,1.14,564.02
+314,97571.0,Iván Rossi,Squad Club Atlético Huracán,"Nov 1, 1993 (25)",25,left,15.0,0.2800000011920929,0.0,0.28,0.0,0.03,0.57,990.0
+315,63477.0,Ignacio Fernández,Squad Club Atlético River Plate,"Jan 12, 1990 (28)",28,left,26.0,0.2800000011920929,0.12,0.4,0.0,0.07,5.14,497.02
+316,8903.0,Jonatan Maidana,Squad Club Atlético River Plate,"Jul 29, 1985 (33)",33,right,2.0,0.2800000011920929,0.14,0.42,0.0,0.08,1.71,450.0
+317,112671.0,Rafael Borré,Squad Club Atlético River Plate,"Sep 15, 1995 (23)",23,right,19.0,0.2800000011920929,0.07,0.35,0.0,0.09,3.43,356.5
+318,57586.0,Gustavo Toledo,Squad Club Atlético Colón,"Sep 19, 1989 (29)",29,right,2.0,0.2800000011920929,0.04,0.32,0.0,0.02,1.03,1170.0
+319,128296.0,Mariano Bareiro,Squad Club Social y Deportivo Defensa y Justicia,"Mar 8, 1995 (23)",23,right,5.0,0.2700000107288361,0.0,0.27,0.0,0.05,1.14,504.78
+320,209302.0,Walter Pérez,Squad Club Atlético Huracán,"Oct 23, 1998 (20)",20,left,13.0,0.2700000107288361,0.0,0.27,0.0,0.05,,462.25
+321,136947.0,Nicolás Da Campo,Squad Club Atlético San Martín (SJ),"Aug 6, 1994 (24)",24,right,21.0,0.2700000107288361,0.08,0.35,0.0,0.19,0.69,168.52
+322,89354.0,Nery Domínguez,Squad Racing Club,"Apr 9, 1990 (28)",28,right,23.0,0.25999999046325684,0.17,0.43,0.0,0.08,1.14,471.23
+323,126587.0,Denis Rodríguez,Squad Club Atlético Belgrano,"Mar 21, 1996 (22)",22,right,30.0,0.25999999046325684,0.13,0.39,0.0,0.07,0.57,470.1
 324,16183.0,Julio Buffarini,Squad Club Atlético Boca Juniors,"Aug 18, 1988 (30)",30,right,4.0,0.25999999046325684,0.04,0.3,1.0,0.06,2.29,450.0
-325,76105.0,Leonardo Jara,Squad Club Atlético Boca Juniors,"May 20, 1991 (27)",27,right,29.0,0.25,0.11,0.36,0.0,0.10424710424710423,4.0,310.8
+325,76105.0,Leonardo Jara,Squad Club Atlético Boca Juniors,"May 20, 1991 (27)",27,right,29.0,0.25,0.11,0.36,0.0,0.1,4.0,310.8
 326,176520.0,Juan Rodríguez,Squad Club Atlético San Martín (SJ),"Feb 28, 1994 (24)",24,right,18.0,0.25,0.07,0.32,0.0,0.08,,360.0
-327,61653.0,Paolo Goltz,Squad Club Atlético Boca Juniors,"May 12, 1985 (33)",33,right,2.0,0.25,0.25,0.5,0.0,0.055968989034224,2.06,804.0166666666667
-328,167929.0,Braian Rivero,Squad Club Atlético Newell's Old Boys,"Feb 22, 1996 (22)",22,right,8.0,0.23999999463558197,0.08,0.32,0.0,0.05560561204788261,0.29,517.9333333333333
-329,192596.0,Marcelo Torres,Squad Club Atlético Banfield,"Nov 6, 1997 (21)",21,right,11.0,0.23999999463558197,0.0,0.24,0.0,0.13779904306220095,0.69,156.75
-330,148044.0,Exequiel Palacios,Squad Club Atlético River Plate,"Oct 5, 1998 (20)",20,right,15.0,0.23999999463558197,0.1,0.34,1.0,0.07130097087378641,4.29,429.1666666666667
-331,186086.0,Maximiliano Cuadra,Squad Racing Club,"Jun 6, 1995 (23)",23,right,27.0,0.23999999463558197,0.0,0.24,1.0,0.16954474097331237,2.29,127.4
-332,193186.0,Gonzalo Asís,Squad Club Atlético Independiente,"Mar 28, 1996 (22)",22,right,15.0,0.23999999463558197,0.07,0.31,0.0,0.17268413451619558,,161.56666666666666
-333,209377.0,Andrés Lioi,Squad Club Atlético Rosario Central,"Mar 7, 1997 (21)",21,right,18.0,0.23999999463558197,0.12,0.36,0.0,0.11148067438926482,1.14,290.6333333333333
-334,24544.0,Julio González,Squad Club Social y Deportivo Defensa y Justicia,"Jun 28, 1992 (26)",26,right,4.0,0.23999999463558197,0.24,0.48,0.0,0.12,,360.0
-335,39790.0,Facundo Sánchez,Squad Club Estudiantes de La Plata,"Mar 7, 1990 (28)",28,right,14.0,0.23999999463558197,0.24,0.48,0.0,0.04207655595597545,2.86,1026.7
-336,88395.0,Leonel Di Plácido,Squad Club Atlético Lanús,"Jan 28, 1994 (24)",24,right,26.0,0.23000000417232513,0.0,0.23,0.0,0.025189632093457186,0.91,821.7666666666668
-337,79856.0,Guillermo Ortiz,Squad Club Atlético Colón,"Aug 9, 1992 (26)",26,left,24.0,0.23000000417232513,0.23,0.46,0.0,0.06491232654767816,3.15,637.7833333333333
-338,126637.0,Santiago Rosales,Squad Club de Gimnasia y Esgrima La Plata,"Mar 22, 1995 (23)",23,right,10.0,0.23000000417232513,0.23,0.46,0.0,0.15038140210679263,2.74,275.29999999999995
-339,60018.0,Rafael Delgado,Squad Club Social y Deportivo Defensa y Justicia,"Jan 13, 1990 (28)",28,left,33.0,0.23000000417232513,0.07,0.3,0.0,0.0600422519550795,1.71,449.68333333333334
-340,215882.0,Manuel Insaurralde,Squad Club Atlético San Lorenzo de Almagro,"Jan 31, 1999 (19)",19,right,36.0,0.23000000417232513,0.0,0.23,0.0,0.0811764705882353,,255.0
-341,210852.0,Iván Erquiaga,Squad Club Estudiantes de La Plata,"Mar 26, 1998 (20)",20,left,3.0,0.2199999988079071,0.07,0.29,0.0,0.029470435469908535,,885.6333333333333
-342,103206.0,Lucas Rodríguez,Squad Club Atlético Tigre,"Sep 27, 1993 (25)",25,left,20.0,0.2199999988079071,0.0,0.22,0.0,0.027166704779327693,0.8,728.8333333333334
-343,89017.0,Christian Bernardi,Squad Club Atlético Colón,"Apr 10, 1990 (28)",28,right,23.0,0.2199999988079071,0.0,0.22,0.0,0.05621273776852466,0.69,352.2333333333333
-344,55204.0,Diego Sosa,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Oct 24, 1991 (27)",27,right,20.0,0.2199999988079071,0.13,0.35,0.0,0.06993265744098276,0.23,450.4333333333333
-345,172673.0,Claudio Bravo,Squad Club Atlético Banfield,"Mar 13, 1997 (21)",21,left,3.0,0.2199999988079071,0.0,0.22,0.0,0.03666666666666667,0.34,540.0
-346,198924.0,Juan Pablo Álvarez,Squad Club Atlético Banfield,"Feb 10, 1996 (22)",22,right,22.0,0.2199999988079071,0.15,0.37,0.0,0.16382420465726466,0.17,203.26666666666668
-347,210881.0,Leonardo Balerdi,Squad Club Atlético Boca Juniors,"Jan 26, 1999 (19)",19,right,26.0,0.2199999988079071,0.22,0.44,0.0,0.088,,450.0
-348,96979.0,Federico Gino,Squad Club Atlético Aldosivi,"Feb 26, 1993 (25)",25,right,29.0,0.2199999988079071,0.16,0.38,0.0,0.09391304347826086,0.31,364.1666666666667
-349,190843.0,Facundo Medina,Squad Club Atlético Talleres,"May 28, 1999 (19)",19,left,30.0,0.20999999344348907,0.13,0.34,0.0,0.028333333333333335,0.06,1080.0
-350,8867.0,José San Róman,Squad Club Atlético Tucumán,"Aug 17, 1988 (30)",30,right,20.0,0.20999999344348907,0.11,0.32,1.0,0.02897724414334345,0.46,993.8833333333333
-351,179925.0,Gonzalo Escobar,Squad Club Atlético Colón,"Mar 16, 1997 (21)",21,left,31.0,0.20999999344348907,0.13,0.34,0.0,0.03801793220549562,1.71,804.8833333333333
-352,49610.0,Leonardo Gil,Squad Club Atlético Rosario Central,"May 31, 1991 (27)",27,left,5.0,0.20999999344348907,0.0,0.21,1.0,0.019337016574585635,4.0,977.4
-353,94225.0,Joaquín Laso,Squad Club Atlético Vélez Sarsfield,"Jul 4, 1990 (28)",28,right,6.0,0.20000000298023224,0.0,0.2,0.0,0.018181818181818184,0.34,990.0
-354,473.0,Rodrigo Braña,Squad Club Estudiantes de La Plata,"Mar 7, 1979 (39)",39,right,22.0,0.20000000298023224,0.0,0.2,0.0,0.025301628206629963,0.23,711.4166666666667
-355,3099.0,Israel Damonte,Squad Club Atlético Huracán,"Jan 6, 1982 (36)",36,right,5.0,0.20000000298023224,0.0,0.2,0.0,0.02167499548437594,0.29,830.45
-356,196046.0,Nahuel Barrios,Squad Club Atlético San Lorenzo de Almagro,"May 7, 1998 (20)",20,right,28.0,0.20000000298023224,0.2,0.4,0.0,0.1557317952415285,2.29,231.16666666666666
-357,55325.0,Brian Montenegro,Squad Club Atlético Talleres,"Jun 10, 1993 (25)",25,right,27.0,0.1899999976158142,0.19,0.38,0.0,0.13023610053313026,0.46,262.59999999999997
-358,59721.0,Franco Mussis,Squad Club Atlético San Lorenzo de Almagro,"Apr 19, 1992 (26)",26,both,7.0,0.1899999976158142,0.09,0.28,1.0,0.06358551663232263,2.06,396.31666666666666
-359,19308.0,Álvaro Fernández,Squad Club Atlético San Martín (Tucumán),"Oct 11, 1985 (33)",33,right,23.0,0.18000000715255737,0.18,0.36,0.0,0.11472410740631454,0.46,282.4166666666667
-360,179341.0,Tomás Sandoval,Squad Club Atlético Colón,"Mar 30, 1999 (19)",19,right,32.0,0.18000000715255737,0.18,0.36,0.0,0.6842661034846885,0.34,47.35
-361,204644.0,Matías Melluso,Squad Club de Gimnasia y Esgrima La Plata,"Jun 9, 1998 (20)",20,left,32.0,0.18000000715255737,0.0,0.18,0.0,0.014901576010302325,0.06,1087.1333333333332
-362,202647.0,Leandro Lencinas,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Mar 6, 1995 (23)",23,left,17.0,0.18000000715255737,0.1,0.28,0.0,0.09316655370016637,0.17,270.48333333333335
-363,47915.0,Emanuel Olivera,Squad Club Atlético Colón,"Apr 2, 1990 (28)",28,right,6.0,0.18000000715255737,0.11,0.29,0.0,0.03222222222222222,0.4,810.0
-364,89965.0,Fernando Evangelista,Squad Club Estudiantes de La Plata,"Oct 21, 1991 (27)",27,left,13.0,0.18000000715255737,0.0,0.18,0.0,0.06076139276114271,0.69,266.6166666666667
-365,128530.0,Alex Silva,Squad Club Atlético San Martín (SJ),"Jun 15, 1993 (25)",25,right,16.0,0.17000000178813934,0.04,0.21,0.0,0.1250137801785911,0.57,151.18333333333334
-366,196095.0,Fernando Núñez,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Jul 22, 1995 (23)",23,right,23.0,0.17000000178813934,0.0,0.17,0.0,0.07494489346069066,0.06,204.15
-367,182838.0,Norberto Briasco,Squad Club Atlético Huracán,"Feb 29, 1996 (22)",22,left,20.0,0.17000000178813934,0.0,0.17,0.0,0.07690374465946218,0.57,198.95000000000002
-368,210465.0,Ignacio Aliseda,Squad Club Social y Deportivo Defensa y Justicia,"Mar 14, 2000 (18)",18,both,31.0,0.17000000178813934,0.0,0.17,0.0,0.0653520324624475,,234.11666666666667
-369,46601.0,Jorge Moreira,Squad Club Atlético River Plate,"Feb 1, 1990 (28)",28,right,4.0,0.1599999964237213,0.16,0.32,0.0,0.05608204595612099,1.71,513.5333333333333
-370,67.0,Néstor Ortigoza,Squad Club Atlético Rosario Central,"Oct 7, 1984 (34)",34,right,10.0,0.1599999964237213,0.07,0.23,0.0,0.02110091743119266,0.57,981.0
-371,8484.0,Miguel Torrén,Squad Asociación Atlética Argentinos Juniors,"Aug 12, 1988 (30)",30,right,2.0,0.1599999964237213,0.0,0.16,0.0,0.014545454545454545,0.8,990.0
-372,86457.0,Guido Herrera,Squad Club Atlético Talleres,"Feb 29, 1992 (26)",26,left,22.0,0.1599999964237213,0.0,0.16,0.0,0.012307692307692308,1.44,1170.0
+327,61653.0,Paolo Goltz,Squad Club Atlético Boca Juniors,"May 12, 1985 (33)",33,right,2.0,0.25,0.25,0.5,0.0,0.06,2.06,804.02
+328,167929.0,Braian Rivero,Squad Club Atlético Newell's Old Boys,"Feb 22, 1996 (22)",22,right,8.0,0.239999994635582,0.08,0.32,0.0,0.06,0.29,517.93
+329,192596.0,Marcelo Torres,Squad Club Atlético Banfield,"Nov 6, 1997 (21)",21,right,11.0,0.239999994635582,0.0,0.24,0.0,0.14,0.69,156.75
+330,148044.0,Exequiel Palacios,Squad Club Atlético River Plate,"Oct 5, 1998 (20)",20,right,15.0,0.239999994635582,0.1,0.34,1.0,0.07,4.29,429.17
+331,186086.0,Maximiliano Cuadra,Squad Racing Club,"Jun 6, 1995 (23)",23,right,27.0,0.239999994635582,0.0,0.24,1.0,0.17,2.29,127.4
+332,193186.0,Gonzalo Asís,Squad Club Atlético Independiente,"Mar 28, 1996 (22)",22,right,15.0,0.239999994635582,0.07,0.31,0.0,0.17,,161.57
+333,209377.0,Andrés Lioi,Squad Club Atlético Rosario Central,"Mar 7, 1997 (21)",21,right,18.0,0.239999994635582,0.12,0.36,0.0,0.11,1.14,290.63
+334,24544.0,Julio González,Squad Club Social y Deportivo Defensa y Justicia,"Jun 28, 1992 (26)",26,right,4.0,0.239999994635582,0.24,0.48,0.0,0.12,,360.0
+335,39790.0,Facundo Sánchez,Squad Club Estudiantes de La Plata,"Mar 7, 1990 (28)",28,right,14.0,0.239999994635582,0.24,0.48,0.0,0.04,2.86,1026.7
+336,88395.0,Leonel Di Plácido,Squad Club Atlético Lanús,"Jan 28, 1994 (24)",24,right,26.0,0.23000000417232516,0.0,0.23,0.0,0.03,0.91,821.77
+337,79856.0,Guillermo Ortiz,Squad Club Atlético Colón,"Aug 9, 1992 (26)",26,left,24.0,0.23000000417232516,0.23,0.46,0.0,0.06,3.15,637.78
+338,126637.0,Santiago Rosales,Squad Club de Gimnasia y Esgrima La Plata,"Mar 22, 1995 (23)",23,right,10.0,0.23000000417232516,0.23,0.46,0.0,0.15,2.74,275.3
+339,60018.0,Rafael Delgado,Squad Club Social y Deportivo Defensa y Justicia,"Jan 13, 1990 (28)",28,left,33.0,0.23000000417232516,0.07,0.3,0.0,0.06,1.71,449.68
+340,215882.0,Manuel Insaurralde,Squad Club Atlético San Lorenzo de Almagro,"Jan 31, 1999 (19)",19,right,36.0,0.23000000417232516,0.0,0.23,0.0,0.08,,255.0
+341,210852.0,Iván Erquiaga,Squad Club Estudiantes de La Plata,"Mar 26, 1998 (20)",20,left,3.0,0.2199999988079071,0.07,0.29,0.0,0.03,,885.63
+342,103206.0,Lucas Rodríguez,Squad Club Atlético Tigre,"Sep 27, 1993 (25)",25,left,20.0,0.2199999988079071,0.0,0.22,0.0,0.03,0.8,728.83
+343,89017.0,Christian Bernardi,Squad Club Atlético Colón,"Apr 10, 1990 (28)",28,right,23.0,0.2199999988079071,0.0,0.22,0.0,0.06,0.69,352.23
+344,55204.0,Diego Sosa,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Oct 24, 1991 (27)",27,right,20.0,0.2199999988079071,0.13,0.35,0.0,0.07,0.23,450.43
+345,172673.0,Claudio Bravo,Squad Club Atlético Banfield,"Mar 13, 1997 (21)",21,left,3.0,0.2199999988079071,0.0,0.22,0.0,0.04,0.34,540.0
+346,198924.0,Juan Pablo Álvarez,Squad Club Atlético Banfield,"Feb 10, 1996 (22)",22,right,22.0,0.2199999988079071,0.15,0.37,0.0,0.16,0.17,203.27
+347,210881.0,Leonardo Balerdi,Squad Club Atlético Boca Juniors,"Jan 26, 1999 (19)",19,right,26.0,0.2199999988079071,0.22,0.44,0.0,0.09,,450.0
+348,96979.0,Federico Gino,Squad Club Atlético Aldosivi,"Feb 26, 1993 (25)",25,right,29.0,0.2199999988079071,0.16,0.38,0.0,0.09,0.31,364.17
+349,190843.0,Facundo Medina,Squad Club Atlético Talleres,"May 28, 1999 (19)",19,left,30.0,0.20999999344348907,0.13,0.34,0.0,0.03,0.06,1080.0
+350,8867.0,José San Róman,Squad Club Atlético Tucumán,"Aug 17, 1988 (30)",30,right,20.0,0.20999999344348907,0.11,0.32,1.0,0.03,0.46,993.88
+351,179925.0,Gonzalo Escobar,Squad Club Atlético Colón,"Mar 16, 1997 (21)",21,left,31.0,0.20999999344348907,0.13,0.34,0.0,0.04,1.71,804.88
+352,49610.0,Leonardo Gil,Squad Club Atlético Rosario Central,"May 31, 1991 (27)",27,left,5.0,0.20999999344348907,0.0,0.21,1.0,0.02,4.0,977.4
+353,94225.0,Joaquín Laso,Squad Club Atlético Vélez Sarsfield,"Jul 4, 1990 (28)",28,right,6.0,0.20000000298023224,0.0,0.2,0.0,0.02,0.34,990.0
+354,473.0,Rodrigo Braña,Squad Club Estudiantes de La Plata,"Mar 7, 1979 (39)",39,right,22.0,0.20000000298023224,0.0,0.2,0.0,0.03,0.23,711.42
+355,3099.0,Israel Damonte,Squad Club Atlético Huracán,"Jan 6, 1982 (36)",36,right,5.0,0.20000000298023224,0.0,0.2,0.0,0.02,0.29,830.45
+356,196046.0,Nahuel Barrios,Squad Club Atlético San Lorenzo de Almagro,"May 7, 1998 (20)",20,right,28.0,0.20000000298023224,0.2,0.4,0.0,0.16,2.29,231.17
+357,55325.0,Brian Montenegro,Squad Club Atlético Talleres,"Jun 10, 1993 (25)",25,right,27.0,0.1899999976158142,0.19,0.38,0.0,0.13,0.46,262.6
+358,59721.0,Franco Mussis,Squad Club Atlético San Lorenzo de Almagro,"Apr 19, 1992 (26)",26,both,7.0,0.1899999976158142,0.09,0.28,1.0,0.06,2.06,396.32
+359,19308.0,Álvaro Fernández,Squad Club Atlético San Martín (Tucumán),"Oct 11, 1985 (33)",33,right,23.0,0.18000000715255735,0.18,0.36,0.0,0.11,0.46,282.42
+360,179341.0,Tomás Sandoval,Squad Club Atlético Colón,"Mar 30, 1999 (19)",19,right,32.0,0.18000000715255735,0.18,0.36,0.0,0.68,0.34,47.35
+361,204644.0,Matías Melluso,Squad Club de Gimnasia y Esgrima La Plata,"Jun 9, 1998 (20)",20,left,32.0,0.18000000715255735,0.0,0.18,0.0,0.01,0.06,1087.13
+362,202647.0,Leandro Lencinas,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Mar 6, 1995 (23)",23,left,17.0,0.18000000715255735,0.1,0.28,0.0,0.09,0.17,270.48
+363,47915.0,Emanuel Olivera,Squad Club Atlético Colón,"Apr 2, 1990 (28)",28,right,6.0,0.18000000715255735,0.11,0.29,0.0,0.03,0.4,810.0
+364,89965.0,Fernando Evangelista,Squad Club Estudiantes de La Plata,"Oct 21, 1991 (27)",27,left,13.0,0.18000000715255735,0.0,0.18,0.0,0.06,0.69,266.62
+365,128530.0,Alex Silva,Squad Club Atlético San Martín (SJ),"Jun 15, 1993 (25)",25,right,16.0,0.17000000178813934,0.04,0.21,0.0,0.13,0.57,151.18
+366,196095.0,Fernando Núñez,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Jul 22, 1995 (23)",23,right,23.0,0.17000000178813934,0.0,0.17,0.0,0.07,0.06,204.15
+367,182838.0,Norberto Briasco,Squad Club Atlético Huracán,"Feb 29, 1996 (22)",22,left,20.0,0.17000000178813934,0.0,0.17,0.0,0.08,0.57,198.95
+368,210465.0,Ignacio Aliseda,Squad Club Social y Deportivo Defensa y Justicia,"Mar 14, 2000 (18)",18,both,31.0,0.17000000178813934,0.0,0.17,0.0,0.07,,234.12
+369,46601.0,Jorge Moreira,Squad Club Atlético River Plate,"Feb 1, 1990 (28)",28,right,4.0,0.1599999964237213,0.16,0.32,0.0,0.06,1.71,513.53
+370,67.0,Néstor Ortigoza,Squad Club Atlético Rosario Central,"Oct 7, 1984 (34)",34,right,10.0,0.1599999964237213,0.07,0.23,0.0,0.02,0.57,981.0
+371,8484.0,Miguel Torrén,Squad Asociación Atlética Argentinos Juniors,"Aug 12, 1988 (30)",30,right,2.0,0.1599999964237213,0.0,0.16,0.0,0.01,0.8,990.0
+372,86457.0,Guido Herrera,Squad Club Atlético Talleres,"Feb 29, 1992 (26)",26,left,22.0,0.1599999964237213,0.0,0.16,0.0,0.01,1.44,1170.0
 373,24885.0,Luciano Lollo,Squad Club Atlético River Plate,"Mar 29, 1987 (31)",31,right,6.0,0.1599999964237213,0.0,0.16,1.0,0.04,1.44,360.0
-374,105810.0,Luis Amarilla,Squad Club Atlético Vélez Sarsfield,"Aug 25, 1995 (23)",23,right,20.0,0.1599999964237213,0.0,0.16,0.0,0.12051890082298786,0.29,119.48333333333333
-375,126549.0,Javier Iritier,Squad Club Atlético Aldosivi,"Dec 20, 1994 (23)",23,right,18.0,0.1599999964237213,0.0,0.16,0.0,0.05316595901790659,0.4,270.85
-376,37092.0,Enzo Pérez,Squad Club Atlético River Plate,"Feb 22, 1986 (32)",32,right,24.0,0.15000000596046448,0.0,0.15,0.0,0.025039413892237784,2.86,539.15
-377,57003.0,Fernando Coniglio,Squad Club Atlético Lanús,"Nov 24, 1991 (27)",27,right,9.0,0.15000000596046448,0.0,0.15,0.0,0.05723572639909553,2.29,235.86666666666667
-378,98844.0,Gabriel Gudiño,Squad Club Atlético San Lorenzo de Almagro,"Mar 16, 1992 (26)",26,right,8.0,0.15000000596046448,0.0,0.15,0.0,0.10454310789881259,2.29,129.13333333333333
-379,219117.0,Álvaro Barreal,Squad Club Atlético Vélez Sarsfield,"Aug 17, 2000 (18)",18,left,31.0,0.14000000059604645,0.0,0.14,0.0,0.0802207130730051,,157.06666666666666
-380,186251.0,Diego Sosa,Squad Club Atlético Tigre,"Jul 28, 1997 (21)",21,left,29.0,0.14000000059604645,0.1,0.24,0.0,0.06676970633693972,0.91,323.5
-381,20478.0,Facundo Castillón,Squad Club Atlético Aldosivi,"Aug 21, 1985 (33)",33,right,19.0,0.14000000059604645,0.14,0.28,0.0,0.11945958757999527,0.29,210.95000000000002
-382,72090.0,Federico Bravo,Squad Club Atlético Patronato de la Juventud Católica,"Oct 5, 1993 (25)",25,right,22.0,0.14000000059604645,0.14,0.28,0.0,0.05410821643286573,0.57,465.73333333333335
+374,105810.0,Luis Amarilla,Squad Club Atlético Vélez Sarsfield,"Aug 25, 1995 (23)",23,right,20.0,0.1599999964237213,0.0,0.16,0.0,0.12,0.29,119.48
+375,126549.0,Javier Iritier,Squad Club Atlético Aldosivi,"Dec 20, 1994 (23)",23,right,18.0,0.1599999964237213,0.0,0.16,0.0,0.05,0.4,270.85
+376,37092.0,Enzo Pérez,Squad Club Atlético River Plate,"Feb 22, 1986 (32)",32,right,24.0,0.15000000596046448,0.0,0.15,0.0,0.03,2.86,539.15
+377,57003.0,Fernando Coniglio,Squad Club Atlético Lanús,"Nov 24, 1991 (27)",27,right,9.0,0.15000000596046448,0.0,0.15,0.0,0.06,2.29,235.87
+378,98844.0,Gabriel Gudiño,Squad Club Atlético San Lorenzo de Almagro,"Mar 16, 1992 (26)",26,right,8.0,0.15000000596046448,0.0,0.15,0.0,0.1,2.29,129.13
+379,219117.0,Álvaro Barreal,Squad Club Atlético Vélez Sarsfield,"Aug 17, 2000 (18)",18,left,31.0,0.14000000059604645,0.0,0.14,0.0,0.08,,157.07
+380,186251.0,Diego Sosa,Squad Club Atlético Tigre,"Jul 28, 1997 (21)",21,left,29.0,0.14000000059604645,0.1,0.24,0.0,0.07,0.91,323.5
+381,20478.0,Facundo Castillón,Squad Club Atlético Aldosivi,"Aug 21, 1985 (33)",33,right,19.0,0.14000000059604645,0.14,0.28,0.0,0.12,0.29,210.95
+382,72090.0,Federico Bravo,Squad Club Atlético Patronato de la Juventud Católica,"Oct 5, 1993 (25)",25,right,22.0,0.14000000059604645,0.14,0.28,0.0,0.05,0.57,465.73
 383,98007.0,Eugenio Isnaldo,Squad Club Social y Deportivo Defensa y Justicia,"Jan 7, 1994 (24)",24,left,11.0,0.14000000059604645,0.14,0.28,0.0,0.28,0.69,90.0
-384,174330.0,Damián Batallini,Squad Asociación Atlética Argentinos Juniors,"Jun 24, 1996 (22)",22,right,11.0,0.14000000059604645,0.14,0.28,0.0,0.18486367526592495,2.29,136.31666666666666
-385,75491.0,Iván Gómez,Squad Club Estudiantes de La Plata,"Feb 28, 1997 (21)",21,right,4.0,0.12999999523162842,0.05,0.18,0.0,0.018747830112255524,0.57,864.1
-386,80233.0,Gonzalo Bettini,Squad Club Atlético Rosario Central,"Sep 26, 1992 (26)",26,left,4.0,0.12999999523162842,0.13,0.26,0.0,0.021666666666666667,0.69,1080.0
-387,359.0,Néstor Moiraghi,Squad Club Atlético Tigre,"Apr 19, 1984 (34)",34,left,3.0,0.12999999523162842,0.0,0.13,0.0,0.014444444444444446,0.46,810.0
-388,178490.0,Carlos Benavídez,Squad Club Atlético Independiente,"Mar 30, 1998 (20)",20,right,21.0,0.12999999523162842,0.0,0.13,0.0,0.07355406538139146,2.29,159.06666666666666
-389,251.0,Lucas Licht,Squad Club de Gimnasia y Esgrima La Plata,"Apr 6, 1981 (37)",37,left,25.0,0.12999999523162842,0.06,0.19,0.0,0.11812111443702511,0.11,144.76666666666665
-390,53904.0,Bruno Zuculini,Squad Club Atlético River Plate,"Apr 2, 1993 (25)",25,right,5.0,0.12999999523162842,0.0,0.13,0.0,0.020590133161260047,2.86,568.2333333333333
-391,167687.0,Fabián Henríquez,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Jun 8, 1995 (23)",23,right,19.0,0.12999999523162842,0.0,0.13,0.0,0.02119629215857967,0.57,551.9833333333333
-392,208462.0,Hernán De La Fuente,Squad Club Atlético Vélez Sarsfield,"Jan 7, 1997 (21)",21,right,4.0,0.12999999523162842,0.0,0.13,0.0,0.043333333333333335,0.69,270.0
-393,16123.0,Bruno Urribarri,Squad Club Atlético Patronato de la Juventud Católica,"Nov 6, 1986 (32)",32,left,23.0,0.12999999523162842,0.06,0.19,0.0,0.03166666666666667,0.17,540.0
-394,6084.0,Mauro Bogado,Squad Club Atlético Huracán,"May 31, 1985 (33)",33,right,8.0,0.11999999731779099,0.0,0.12,0.0,0.11404435058078141,0.4,94.69999999999999
-395,55208.0,Juan Sánchez Miño,Squad Club Atlético Independiente,"Jan 1, 1990 (28)",28,left,6.0,0.11999999731779099,0.0,0.12,0.0,0.01430811013711939,5.14,754.8166666666666
-396,30969.0,Francisco Silva,Squad Club Atlético Independiente,"Feb 11, 1986 (32)",32,right,22.0,0.11999999731779099,0.0,0.12,0.0,0.04348117828625109,2.06,248.38333333333333
-397,63356.0,Juan Galeano,Squad Club Atlético Aldosivi,"Jul 3, 1988 (30)",30,-,8.0,0.11999999731779099,0.0,0.12,0.0,0.03498731170023217,0.11,308.68333333333334
-398,129572.0,Hernán Menosse,Squad Club Atlético Belgrano,"Apr 28, 1987 (31)",31,right,2.0,0.11999999731779099,0.0,0.12,0.0,0.01460446247464503,0.46,739.5
-399,16271.0,Alexis Niz,Squad Club Atlético Tigre,"May 17, 1988 (30)",30,right,4.0,0.11999999731779099,0.0,0.12,0.0,0.032098276203685355,0.34,336.46666666666664
-400,75517.0,Bruno Vides,Squad Club Atlético Lanús,"Feb 20, 1993 (25)",25,right,32.0,0.10999999940395355,0.0,0.11,0.0,0.2690217391304348,0.57,36.8
-401,118014.0,Rodrigo Arciero,Squad Club Atlético Banfield,"Mar 12, 1993 (25)",25,right,4.0,0.10999999940395355,0.11,0.22,0.0,0.020167382484254842,0.17,981.7833333333333
-402,100773.0,Fabricio Bustos,Squad Club Atlético Independiente,"Apr 28, 1996 (22)",22,right,16.0,0.10999999940395355,0.0,0.11,0.0,0.011395902079656205,11.43,868.7333333333333
-403,45619.0,Nelson Acevedo,Squad Club Atlético Unión (Santa Fe),"Jul 11, 1988 (30)",30,right,5.0,0.10999999940395355,0.0,0.11,0.0,0.011385199240986715,0.69,869.5500000000002
-404,195168.0,Nehuén Pérez,Squad Asociación Atlética Argentinos Juniors,"Jun 24, 2000 (18)",18,right,6.0,0.10999999940395355,0.11,0.22,0.0,0.22,,90.0
-405,166837.0,Hernán Toledo,Squad Asociación Atlética Argentinos Juniors,"Jan 17, 1996 (22)",22,right,19.0,0.10000000149011612,0.1,0.2,0.0,0.04400081482990426,1.14,409.0833333333333
-406,32236.0,Nicolás Bertolo,Squad Club Atlético Banfield,"Jan 2, 1986 (32)",32,right,8.0,0.10000000149011612,0.0,0.1,0.0,0.03982300884955752,0.86,226.0
-407,58048.0,Luciano Abecasis,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Jun 4, 1990 (28)",28,right,29.0,0.10000000149011612,0.06,0.16,0.0,0.017777777777777778,2.86,810.0
-408,179724.0,Jonatan Goitia,Squad Club Atlético San Martín (SJ),"Aug 2, 1994 (24)",24,left,19.0,0.10000000149011612,0.1,0.2,0.0,0.03628178855779891,0.17,496.1166666666667
-409,192595.0,Franco Moyano,Squad Club Atlético San Lorenzo de Almagro,"Sep 13, 1997 (21)",21,right,34.0,0.10000000149011612,0.1,0.2,0.0,0.037890748342279755,0.57,475.05000000000007
+384,174330.0,Damián Batallini,Squad Asociación Atlética Argentinos Juniors,"Jun 24, 1996 (22)",22,right,11.0,0.14000000059604645,0.14,0.28,0.0,0.18,2.29,136.32
+385,75491.0,Iván Gómez,Squad Club Estudiantes de La Plata,"Feb 28, 1997 (21)",21,right,4.0,0.12999999523162842,0.05,0.18,0.0,0.02,0.57,864.1
+386,80233.0,Gonzalo Bettini,Squad Club Atlético Rosario Central,"Sep 26, 1992 (26)",26,left,4.0,0.12999999523162842,0.13,0.26,0.0,0.02,0.69,1080.0
+387,359.0,Néstor Moiraghi,Squad Club Atlético Tigre,"Apr 19, 1984 (34)",34,left,3.0,0.12999999523162842,0.0,0.13,0.0,0.01,0.46,810.0
+388,178490.0,Carlos Benavídez,Squad Club Atlético Independiente,"Mar 30, 1998 (20)",20,right,21.0,0.12999999523162842,0.0,0.13,0.0,0.07,2.29,159.07
+389,251.0,Lucas Licht,Squad Club de Gimnasia y Esgrima La Plata,"Apr 6, 1981 (37)",37,left,25.0,0.12999999523162842,0.06,0.19,0.0,0.12,0.11,144.77
+390,53904.0,Bruno Zuculini,Squad Club Atlético River Plate,"Apr 2, 1993 (25)",25,right,5.0,0.12999999523162842,0.0,0.13,0.0,0.02,2.86,568.23
+391,167687.0,Fabián Henríquez,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Jun 8, 1995 (23)",23,right,19.0,0.12999999523162842,0.0,0.13,0.0,0.02,0.57,551.98
+392,208462.0,Hernán De La Fuente,Squad Club Atlético Vélez Sarsfield,"Jan 7, 1997 (21)",21,right,4.0,0.12999999523162842,0.0,0.13,0.0,0.04,0.69,270.0
+393,16123.0,Bruno Urribarri,Squad Club Atlético Patronato de la Juventud Católica,"Nov 6, 1986 (32)",32,left,23.0,0.12999999523162842,0.06,0.19,0.0,0.03,0.17,540.0
+394,6084.0,Mauro Bogado,Squad Club Atlético Huracán,"May 31, 1985 (33)",33,right,8.0,0.119999997317791,0.0,0.12,0.0,0.11,0.4,94.7
+395,55208.0,Juan Sánchez Miño,Squad Club Atlético Independiente,"Jan 1, 1990 (28)",28,left,6.0,0.119999997317791,0.0,0.12,0.0,0.01,5.14,754.82
+396,30969.0,Francisco Silva,Squad Club Atlético Independiente,"Feb 11, 1986 (32)",32,right,22.0,0.119999997317791,0.0,0.12,0.0,0.04,2.06,248.38
+397,63356.0,Juan Galeano,Squad Club Atlético Aldosivi,"Jul 3, 1988 (30)",30,-,8.0,0.119999997317791,0.0,0.12,0.0,0.03,0.11,308.68
+398,129572.0,Hernán Menosse,Squad Club Atlético Belgrano,"Apr 28, 1987 (31)",31,right,2.0,0.119999997317791,0.0,0.12,0.0,0.01,0.46,739.5
+399,16271.0,Alexis Niz,Squad Club Atlético Tigre,"May 17, 1988 (30)",30,right,4.0,0.119999997317791,0.0,0.12,0.0,0.03,0.34,336.47
+400,75517.0,Bruno Vides,Squad Club Atlético Lanús,"Feb 20, 1993 (25)",25,right,32.0,0.10999999940395357,0.0,0.11,0.0,0.27,0.57,36.8
+401,118014.0,Rodrigo Arciero,Squad Club Atlético Banfield,"Mar 12, 1993 (25)",25,right,4.0,0.10999999940395357,0.11,0.22,0.0,0.02,0.17,981.78
+402,100773.0,Fabricio Bustos,Squad Club Atlético Independiente,"Apr 28, 1996 (22)",22,right,16.0,0.10999999940395357,0.0,0.11,0.0,0.01,11.43,868.73
+403,45619.0,Nelson Acevedo,Squad Club Atlético Unión (Santa Fe),"Jul 11, 1988 (30)",30,right,5.0,0.10999999940395357,0.0,0.11,0.0,0.01,0.69,869.55
+404,195168.0,Nehuén Pérez,Squad Asociación Atlética Argentinos Juniors,"Jun 24, 2000 (18)",18,right,6.0,0.10999999940395357,0.11,0.22,0.0,0.22,,90.0
+405,166837.0,Hernán Toledo,Squad Asociación Atlética Argentinos Juniors,"Jan 17, 1996 (22)",22,right,19.0,0.10000000149011612,0.1,0.2,0.0,0.04,1.14,409.08
+406,32236.0,Nicolás Bertolo,Squad Club Atlético Banfield,"Jan 2, 1986 (32)",32,right,8.0,0.10000000149011612,0.0,0.1,0.0,0.04,0.86,226.0
+407,58048.0,Luciano Abecasis,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Jun 4, 1990 (28)",28,right,29.0,0.10000000149011612,0.06,0.16,0.0,0.02,2.86,810.0
+408,179724.0,Jonatan Goitia,Squad Club Atlético San Martín (SJ),"Aug 2, 1994 (24)",24,left,19.0,0.10000000149011612,0.1,0.2,0.0,0.04,0.17,496.12
+409,192595.0,Franco Moyano,Squad Club Atlético San Lorenzo de Almagro,"Sep 13, 1997 (21)",21,right,34.0,0.10000000149011612,0.1,0.2,0.0,0.04,0.57,475.05
 410,79278.0,Gastón Silva,Squad Club Atlético Independiente,"Mar 5, 1994 (24)",24,left,20.0,0.10000000149011612,0.0,0.1,0.0,0.02,2.86,450.0
-411,111092.0,Joaquín Pereyra,Squad Club Atlético Rosario Central,"Dec 1, 1998 (20)",20,left,7.0,0.10000000149011612,0.04,0.14,0.0,0.212718064153067,0.69,59.233333333333334
-412,200980.0,Enzo Ybáñez,Squad Asociación Atlética Argentinos Juniors,"Aug 29, 1998 (20)",20,left,13.0,0.10000000149011612,0.0,0.1,0.0,0.025,0.06,360.0
-413,105325.0,Federico Milo,Squad Club Atlético San Martín (SJ),"Jan 10, 1992 (26)",26,left,25.0,0.10000000149011612,0.0,0.1,0.0,0.014436186708014756,0.29,623.4333333333334
-414,1318.0,Adrián Bastía,Squad Club Atlético Colón,"Dec 20, 1978 (39)",39,right,14.0,0.09000000357627869,0.09,0.18,0.0,0.047412321350178026,0.11,341.6833333333334
-415,33527.0,Alejandro Donatti,Squad Racing Club,"Oct 24, 1986 (32)",32,right,2.0,0.09000000357627869,0.0,0.09,0.0,0.04420593050754957,1.71,183.23333333333332
-416,118231.0,Pablo Galdames,Squad Club Atlético Vélez Sarsfield,"Dec 30, 1996 (21)",21,right,27.0,0.09000000357627869,0.0,0.09,0.0,0.07861533484309285,0.57,103.03333333333333
-417,69296.0,Arián Pucheta,Squad Club Atlético San Martín (SJ),"Mar 8, 1995 (23)",23,left,6.0,0.09000000357627869,0.0,0.09,0.0,0.011530796241814557,0.29,702.4666666666667
-418,120431.0,Alexis Soto,Squad Racing Club,"Oct 20, 1993 (25)",25,left,3.0,0.09000000357627869,0.0,0.09,0.0,0.05441719852200202,3.2,148.85
-419,28317.0,Iván Pillud,Squad Racing Club,"Apr 24, 1986 (32)",32,right,4.0,0.09000000357627869,0.09,0.18,0.0,0.07014505304178394,0.69,230.95
-420,68988.0,Nery Leyes,Squad Club Atlético Tucumán,"Sep 5, 1989 (29)",29,right,38.0,0.09000000357627869,0.09,0.18,0.0,0.04355033827680451,0.4,371.98333333333335
-421,100662.0,Aldo Araujo,Squad Club Atlético Talleres,"Jan 3, 1992 (26)",26,right,11.0,0.07999999821186066,0.0,0.08,0.0,0.05973451327433629,0.4,120.53333333333333
-422,75048.0,Gerónimo Poblete,Squad Club Atlético San Lorenzo de Almagro,"Jan 2, 1993 (25)",25,right,17.0,0.07999999821186066,0.0,0.08,0.0,0.016,1.71,450.0
-423,39479.0,Eugenio Mena,Squad Racing Club,"Jul 18, 1988 (30)",30,left,5.0,0.07999999821186066,0.08,0.16,0.0,0.017856035712071422,1.71,806.45
-424,145031.0,Julián Vitale,Squad Club Atlético San Martín (Tucumán),"Jun 21, 1995 (23)",23,right,15.0,0.07999999821186066,0.0,0.08,0.0,0.0185774490410252,0.34,387.56666666666666
-425,126655.0,Emanuel Reynoso,Squad Club Atlético Boca Juniors,"Nov 16, 1995 (23)",23,left,30.0,0.07999999821186066,0.0,0.08,0.0,0.08463949843260189,6.86,85.06666666666666
-426,56290.0,Pablo Magnín,Squad Club Atlético San Martín (SJ),"Apr 25, 1990 (28)",28,right,11.0,0.07999999821186066,0.08,0.16,0.0,0.26438188494492043,0.23,54.46666666666667
-427,173026.0,Matías Nani,Squad Club Atlético Belgrano,"Mar 26, 1998 (20)",20,left,6.0,0.07999999821186066,0.0,0.08,0.0,0.016,0.09,450.0
-428,51917.0,Facundo Quignón,Squad Club Atlético Lanús,"May 2, 1993 (25)",25,left,19.0,0.07999999821186066,0.0,0.08,0.0,0.012603938730853392,2.29,571.25
-429,20311.0,Matías Ibáñez,Squad Club Atlético Lanús,"Dec 16, 1986 (31)",31,right,12.0,0.07999999821186066,0.08,0.16,0.0,0.022857142857142857,0.57,630.0
-430,89002.0,Lautaro Geminiani,Squad Club Atlético Patronato de la Juventud Católica,"Mar 2, 1991 (27)",27,right,4.0,0.07999999821186066,0.0,0.08,0.0,0.011428571428571429,0.29,630.0
-431,208434.0,Maximiliano Martínez,Squad Club Atlético San Martín (Tucumán),"Sep 1, 1992 (26)",26,left,3.0,0.07000000029802322,0.0,0.07,0.0,0.00684447824433701,,920.4499999999999
-432,106104.0,Víctor Salazar,Squad Club Atlético San Lorenzo de Almagro,"May 26, 1993 (25)",25,right,29.0,0.07000000029802322,0.07,0.14,0.0,0.014300035939243763,1.44,881.1166666666667
+411,111092.0,Joaquín Pereyra,Squad Club Atlético Rosario Central,"Dec 1, 1998 (20)",20,left,7.0,0.10000000149011612,0.04,0.14,0.0,0.21,0.69,59.23
+412,200980.0,Enzo Ybáñez,Squad Asociación Atlética Argentinos Juniors,"Aug 29, 1998 (20)",20,left,13.0,0.10000000149011612,0.0,0.1,0.0,0.02,0.06,360.0
+413,105325.0,Federico Milo,Squad Club Atlético San Martín (SJ),"Jan 10, 1992 (26)",26,left,25.0,0.10000000149011612,0.0,0.1,0.0,0.01,0.29,623.43
+414,1318.0,Adrián Bastía,Squad Club Atlético Colón,"Dec 20, 1978 (39)",39,right,14.0,0.09000000357627869,0.09,0.18,0.0,0.05,0.11,341.68
+415,33527.0,Alejandro Donatti,Squad Racing Club,"Oct 24, 1986 (32)",32,right,2.0,0.09000000357627869,0.0,0.09,0.0,0.04,1.71,183.23
+416,118231.0,Pablo Galdames,Squad Club Atlético Vélez Sarsfield,"Dec 30, 1996 (21)",21,right,27.0,0.09000000357627869,0.0,0.09,0.0,0.08,0.57,103.03
+417,69296.0,Arián Pucheta,Squad Club Atlético San Martín (SJ),"Mar 8, 1995 (23)",23,left,6.0,0.09000000357627869,0.0,0.09,0.0,0.01,0.29,702.47
+418,120431.0,Alexis Soto,Squad Racing Club,"Oct 20, 1993 (25)",25,left,3.0,0.09000000357627869,0.0,0.09,0.0,0.05,3.2,148.85
+419,28317.0,Iván Pillud,Squad Racing Club,"Apr 24, 1986 (32)",32,right,4.0,0.09000000357627869,0.09,0.18,0.0,0.07,0.69,230.95
+420,68988.0,Nery Leyes,Squad Club Atlético Tucumán,"Sep 5, 1989 (29)",29,right,38.0,0.09000000357627869,0.09,0.18,0.0,0.04,0.4,371.98
+421,100662.0,Aldo Araujo,Squad Club Atlético Talleres,"Jan 3, 1992 (26)",26,right,11.0,0.07999999821186066,0.0,0.08,0.0,0.06,0.4,120.53
+422,75048.0,Gerónimo Poblete,Squad Club Atlético San Lorenzo de Almagro,"Jan 2, 1993 (25)",25,right,17.0,0.07999999821186066,0.0,0.08,0.0,0.02,1.71,450.0
+423,39479.0,Eugenio Mena,Squad Racing Club,"Jul 18, 1988 (30)",30,left,5.0,0.07999999821186066,0.08,0.16,0.0,0.02,1.71,806.45
+424,145031.0,Julián Vitale,Squad Club Atlético San Martín (Tucumán),"Jun 21, 1995 (23)",23,right,15.0,0.07999999821186066,0.0,0.08,0.0,0.02,0.34,387.57
+425,126655.0,Emanuel Reynoso,Squad Club Atlético Boca Juniors,"Nov 16, 1995 (23)",23,left,30.0,0.07999999821186066,0.0,0.08,0.0,0.08,6.86,85.07
+426,56290.0,Pablo Magnín,Squad Club Atlético San Martín (SJ),"Apr 25, 1990 (28)",28,right,11.0,0.07999999821186066,0.08,0.16,0.0,0.26,0.23,54.47
+427,173026.0,Matías Nani,Squad Club Atlético Belgrano,"Mar 26, 1998 (20)",20,left,6.0,0.07999999821186066,0.0,0.08,0.0,0.02,0.09,450.0
+428,51917.0,Facundo Quignón,Squad Club Atlético Lanús,"May 2, 1993 (25)",25,left,19.0,0.07999999821186066,0.0,0.08,0.0,0.01,2.29,571.25
+429,20311.0,Matías Ibáñez,Squad Club Atlético Lanús,"Dec 16, 1986 (31)",31,right,12.0,0.07999999821186066,0.08,0.16,0.0,0.02,0.57,630.0
+430,89002.0,Lautaro Geminiani,Squad Club Atlético Patronato de la Juventud Católica,"Mar 2, 1991 (27)",27,right,4.0,0.07999999821186066,0.0,0.08,0.0,0.01,0.29,630.0
+431,208434.0,Maximiliano Martínez,Squad Club Atlético San Martín (Tucumán),"Sep 1, 1992 (26)",26,left,3.0,0.07000000029802322,0.0,0.07,0.0,0.01,,920.45
+432,106104.0,Víctor Salazar,Squad Club Atlético San Lorenzo de Almagro,"May 26, 1993 (25)",25,right,29.0,0.07000000029802322,0.07,0.14,0.0,0.01,1.44,881.12
 433,200953.0,Matías Ruiz Díaz,Squad Club Estudiantes de La Plata,"Sep 9, 1996 (22)",22,right,20.0,0.07000000029802322,0.07,0.14,0.0,0.14,0.17,90.0
-434,46432.0,Milton Casco,Squad Club Atlético River Plate,"Apr 11, 1988 (30)",30,right,20.0,0.07000000029802322,0.07,0.14,0.0,0.028000000000000004,1.14,450.0
-435,208534.0,Francisco Ortega,Squad Club Atlético Vélez Sarsfield,"Feb 19, 1999 (19)",19,left,34.0,0.07000000029802322,0.07,0.14,0.0,0.035,0.46,360.0
-436,155.0,Neri Cardozo,Squad Racing Club,"Aug 8, 1986 (32)",32,left,19.0,0.07000000029802322,0.07,0.14,0.0,0.04054271464578753,2.06,310.78333333333336
-437,16658.0,Diego Arismendi,Squad Club Atlético Rosario Central,"Jan 25, 1988 (30)",30,right,14.0,0.07000000029802322,0.07,0.14,0.0,0.14911242603550298,0.57,84.5
-438,15839.0,Juan Quiroga,Squad Club Atlético Belgrano,"Apr 20, 1982 (36)",36,left,29.0,0.07000000029802322,0.0,0.07,0.0,0.00886845130563311,0.06,710.3833333333333
-439,30724.0,José Fernández,Squad Club Atlético Rosario Central,"Oct 26, 1987 (31)",31,left,11.0,0.07000000029802322,0.07,0.14,0.0,0.16958277254374163,0.91,74.3
+434,46432.0,Milton Casco,Squad Club Atlético River Plate,"Apr 11, 1988 (30)",30,right,20.0,0.07000000029802322,0.07,0.14,0.0,0.03,1.14,450.0
+435,208534.0,Francisco Ortega,Squad Club Atlético Vélez Sarsfield,"Feb 19, 1999 (19)",19,left,34.0,0.07000000029802322,0.07,0.14,0.0,0.04,0.46,360.0
+436,155.0,Neri Cardozo,Squad Racing Club,"Aug 8, 1986 (32)",32,left,19.0,0.07000000029802322,0.07,0.14,0.0,0.04,2.06,310.78
+437,16658.0,Diego Arismendi,Squad Club Atlético Rosario Central,"Jan 25, 1988 (30)",30,right,14.0,0.07000000029802322,0.07,0.14,0.0,0.15,0.57,84.5
+438,15839.0,Juan Quiroga,Squad Club Atlético Belgrano,"Apr 20, 1982 (36)",36,left,29.0,0.07000000029802322,0.0,0.07,0.0,0.01,0.06,710.38
+439,30724.0,José Fernández,Squad Club Atlético Rosario Central,"Oct 26, 1987 (31)",31,left,11.0,0.07000000029802322,0.07,0.14,0.0,0.17,0.91,74.3
 440,58039.0,Leandro Sapetti,Squad Club Atlético Aldosivi,"Jan 30, 1989 (29)",29,left,26.0,0.07000000029802322,0.0,0.07,0.0,0.07,0.34,90.0
-441,192402.0,Tomás Attis,Squad Club Atlético Belgrano,"Oct 2, 1999 (19)",19,right,28.0,0.07000000029802322,0.0,0.07,0.0,0.07248322147651007,0.17,86.91666666666667
-442,1118.0,Leonardo Ponzio,Squad Club Atlético River Plate,"Jan 29, 1982 (36)",36,right,23.0,0.05999999865889549,0.0,0.06,0.0,0.016290411785409017,0.86,331.48333333333335
-443,163540.0,Carlo Lattanzio,Squad Club Estudiantes de La Plata,"Jul 25, 1997 (21)",21,left,30.0,0.05999999865889549,0.0,0.06,0.0,0.037422037422037424,0.29,144.29999999999998
-444,16056.0,Facundo Oreja,Squad Club de Gimnasia y Esgrima La Plata,"Jun 14, 1982 (36)",36,right,4.0,0.05999999865889549,0.0,0.06,0.0,0.008107702317201341,0.17,666.0333333333333
-445,173028.0,Gabriel Carrasco,Squad Club Atlético Lanús,"Mar 7, 1997 (21)",21,right,27.0,0.05999999865889549,0.06,0.12,0.0,0.12,0.46,90.0
-446,193908.0,Tomás Guidara,Squad Club Atlético Belgrano,"Mar 13, 1996 (22)",22,right,4.0,0.05999999865889549,0.06,0.12,0.0,0.012,1.44,900.0
-447,79279.0,Gianni Rodríguez,Squad Club Atlético San Martín (SJ),"Jun 7, 1994 (24)",24,left,17.0,0.05000000074505806,0.0,0.05,0.0,0.012254901960784314,0.26,367.2
-448,29319.0,Lucas Ceballos,Squad Club Atlético Patronato de la Juventud Católica,"Jan 3, 1987 (31)",31,right,3.0,0.05000000074505806,0.0,0.05,0.0,0.00842512559677973,0.57,534.1166666666667
-449,168681.0,Gonzalo Montiel,Squad Club Atlético River Plate,"Jan 1, 1997 (21)",21,right,29.0,0.05000000074505806,0.05,0.1,0.0,0.03333333333333333,2.29,270.0
-450,215759.0,Franco Sivetti,Squad Club Estudiantes de La Plata,"May 30, 1998 (20)",20,-,27.0,0.05000000074505806,0.05,0.1,0.0,0.04979712283290299,,180.73333333333335
-451,174331.0,Francis Mac Allister,Squad Asociación Atlética Argentinos Juniors,"Oct 30, 1995 (23)",23,right,5.0,0.05000000074505806,0.05,0.1,0.0,0.05951068988318273,0.86,151.23333333333332
-452,127048.0,Ezequiel Bonifacio,Squad Club de Gimnasia y Esgrima La Plata,"May 9, 1994 (24)",24,right,6.0,0.05000000074505806,0.0,0.05,0.0,0.0080857690464782,0.57,556.5333333333333
-453,196097.0,Agustín Verdugo,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Sep 18, 1997 (21)",21,right,26.0,0.05000000074505806,0.05,0.1,0.0,0.02888627367069648,0.46,311.56666666666666
-454,24484.0,Damián Lemos,Squad Club Atlético Patronato de la Juventud Católica,"Jan 31, 1989 (29)",29,right,24.0,0.05000000074505806,0.05,0.1,0.0,0.010648787221455335,0.29,845.1666666666667
-455,3173.0,Gonzalo Prósperi,Squad Club Atlético San Martín (SJ),"Sep 28, 1985 (33)",33,right,4.0,0.05000000074505806,0.05,0.1,0.0,0.04686686339177226,0.29,192.03333333333333
-456,33966.0,Sebastián Luna,Squad Club Atlético Belgrano,"Dec 25, 1987 (30)",30,left,21.0,0.05000000074505806,0.0,0.05,0.0,0.007100965205270494,0.46,633.7166666666667
-457,61.0,Gastón Machín,Squad Asociación Atlética Argentinos Juniors,"Feb 23, 1983 (35)",35,right,8.0,0.03999999910593033,0.04,0.08,0.0,0.010044409309679371,0.23,716.8166666666666
-458,182947.0,Juan Andrada,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Jan 4, 1995 (23)",23,right,30.0,0.03999999910593033,0.0,0.04,0.0,0.013524513180139001,1.14,266.18333333333334
-459,204820.0,Leonel Ferroni,Squad Club Atlético Newell's Old Boys,"Jan 29, 1996 (22)",22,left,20.0,0.03999999910593033,0.04,0.08,0.0,0.022185702547247332,0.17,324.5333333333333
-460,100730.0,Oscar Cabezas,Squad Club Atlético Rosario Central,"Dec 22, 1996 (21)",21,left,26.0,0.03999999910593033,0.0,0.04,0.0,0.006153144940747494,0.57,585.0666666666666
-461,49599.0,Emiliano Albín,Squad Club Atlético San Martín (Tucumán),"Jan 24, 1989 (29)",29,right,24.0,0.03999999910593033,0.0,0.04,0.0,0.02290804963410754,0.29,157.15
-462,169452.0,Luciano Perdomo,Squad Club de Gimnasia y Esgrima La Plata,"Sep 10, 1996 (22)",22,right,38.0,0.03999999910593033,0.0,0.04,0.0,0.017084552716918455,0.57,210.71666666666664
-463,81332.0,Gastón Gil Romero,Squad Club Atlético Belgrano,"May 6, 1993 (25)",25,right,8.0,0.03999999910593033,0.04,0.08,0.0,0.015104366980175522,0.57,476.6833333333333
-464,113707.0,Julián Chicco,Squad Club Atlético Boca Juniors,"Jan 13, 1998 (20)",20,right,40.0,0.03999999910593033,0.04,0.08,0.0,0.04129624318898766,0.69,174.35000000000002
-465,2132.0,Pablo Guiñazú,Squad Club Atlético Talleres,"Aug 26, 1978 (40)",40,left,5.0,0.03999999910593033,0.0,0.04,0.0,0.00316001989642157,0.46,1139.2333333333333
-466,153268.0,Nicolás Delgadillo,Squad Club Atlético Vélez Sarsfield,"Oct 2, 1997 (21)",21,left,33.0,0.03999999910593033,0.04,0.08,0.0,0.05780810919309514,1.14,124.55000000000001
-467,186634.0,Matías Fonseca,Squad Club Atlético Patronato de la Juventud Católica,"Oct 4, 1995 (23)",23,right,41.0,0.03999999910593033,0.0,0.04,0.0,0.10241820768136561,,35.14999999999999
+441,192402.0,Tomás Attis,Squad Club Atlético Belgrano,"Oct 2, 1999 (19)",19,right,28.0,0.07000000029802322,0.0,0.07,0.0,0.07,0.17,86.92
+442,1118.0,Leonardo Ponzio,Squad Club Atlético River Plate,"Jan 29, 1982 (36)",36,right,23.0,0.059999998658895486,0.0,0.06,0.0,0.02,0.86,331.48
+443,163540.0,Carlo Lattanzio,Squad Club Estudiantes de La Plata,"Jul 25, 1997 (21)",21,left,30.0,0.059999998658895486,0.0,0.06,0.0,0.04,0.29,144.3
+444,16056.0,Facundo Oreja,Squad Club de Gimnasia y Esgrima La Plata,"Jun 14, 1982 (36)",36,right,4.0,0.059999998658895486,0.0,0.06,0.0,0.01,0.17,666.03
+445,173028.0,Gabriel Carrasco,Squad Club Atlético Lanús,"Mar 7, 1997 (21)",21,right,27.0,0.059999998658895486,0.06,0.12,0.0,0.12,0.46,90.0
+446,193908.0,Tomás Guidara,Squad Club Atlético Belgrano,"Mar 13, 1996 (22)",22,right,4.0,0.059999998658895486,0.06,0.12,0.0,0.01,1.44,900.0
+447,79279.0,Gianni Rodríguez,Squad Club Atlético San Martín (SJ),"Jun 7, 1994 (24)",24,left,17.0,0.05000000074505806,0.0,0.05,0.0,0.01,0.26,367.2
+448,29319.0,Lucas Ceballos,Squad Club Atlético Patronato de la Juventud Católica,"Jan 3, 1987 (31)",31,right,3.0,0.05000000074505806,0.0,0.05,0.0,0.01,0.57,534.12
+449,168681.0,Gonzalo Montiel,Squad Club Atlético River Plate,"Jan 1, 1997 (21)",21,right,29.0,0.05000000074505806,0.05,0.1,0.0,0.03,2.29,270.0
+450,215759.0,Franco Sivetti,Squad Club Estudiantes de La Plata,"May 30, 1998 (20)",20,-,27.0,0.05000000074505806,0.05,0.1,0.0,0.05,,180.73
+451,174331.0,Francis Mac Allister,Squad Asociación Atlética Argentinos Juniors,"Oct 30, 1995 (23)",23,right,5.0,0.05000000074505806,0.05,0.1,0.0,0.06,0.86,151.23
+452,127048.0,Ezequiel Bonifacio,Squad Club de Gimnasia y Esgrima La Plata,"May 9, 1994 (24)",24,right,6.0,0.05000000074505806,0.0,0.05,0.0,0.01,0.57,556.53
+453,196097.0,Agustín Verdugo,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Sep 18, 1997 (21)",21,right,26.0,0.05000000074505806,0.05,0.1,0.0,0.03,0.46,311.57
+454,24484.0,Damián Lemos,Squad Club Atlético Patronato de la Juventud Católica,"Jan 31, 1989 (29)",29,right,24.0,0.05000000074505806,0.05,0.1,0.0,0.01,0.29,845.17
+455,3173.0,Gonzalo Prósperi,Squad Club Atlético San Martín (SJ),"Sep 28, 1985 (33)",33,right,4.0,0.05000000074505806,0.05,0.1,0.0,0.05,0.29,192.03
+456,33966.0,Sebastián Luna,Squad Club Atlético Belgrano,"Dec 25, 1987 (30)",30,left,21.0,0.05000000074505806,0.0,0.05,0.0,0.01,0.46,633.72
+457,61.0,Gastón Machín,Squad Asociación Atlética Argentinos Juniors,"Feb 23, 1983 (35)",35,right,8.0,0.03999999910593033,0.04,0.08,0.0,0.01,0.23,716.82
+458,182947.0,Juan Andrada,Squad Club Deportivo Godoy Cruz Antonio Tomba,"Jan 4, 1995 (23)",23,right,30.0,0.03999999910593033,0.0,0.04,0.0,0.01,1.14,266.18
+459,204820.0,Leonel Ferroni,Squad Club Atlético Newell's Old Boys,"Jan 29, 1996 (22)",22,left,20.0,0.03999999910593033,0.04,0.08,0.0,0.02,0.17,324.53
+460,100730.0,Oscar Cabezas,Squad Club Atlético Rosario Central,"Dec 22, 1996 (21)",21,left,26.0,0.03999999910593033,0.0,0.04,0.0,0.01,0.57,585.07
+461,49599.0,Emiliano Albín,Squad Club Atlético San Martín (Tucumán),"Jan 24, 1989 (29)",29,right,24.0,0.03999999910593033,0.0,0.04,0.0,0.02,0.29,157.15
+462,169452.0,Luciano Perdomo,Squad Club de Gimnasia y Esgrima La Plata,"Sep 10, 1996 (22)",22,right,38.0,0.03999999910593033,0.0,0.04,0.0,0.02,0.57,210.72
+463,81332.0,Gastón Gil Romero,Squad Club Atlético Belgrano,"May 6, 1993 (25)",25,right,8.0,0.03999999910593033,0.04,0.08,0.0,0.02,0.57,476.68
+464,113707.0,Julián Chicco,Squad Club Atlético Boca Juniors,"Jan 13, 1998 (20)",20,right,40.0,0.03999999910593033,0.04,0.08,0.0,0.04,0.69,174.35
+465,2132.0,Pablo Guiñazú,Squad Club Atlético Talleres,"Aug 26, 1978 (40)",40,left,5.0,0.03999999910593033,0.0,0.04,0.0,0.0,0.46,1139.23
+466,153268.0,Nicolás Delgadillo,Squad Club Atlético Vélez Sarsfield,"Oct 2, 1997 (21)",21,left,33.0,0.03999999910593033,0.04,0.08,0.0,0.06,1.14,124.55
+467,186634.0,Matías Fonseca,Squad Club Atlético Patronato de la Juventud Católica,"Oct 4, 1995 (23)",23,right,41.0,0.03999999910593033,0.0,0.04,0.0,0.1,,35.15
 468,169461.0,Brian Blasi,Squad Club Atlético Unión (Santa Fe),"Feb 8, 1996 (22)",22,right,17.0,0.03999999910593033,0.04,0.08,0.0,0.08,0.29,90.0
-469,106024.0,Agustín Sandona,Squad Club Atlético Patronato de la Juventud Católica,"May 1, 1993 (25)",25,right,34.0,0.03999999910593033,0.0,0.04,0.0,0.006666666666666667,0.34,540.0
+469,106024.0,Agustín Sandona,Squad Club Atlético Patronato de la Juventud Católica,"May 1, 1993 (25)",25,right,34.0,0.03999999910593033,0.0,0.04,0.0,0.01,0.34,540.0
