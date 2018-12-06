@@ -24,8 +24,13 @@ df_facts = pd.DataFrame(['League: Argentina Super Liga', 'Teams: 26', 'Players: 
 xg_df = pd.read_csv('xgboost_table.csv') #complete table
 xg_df.drop(columns=['Unnamed: 0'], inplace=True)
 
-top_scorers = xg_df.sort_values(by=['goals'], ascending=False).copy() #top 20 scorers
-top_contributors = xg_df.sort_values(by=['total_xG+xA'], ascending=False).copy() #top 20 total xG + xA
+top_scorers = xg_df.sort_values(by=['goals'], ascending=False).head(20).copy() #top 20 scorers
+top_scorers_dict = {'Top 20 Scorers': {'Shots Per Game': 2.21, 'Average xG/Attempt': 0.16, 'Average Distance/Attempt (yards)': 16.19},
+                    'Rest of League': {'Shots Per Game': 1.5, 'Average xG/Attempt': 0.13, 'Average Distance/Attempt (yards)': 17.99}}
+top_sc_comp = pd.DataFrame(top_scorers_dict)
+
+
+top_contributors = xg_df.sort_values(by=['total_xG+xA'], ascending=False).head(20).copy() #top 20 total xG + xA
 top_per_90 = xg_df[xg_df['total_minutes_played'] > 500].sort_values(by=['xG+xA/90'], ascending=False).copy() #per 90
 young_top_20 = xg_df[(xg_df['transfer_value(USD)'] < 8) & (xg_df['total_minutes_played'] >= 300 ) & (xg_df['age'] <= 25)].sort_values(by=['xG+xA/90'], ascending=False).head(20).copy()
 
@@ -38,7 +43,7 @@ overview = html.Div([  # page 1
         html.Div([
             Header(),
 
-            # Row 3
+            # Row 1
             html.Div([
 
                 html.Div([
@@ -73,7 +78,7 @@ overview = html.Div([  # page 1
             html.Div([
 
                 html.Div([
-                    html.H6('Shots and Goals', # need to insert static image   
+                    html.H6('xG vs Actual Goals', # need to insert static image   
                             className="gs-header gs-text-header padded"),
                     dcc.Graph(
                         id = "graph-1",
@@ -153,66 +158,76 @@ overview = html.Div([  # page 1
                 ], className="six columns"),
 
                 html.Div([
-                    html.H6("Shot Data",  #input static image of makes and misses    
+                    html.H6("Average xG of Different Events",  #input static image of makes and misses    
                             className="gs-header gs-table-header padded"),
                     dcc.Graph(
                         id="graph-2",
                         figure={
                             'data': [
-                                go.Scatter(
-                                    x = ["2008", "2009", "2010", "2011", "2012", "2013", "2014", "2015", "2016", "2017", "2018"],
-                                    y = ["10000", "7500", "9000", "10000", "10500", "11000", "14000", "18000", "19000", "20500", "24000"],
-                                    line = {"color": "rgb(53, 83, 255)"},
-                                    mode = "lines",
-                                    name = "500 Index Fund Inv"
-                                )
+                                go.Bar(
+                                    x = ["Goal", "Assisted Attempt", "Penalty Attempt"],
+                                    y = ["0.22", "0.12", "0.74"],
+                                    marker = {
+                                      "color": "rgb(53, 83, 255)",
+                                      "line": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "width": 2
+                                      }
+                                    },
+                                    name = "Event True"
+                                ),
+                                go.Bar(
+                                    x = ["Goal", "Assisted Attempt", "Penalty Attempt"],
+                                    y = ["0.11", "0.11", "0.12"],
+                                    marker = {
+                                      "color": "rgb(255, 225, 53)",
+                                      "line": {
+                                        "color": "rgb(255, 255, 255)",
+                                        "width": 2
+                                        }
+                                    },
+                                    name = "Event False"
+                                ),
                             ],
                             'layout': go.Layout(
                                 autosize = False,
-                                title = "",
+                                bargap = 0.35,
                                 font = {
                                   "family": "Raleway",
                                   "size": 10
                                 },
                                 height = 200,
-                                width = 340,
                                 hovermode = "closest",
                                 legend = {
-                                  "x": -0.0277108433735,
-                                  "y": -0.142606516291,
-                                  "orientation": "h"
+                                  "x": -0.0228945952895,
+                                  "y": -0.189563896463,
+                                  "orientation": "h",
+                                  "yanchor": "top"
                                 },
                                 margin = {
-                                  "r": 20,
+                                  "r": 0,
                                   "t": 20,
-                                  "b": 20,
-                                  "l": 50
+                                  "b": 10,
+                                  "l": 10
                                 },
                                 showlegend = True,
+                                title = "",
+                                width = 340,
                                 xaxis = {
                                   "autorange": True,
-                                  "linecolor": "rgb(0, 0, 0)",
-                                  "linewidth": 1,
-                                  "range": [2008, 2018],
-                                  "showgrid": False,
+                                  "range": [-0.5, 4.5],
                                   "showline": True,
                                   "title": "",
-                                  "type": "linear"
+                                  "type": "category"
                                 },
                                 yaxis = {
-                                  "autorange": False,
-                                  "gridcolor": "rgba(127, 127, 127, 0.2)",
-                                  "mirror": False,
-                                  "nticks": 4,
-                                  "range": [0, 30000],
+                                  "autorange": True,
+                                  "range": [0, 1],
                                   "showgrid": True,
                                   "showline": True,
-                                  "ticklen": 10,
-                                  "ticks": "outside",
-                                  "title": "$",
+                                  "title": "",
                                   "type": "linear",
-                                  "zeroline": False,
-                                  "zerolinewidth": 4
+                                  "zeroline": False
                                 }
                             )
                         },
@@ -237,6 +252,43 @@ top_scorers = html.Div([  # page 2
 
         html.Div([
             Header(),
+
+            html.Div([
+
+                html.Div([
+                    html.H6('Top Scorers',
+                            className="gs-header gs-text-header padded"),
+
+                    html.Br([]),
+
+                    html.P("\
+                            The xG model is a way to measure each player's contribution \
+                            to the rare events that occur in a soccer game. \
+                            While goals and assists are a concrete representation of a \
+                            player's production, the expected goals (xG) and expected \
+                            assists (xA) model tries to better evaluate a player by \
+                            calculating the probability of successful events. By doing so,  \
+                            and comparing these metrics to their proposed transfer value \
+                            (via Transfer Market) and age, high value or high potential players  \
+                            may be identified for a potentially transfer to the MLS"),
+
+                ], className="six columns"),
+
+                html.Div([
+                    html.H6(["Comparing Top 20 Scorers vs Rest of League"],
+                            className="gs-header gs-table-header padded"),
+                    dash_table.DataTable(
+                        id='Top 20 Scorer Comparison',
+                        columns=[{"name": i, "id": i} for i in top_sc_comp.columns],
+                        data=top_sc_comp.to_dict("rows"),
+                        style_cell_conditional=[{
+                        'if': {'row_index': 'odd'},
+                        'backgroundColor': 'rgb(248, 248, 248)'
+                    }]
+                    )
+                ], className="six columns"),
+
+            ], className="row "),
 
             html.Div([
 
@@ -462,6 +514,8 @@ def display_page(pathname):
         return per_90
     elif pathname == '/argentina_superliga/gems':
         return gems
+    # elif pathname == '/argentina_superliga/notable_transfers':
+    #     return transfers
     elif pathname == '/argentina_superliga/about':
         return about
     else:
