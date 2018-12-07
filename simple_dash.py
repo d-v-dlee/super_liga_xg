@@ -12,8 +12,11 @@ import pandas as pd
 from flask_functions import create_scrollable_table, generate_table
 import dash_table
 
-image_filename = 'all_shots.png' # replace with your own image
+image_filename = 'all_shots_final.jpg' # replace with your own image
 encoded_image = base64.b64encode(open(image_filename, 'rb').read())
+
+image_filename1 = 'shot_compare.jpg'
+encoded_image1 = base64.b64encode(open(image_filename1, 'rb').read())
 
 app = dash.Dash(__name__)
 server = app.server
@@ -322,6 +325,7 @@ top_scorers = html.Div([  # page 2
                         'selector': '.dash-cell div.dash-cell-value',
                         'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
                     }],
+                        style_header={'fontWeight': 'bold'},
                         style_data_conditional=[{
                     'if': {'column_id': 'goals'},
                     'backgroundColor': '#3D9970',
@@ -329,11 +333,36 @@ top_scorers = html.Div([  # page 2
                         n_fixed_columns=2,
                         # style_cell={'textAlign': 'right'},
                         style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
-                                    'maxHeight': '300'},
+                                    'maxHeight': '150'},
                         style_data={'whiteSpace': 'normal'}),
                     ], className="twelve columns")
 
             ], className="row "),
+
+            html.Div([
+
+                html.Div([
+                    html.H6('Shot Map',
+                            className="gs-header gs-table-header padded"),
+                    html.Img(src='data:image/png;base64,{}'.format(encoded_image1.decode()))
+                ], className="twelve columns"),
+
+            ], className="row "),
+
+            # html.Div([
+            #         html.H6('xG vs Goals',
+            #                 className="gs-header gs-text-header padded"),
+
+            #         html.Br([]),
+
+            #         html.P("\
+            #                 Here we have the shot charts of Darío Cvitanich and Matías Rojas.  \
+            #                 Although they both have scored five goals, Cvitanich has an xG of  \
+            #                 4.73 while Rojas has an xG of 1.49. From the shot charts, you can see that  \
+            #                 Darío Cvitanich's shot attempts appear closer to the goal, with \
+            #                 a many of them near the center of the 18-yard box."),
+
+            #     ], className="six columns"),
 
             # html.Div([
 
@@ -395,6 +424,7 @@ total_contributions = html.Div([ # page 3
                     'if': {'column_id': 'total_xG+xA'},
                     'backgroundColor': '#3D9970',
                     'color': 'white', }],
+                        style_header={'fontWeight': 'bold'},
                         n_fixed_columns=2,
                         # style_cell={'textAlign': 'right'},
                         style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
@@ -436,6 +466,7 @@ per_90 = html.Div([ # page 4
                     'backgroundColor': '#3D9970',
                     'color': 'white', }],
                         n_fixed_columns=2,
+                        style_header={'fontWeight': 'bold'},
                         # style_cell={'textAlign': 'right'},
                         style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
                                     'maxHeight': '300'},
@@ -465,6 +496,7 @@ gems = html.Div([ # page 5
                         id = 'Top Youngsters',
                         columns=[{"name": i, "id": i} for i in young_top_20.columns],
                         data=young_top_20.to_dict("rows"),
+                        style_header={'fontWeight': 'bold'},
                         css=[{
                         'selector': '.dash-cell div.dash-cell-value',
                         'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
