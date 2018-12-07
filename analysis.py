@@ -33,6 +33,33 @@ def plot_shot_map(df):
     img1 = mpimg.imread('data/soccer_field.jpg')
     imgplot = plt.imshow(img1)
     ax = plt.gca()
-    ax.scatter((df[df['is_goal']==0]['shot_coord_x1'] * 7.32 + 50), (df[df['is_goal']==0]['shot_coord_y1'] * 6.58 + 250), alpha=0.2, color='blue', linewidths=0.1)
-    ax.scatter(df[df['is_goal']==1]['shot_coord_x1'] * 7.32 + 50, df[df['is_goal']==1]['shot_coord_y1'] * 6.58 + 250, alpha=0.5, color='red', linewidths=0.1)
+    ax.scatter((df[df['is_goal']==0]['shot_coord_x1'] * 6 + 50), (df[df['is_goal']==0]['shot_coord_y1'] * 6.58 + 250), alpha=0.2, color='blue', linewidths=0.1)
+    ax.scatter(df[df['is_goal']==1]['shot_coord_x1'] * 6 + 50, df[df['is_goal']==1]['shot_coord_y1'] * 6.58 + 250, alpha=0.5, color='red', linewidths=0.1)
 
+def individual_shot_map(shots_df, player_id, name, xG, goals):
+    """input shots_df and player_id and return shot chart for individual player
+    multiply coordinate system by 6 instead of 7.32 for distance and representation
+    normally 7.32, here 6"""
+
+    player_df = shots_df[shots_df['player_id'] == player_id ]
+    
+    img1 = mpimg.imread('data/soccer_field.jpg')
+    imgplot = plt.imshow(img1)
+    ax = plt.gca()
+    ax.scatter(player_df[player_df['is_goal']==1]['shot_coord_x1'] * 6 + 50, player_df[player_df['is_goal']==1]['shot_coord_y1'] * 6.58 + 250, alpha=0.5, color='red', marker='o' )
+    ax.scatter((player_df[player_df['shot_type']==33]['shot_coord_x1'] * 6 + 50), (player_df[player_df['shot_type']==33]['shot_coord_y1'] * 6.58 + 250), alpha=0.4, color='blue', marker='^')
+    ax.scatter((player_df[player_df['shot_type']==35]['shot_coord_x1'] * 6 + 50), (player_df[player_df['shot_type']==35]['shot_coord_y1'] * 6.58 + 250), alpha=0.4, color='blue', marker='v')
+    ax.scatter((player_df[player_df['shot_type']==34]['shot_coord_x1'] * 6 + 50), (player_df[player_df['shot_type']==34]['shot_coord_y1'] * 6.58 + 250), alpha=0.4, color='blue', marker='>')
+    ax.set_title(f'{name}')
+    ax.annotate(f'xG: {xG}, Goals: {goals}', (400, 400))
+    ax.legend(labels=['Goal', 'Shot on Target', 'Shot off Target', 'Post'])
+    # imgplot.figure.savefig('top_shots.png')
+
+def plot_goals_map(df):
+    """input shot df and show shots by color or marks
+    multiply coordinates by 6 instead of 7.32"""
+    img1 = mpimg.imread('data/soccer_field.jpg')
+    imgplot = plt.imshow(img1)
+    ax = plt.gca()
+    # ax.scatter((df[df['is_goal']==0]['shot_coord_x1'] * 7.32 + 50), (df[df['is_goal']==0]['shot_coord_y1'] * 6.58 + 250), alpha=0.2, color='blue', linewidths=0.1)
+    ax.scatter(df[df['is_goal']==1]['shot_coord_x1'] * 6 + 50, df[df['is_goal']==1]['shot_coord_y1'] * 6.58 + 250, alpha=0.5, color='red', linewidths=0.1)
