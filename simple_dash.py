@@ -472,7 +472,7 @@ per_90 = html.Div([ # page 4
             html.Div([
 
                 html.Div([
-                    html.H6("xG + xA per 90 Minutes vs Transfer Value",
+                    html.H6("xG + xA per 90 Minutes vs Transfer Value (Minimum 300 Minutes)",
                             className="gs-header gs-table-header padded"),
                     dcc.Graph(
                         id='xG+xA/90 vs. transfer_value',
