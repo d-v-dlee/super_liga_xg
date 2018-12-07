@@ -4,7 +4,7 @@ from model_prep import player_minutes_total
 from dataframe_cleaner import transfer_markt_cleaner
 
 def player_minutes_value(games, players):
-    columns = ['player_id', 'player_name', 'club', 'birthday', 'age', 'foot', 'squad_num',
+    columns = ['player_id', 'player_name', 'club', 'birthday', 'age', 'foot', 'position_id', 'squad_num',
            'height', 'total_minutes_played', 'transfer_value(sterlings)', 'transfer_value(USD)']
     
     players_minutes_df = create_master_player_min_df(games)

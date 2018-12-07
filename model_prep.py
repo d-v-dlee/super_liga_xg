@@ -157,9 +157,9 @@ def player_minutes_total(players_minutes_df):
         name = players_minutes_df[players_minutes_df['player_id'] == player]['name'].iloc[0]
         squad_num = players_minutes_df[players_minutes_df['player_id'] == player]['squad_number'].iloc[0]
         club_brev = players_minutes_df[players_minutes_df['player_id'] == player]['club_brev'].iloc[0]
-        player_minutes.append([player, total_minutes, name, squad_num, club_brev])
-        
-    summed_player_min = pd.DataFrame(player_minutes, columns=['player_id', 'total_minutes_played', 'player_name', 'squad_num', 'club_brev'])
+        position_id = players_minutes_df[players_minutes_df['player_id'] == player]['position_id'].iloc[0]
+        player_minutes.append([player, total_minutes, name, squad_num, club_brev, position_id])
+    summed_player_min = pd.DataFrame(player_minutes, columns=['player_id', 'total_minutes_played', 'player_name', 'squad_num', 'club_brev', 'position_id'])
     return summed_player_min
 
 
