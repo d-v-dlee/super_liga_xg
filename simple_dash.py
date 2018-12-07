@@ -171,7 +171,7 @@ overview = html.Div([  # page 1
                         figure={
                             'data': [
                                 go.Bar(
-                                    x = ["Goal", "Assisted Attempt", "Penalty Attempt"],
+                                    x = ["Goal (non-pen)", "Assisted Attempt", "Penalty Attempt"],
                                     y = ["0.22", "0.12", "0.74"],
                                     marker = {
                                       "color": "rgb(53, 83, 255)",
@@ -183,7 +183,7 @@ overview = html.Div([  # page 1
                                     name = "Event True"
                                 ),
                                 go.Bar(
-                                    x = ["Goal", "Assisted Attempt", "Penalty Attempt"],
+                                    x = ["Goal (non-pen)", "Assisted Attempt", "Penalty Attempt"],
                                     y = ["0.11", "0.11", "0.12"],
                                     marker = {
                                       "color": "rgb(255, 225, 53)",
@@ -333,7 +333,7 @@ top_scorers = html.Div([  # page 2
                         n_fixed_columns=2,
                         # style_cell={'textAlign': 'right'},
                         style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
-                                    'maxHeight': '150'},
+                                    'maxHeight': '150', 'maxWidth': '800'},
                         style_data={'whiteSpace': 'normal'}),
                     ], className="twelve columns")
 
@@ -349,51 +349,7 @@ top_scorers = html.Div([  # page 2
 
             ], className="row "),
 
-            # html.Div([
-            #         html.H6('xG vs Goals',
-            #                 className="gs-header gs-text-header padded"),
-
-            #         html.Br([]),
-
-            #         html.P("\
-            #                 Here we have the shot charts of Darío Cvitanich and Matías Rojas.  \
-            #                 Although they both have scored five goals, Cvitanich has an xG of  \
-            #                 4.73 while Rojas has an xG of 1.49. From the shot charts, you can see that  \
-            #                 Darío Cvitanich's shot attempts appear closer to the goal, with \
-            #                 a many of them near the center of the 18-yard box."),
-
-            #     ], className="six columns"),
-
-            # html.Div([
-
-            #     html.Div([
-            #         html.H6("Top Goal Scorers",
-            #                 className="gs-header gs-table-header padded"),
-            #         dash_table.DataTable(
-            #             id = 'Top 5 Scorers',
-            #             columns=[{"name": i, "id": i} for i in top_scorers.columns],
-            #             data=top_scorers.to_dict("rows"),
-            #             n_fixed_columns=2,
-            #             style_data_conditional=[{
-            #         'if': {'column_id': 'goals'},
-            #         'backgroundColor': '#3D9970',
-            #         'color': 'white', }],
-            #             css=[{
-            #             'selector': '.dash-cell div.dash-cell-value',
-            #             'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
-            #         }],
-            #             # style_cell={'textAlign': 'right'},
-            #             style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
-            #                         'maxHeight': '300'},
-            #             style_data={'whiteSpace': 'normal'},
-            #             # css=[{
-            #             #     'selector': '.dash-cell div.dash-cell-value',
-            #             #     'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
-            #             # }]
-            #         )
-            #     ], className="twelve columns"),
-
-            # ], className="row "),
+            
 
         ], className="subpage")
 
@@ -406,6 +362,43 @@ total_contributions = html.Div([ # page 3
             Header(),
 
             # Row 1
+
+            html.Div([
+                    html.Div([
+                        html.H6('Goal Creators',
+                            className="gs-header gs-text-header padded"),
+
+                    html.Br([]),
+
+                    html.P("\
+                            Shown below is the table of the top 20 contributors in terms \
+                            of combined xG + xA. Out of 20 players in the top scoring   \
+                            list, eight players also make the top 20 of total xG + xA  \
+                            contributions. Through xG + xA, we see that players like Franco Soldano  \
+                            and Germán Herrera have contributed a total of 6.52 and 5.35  \
+                            worth of goal contributions, despite only scoring two goals."),  
+
+                ], className="six columns"),
+
+                    html.Div([html.H6('Contributing',
+                            className="gs-header gs-text-header padded"),
+
+                    html.Br([]),
+
+                    html.P("\
+                            The eight players who are top 20 in combined xG + xA but not \
+                            in the top 20 in scoring include Carlos Tevez, Claudio Bieler, \
+                            Franco Soldano, Germán Herrera, Jonatan Cristaldo, Leonardo Sequeira \
+                            Luís Leal, Mariano Pavone, Nicolás Fernández, Nicolás Reniero, \
+                            Santiago García and Sebastián Ribas. Despite none of them scoring \
+                            over 3 goals, the eight players have created an expected value of 4.97  \
+                            goals through shots and passes."),
+                            
+                ], className="six columns"),
+
+            ],  className="row"),
+            
+            #Row 2
 
             html.Div([
 
@@ -428,7 +421,7 @@ total_contributions = html.Div([ # page 3
                         n_fixed_columns=2,
                         # style_cell={'textAlign': 'right'},
                         style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
-                                    'maxHeight': '300'},
+                                    'maxHeight': '300', 'maxWidth': '800'},
                         style_data={'whiteSpace': 'normal'}),
                     ], className="twelve columns")
 
@@ -469,11 +462,48 @@ per_90 = html.Div([ # page 4
                         style_header={'fontWeight': 'bold'},
                         # style_cell={'textAlign': 'right'},
                         style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
-                                    'maxHeight': '300'},
+                                    'maxHeight': '300', 'maxWidth': '800'},
                         style_data={'whiteSpace': 'normal'}),
                     ], className="twelve columns")
 
             ], className="row "),
+
+            # Row 2
+            html.Div([
+
+                html.Div([
+                    html.H6("xG + xA per 90 Minutes vs Transfer Value",
+                            className="gs-header gs-table-header padded"),
+                    dcc.Graph(
+                        id='xG+xA/90 vs. transfer_value',
+                        figure={
+                            'data': [
+                                go.Scatter(
+                                    x=top_per_90[top_per_90['player_name'] == i]['transfer_value(USD)'],
+                                    y=top_per_90[top_per_90['player_name'] == i]['xG+xA/90'],
+                                    text= top_per_90[top_per_90['player_name'] == i]['player_name'],
+                                    mode='markers',
+                                    opacity=0.7,
+                                    marker={
+                                        'size': 15,
+                                        'line': {'width': 0.5, 'color': 'white'}
+                                    },
+                                    name=i
+                                ) for i in top_per_90.player_name.unique()
+                            ],
+                            'layout': go.Layout(
+                                xaxis={'title': 'Transfer Value (M)'},
+                                yaxis={'title': 'xG + xA per 90 minutes'},
+                                margin={'l': 40, 'b': 40, 't': 10, 'r': 10},
+                                # legend={'x': 0, 'y': 1},
+                                hovermode='closest'
+                            )
+                        }
+                    )
+                    
+                    ], className="twelve columns")
+                
+            ], className='row')
 
         ], className="subpage")
 
@@ -513,7 +543,7 @@ gems = html.Div([ # page 5
                         n_fixed_columns=2,
                         # style_cell={'textAlign': 'right'},
                         style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
-                                    'maxHeight': '300'},
+                                    'maxHeight': '150'},
                         style_data={'whiteSpace': 'normal'}),
                     ], className="twelve columns")
 
@@ -523,7 +553,8 @@ gems = html.Div([ # page 5
             html.Div([
 
                 html.Div([
-                    html.Strong([""]),
+                    html.H6("xG + xA per 90 Minutes vs Transfer Value",
+                            className="gs-header gs-table-header padded"),
                     dcc.Graph(
                         id='xG+xA/90 vs. transfer_value',
                         figure={
