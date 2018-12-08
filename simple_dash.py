@@ -27,7 +27,7 @@ fact_dict = {'League': 'Argentina Super League', 'Clubs': 26, 'Number of Players
            'Updated Week': 13}
 df_facts = pd.DataFrame(['League: Argentina Super League', 'Teams: 26', 'Players: 625', 'Goals: 321', 'Shots: 2955', 'Updated Week: 13'] ,index = fact_dict.keys(), columns=['Info'])
 
-xg_df = pd.read_csv('xgboost_table.csv') #complete table
+xg_df = pd.read_csv('xgboost_table1.csv') #complete table
 xg_df.drop(columns=['Unnamed: 0'], inplace=True)
 
 top_scorers = xg_df.sort_values(by=['goals'], ascending=False).head(20).copy() #top 20 scorers
@@ -479,9 +479,9 @@ per_90 = html.Div([ # page 4
                         figure={
                             'data': [
                                 go.Scatter(
-                                    x=top_per_90[top_per_90['player_name'] == i]['transfer_value(USD)'],
-                                    y=top_per_90[top_per_90['player_name'] == i]['xG+xA/90'],
-                                    text= top_per_90[top_per_90['player_name'] == i]['player_name'],
+                                    x=top_per_90[top_per_90['position_id'] == i]['transfer_value(USD)'],
+                                    y=top_per_90[top_per_90['position_id'] == i]['xG+xA/90'],
+                                    text= top_per_90[top_per_90['position_id'] == i]['player_name'],
                                     mode='markers',
                                     opacity=0.7,
                                     marker={
@@ -489,7 +489,7 @@ per_90 = html.Div([ # page 4
                                         'line': {'width': 0.5, 'color': 'white'}
                                     },
                                     name=i
-                                ) for i in top_per_90.player_name.unique()
+                                ) for i in top_per_90.position_id.unique()
                             ],
                             'layout': go.Layout(
                                 xaxis={'title': 'Transfer Value (M)'},
@@ -560,17 +560,17 @@ gems = html.Div([ # page 5
                         figure={
                             'data': [
                                 go.Scatter(
-                                    x=young_top_20[young_top_20['player_name'] == i]['transfer_value(USD)'],
-                                    y=young_top_20[young_top_20['player_name'] == i]['xG+xA/90'],
-                                    text= young_top_20[young_top_20['player_name'] == i]['player_name'],
+                                    x=young_top_20[young_top_20['position_id'] == i]['transfer_value(USD)'],
+                                    y=young_top_20[young_top_20['position_id'] == i]['xG+xA/90'],
+                                    text= young_top_20[young_top_20['position_id'] == i]['player_name'],
                                     mode='markers',
                                     opacity=0.7,
                                     marker={
                                         'size': 15,
                                         'line': {'width': 0.5, 'color': 'white'}
                                     },
-                                    name=i
-                                ) for i in young_top_20.player_name.unique()
+                                    name= i
+                                ) for i in young_top_20.position_id.unique()
                             ],
                             'layout': go.Layout(
                                 xaxis={'title': 'Transfer Value (M)'},
