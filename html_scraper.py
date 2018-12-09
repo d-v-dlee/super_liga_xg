@@ -6,7 +6,7 @@ import requests
 from bs4 import BeautifulSoup
 
 
-import urllib.request, json 
+import urllib.request, json
 import pymongo
 import time
 
@@ -15,6 +15,7 @@ db = mc['gameinfo_db']
 coll = db['games']
 players = db['players']
 teams = db['teams']
+coll1 = db['games_update']
 
 #turned off because scrape complete...
 # browser = Firefox()
@@ -38,13 +39,13 @@ def get_urls(page_links):
 
 def scrape_soccer_json(urls):
     """
-    Makes a request to AFA's website and retrieves the 
+    Makes a request to AFA's website and retrieves the
     soccer data in JSON format.
     Dumps the JSON response into mongodb.
     Parameters
     ----------
     urls: list of strings which are url addresses
-    
+
     Returns
     -------
     None
@@ -118,41 +119,58 @@ def add_player_to_db(player_dict):
     players.delete_many({'player': player, 'club': club})
     players.insert_one(player_dict)
 
+### new AFA scraper
+raw_json_coll = db['raw_json']
+
+def scrape_json_page(url):
+    """Get the JSON from url and cache it. Check cache for existing results before scraping."""
+    found_json = raw_json_coll.find_one({'url': url})
+    if found_json:
+        page_json = found_json['page_json']
+    else:
+        with urllib.request.urlopen(url) as url_json:
+            time.sleep(8)
+            data = json.loads(url_json.read().decode())
+            if data['status']['value'] == 'Finalizado':
+                raw_json_coll.insert_one({'url': url})
+                coll1.insert_one(data)
 
 
-# def scrape_player_info(urls, delay=15):
-#     """Return a dictionary of dictionary of data from a table.
-    
-#     Arguments
-#     ---------
-#     url : str
-#         The URL of the site to scrape.
-#     """
-#     chars = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'k', 'm', '.']
-#     for url in urls:
-#         time.sleep(delay)
-#         club = url.split('/')[3]
+
+# def scrape_page(url):
+#     """Get the HTML source from url and cache it. Check cache for existing results before scraping."""
+#     found_html = raw_html_coll.find_one({'url': url})
+#     if found_html:
+#         page_source = found_html['page_source']
+#     else:
 #         browser.get(url)
-#         player_dict_odd = {}
-#         for row in browser.find_elements_by_css_selector("tr.odd"):
-#             player = row.find_element_by_css_selector('td.hauptlink a').text
-#             squad_num = row.find_elements_by_css_selector('td.zentriert')[0].text
-#             birthday = row.find_elements_by_css_selector('td.zentriert')[1].text
-#             transfer_value = row.find_element_by_css_selector('td.rechts.hauptlink').text.strip()
-#             player_dict_odd[player] = {'club': club, 'squad_num': squad_num, 'birthday': birthday, 'transfer_value(sterlings)': transfer_value}
-#         player_dict_even = {}
-#         for row in browser.find_elements_by_css_selector("tr.even"):
-#             player = row.find_element_by_css_selector('td.hauptlink a').text
-#             squad_num = row.find_elements_by_css_selector('td.zentriert')[0].text
-#             birthday = row.find_elements_by_css_selector('td.zentriert')[1].text
-#         #     nationality = row.find_element_by_css_selector('td.zentriert.img')
-#             transfer_value = row.find_element_by_css_selector('td.rechts.hauptlink').text.strip()
-#             player_dict_even[player] = {'club': club, 'squad_num': squad_num, 'birthday': birthday, 'transfer_value(sterlings)': transfer_value}
-#         player_dict = {**player_dict_even, **player_dict_odd}
-#         db.players.insert_one(player_dict)
-            
+#         time.sleep(5)
+#         page_source = browser.page_source
+#         raw_html_coll.insert_one({'url': url, 'page_source': page_source})
+#     return page_source
+
+
+# def get_game_json(url):
+#     page_source = scrape_page(url)
+#     yield from 
 
 
 
+# def scrape_soccer_json(urls):
+#     """
+#     Makes a request to AFA's website and retrieves the
+#     soccer data in JSON format.
+#     Dumps the JSON response into mongodb.
+#     Parameters
+#     ----------
+#     urls: list of strings which are url addresses
 
-    
+#     Returns
+#     -------
+#     None
+#     """
+#     for url in urls:
+#         with urllib.request.urlopen(url) as url:
+#             data = json.loads(url.read().decode())
+#             coll.insert_one(data)
+#             time.sleep(15)
