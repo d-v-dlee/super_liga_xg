@@ -134,7 +134,8 @@ def scrape_json_page(url):
             if data['status']['value'] == 'Finalizado':
                 raw_json_coll.insert_one({'url': url})
                 coll1.insert_one(data)
-
+            else:
+                continue
 
 
 # def scrape_page(url):
