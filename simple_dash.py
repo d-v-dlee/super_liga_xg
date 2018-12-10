@@ -46,6 +46,11 @@ young_top_20 = xg_df[(xg_df['transfer_value(USD)'] < 8) & (xg_df['total_minutes_
 
 ## Page layouts
 
+app.layout = html.Div([
+    dcc.Location(id='url', refresh=False),
+    html.Div(id='page-content')
+])
+
 overview = html.Div([  # page 1
 
         # print_button(),
@@ -264,6 +269,7 @@ overview = html.Div([  # page 1
 
     ], className="page")
 
+
 ####################################################
 top_scorers = html.Div([  # page 2
 
@@ -343,21 +349,58 @@ top_scorers = html.Div([  # page 2
 
             ], className="row "),
 
-            html.Div([
+            #next row
+                        html.Div([
 
                 html.Div([
-                    html.H6('Shot Map',
+                    html.H6("Actual Goal Production vs. Expected Goals",
                             className="gs-header gs-table-header padded"),
-                    html.Img(src='data:image/png;base64,{}'.format(encoded_image1.decode()))
-                ], className="twelve columns"),
-
-            ], className="row "),
-
-            
+                    dcc.Graph(
+                        id='xG vs Goals',
+                        figure={
+                            'data': [
+                                go.Scatter(
+                                    x=xg_df[(xg_df['position_id'] == i) & (xg_df['goals'] >=2)]['goals'],
+                                    y=xg_df[(xg_df['position_id'] == i) & (xg_df['goals'] >=2)]['total_xG'],
+                                    text= xg_df[(xg_df['position_id'] == i) & (xg_df['goals'] >=2)]['player_name'],
+                                    mode='markers',
+                                    opacity=0.7,
+                                    marker={
+                                        'size': 15,
+                                        'line': {'width': 0.5, 'color': 'white'}
+                                    },
+                                    name= i
+                                ) for i in xg_df[xg_df['goals'] >= 2].position_id.unique()
+                            ],
+                            'layout': go.Layout(
+                                xaxis={'title': 'Goals Scored', 'range': [0, 15]},
+                                yaxis={'title': 'Predicted Goals', 'range': [0, 15]},
+                                margin={'l': 40, 'b': 40, 't': 10, 'r': 10},
+                                # legend={'x': 0, 'y': 1},
+                                hovermode='closest'
+                            )
+                        }
+                    )
+                    
+                    ], className="twelve columns")
+                
+            ], className='row')
 
         ], className="subpage")
 
     ], className="page")
+
+            # html.Div([
+
+            #     html.Div([
+            #         html.H6('Shot Map',
+            #                 className="gs-header gs-table-header padded"),
+            #         html.Img(src='data:image/png;base64,{}'.format(encoded_image1.decode()))
+            #     ], className="twelve columns"),
+
+            # ], className="row "),
+
+
 
 total_contributions = html.Div([ # page 3
 
@@ -611,9 +654,10 @@ about = html.Div([ # page 5
                     dcc.Dropdown(
                         id = 'image-dropdown',
                         options=[{'label': i, 'value': i} for i in list_of_images],
-                        value=list_of_images
+                        placeholder='Select player shot chart',
+                        value=list_of_images[0]
                     ),
-                    html.Img(id='image')
+                    html.Img(id='image'),
                 ])
 
             ], className="row ")
@@ -621,28 +665,6 @@ about = html.Div([ # page 5
         ], className="subpage")
 
     ], className="page")
-
-@app.callback(
-    dash.dependencies.Output('image', 'src'),
-    [dash.dependencies.Input('image-dropdown', 'value')])
-def update_image_src(value):
-    return static_image_route + value
-
-@app.server.route('{}<image_path>.png'.format(static_image_route))
-def serve_image(image_path):
-    image_name = '{}.png'.format(image_path)
-    if image_name not in list_of_images:
-        raise Exception('"{}" is excluded from the allowed static files'.format(image_path))
-    return flask.send_from_directory(image_directory, image_name)
-
-
-
-
-
-
-
-
-
 
 
 
@@ -677,6 +699,21 @@ def display_page(pathname):
         return overview,top_scorers,total_contributions,per_90,gems
     else:
         return 'noPage'
+
+#page 5 callbacks
+@app.callback(
+    dash.dependencies.Output('image', 'src'),
+    [dash.dependencies.Input('image-dropdown', 'value')])
+def update_image_src(value):
+    return static_image_route + value
+
+@app.server.route('{}<image_path>.png'.format(static_image_route))
+def serve_image(image_path):
+    image_name = '{}.png'.format(image_path)
+    if image_name not in list_of_images:
+        raise Exception('"{}" is excluded from the allowed static files'.format(image_path))
+    return flask.send_from_directory(image_directory, image_name)
+
 
 # # # # # # # # #
 # detail the way that external_css and external_js work and link to alternative method locally hosted
