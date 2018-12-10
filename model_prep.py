@@ -118,9 +118,10 @@ def create_summed_xG_df(df):
         xasum = round(df[df['player_id'] == player]['xA'].sum(), 2)
         xgxasum = round(xgsum + xasum, 2)
         goals = df[df['player_id'] == player]['is_goal'].sum()
-        contributions.append([player, xgsum, xasum, xgxasum, goals])
+        pen_attempts = df[df['player_id'] == player]['is_penalty_attempt'].sum()
+        contributions.append([player, xgsum, xasum, xgxasum, pen_attempts, goals])
     by_xG = sorted(contributions, key=lambda x: x[1], reverse=True)
-    contribution_df = pd.DataFrame(by_xG, columns=['player_id', 'total_xG', 'total_xA', 'total_xG+xA', 'goals'])
+    contribution_df = pd.DataFrame(by_xG, columns=['player_id', 'total_xG', 'total_xA', 'total_xG+xA', 'pen_attempts', 'goals'])
     return contribution_df
 
 ### moving from shots to players and minutes

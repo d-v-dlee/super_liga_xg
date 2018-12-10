@@ -31,8 +31,9 @@ fact_dict = {'League': 'Argentina Super League', 'Clubs': 26, 'Number of Players
            'Updated Week': 13}
 df_facts = pd.DataFrame(['League: Argentina Super League', 'Teams: 26', 'Players: 625', 'Goals: 373', 'Shots: 3437', 'Updated Week: 15'] ,index = fact_dict.keys(), columns=['Info'])
 
-xg_df = pd.read_csv('ensemble_df.csv') #complete table
+xg_df = pd.read_csv('xgb_df.csv') #complete table
 xg_df.drop(columns=['Unnamed: 0'], inplace=True)
+xg_df['total_xG'] = round(xg_df['total_xG'], 2)
 
 top_scorers = xg_df.sort_values(by=['goals'], ascending=False).head(20).copy() #top 20 scorers
 top_scorers_dict = {'Top 20 Scorers': {'Shots Per Game': 'Shots Per Game: 2.28', 'Avg xG/Attempt': 'Avg xG/Attempt: 0.16', 'Avg Distance/Attempt (yards)': 'Avg Distance/Attempt: 15.32'},
@@ -181,7 +182,7 @@ overview = html.Div([  # page 1
                             'data': [
                                 go.Bar(
                                     x = ["Goal (non-pen)", "Assisted Attempt", "Penalty Attempt"],
-                                    y = ["0.20", "0.11", "0.86"],
+                                    y = ["0.22", "0.12", "0.91"],
                                     marker = {
                                       "color": "rgb(53, 83, 255)",
                                       "line": {
@@ -193,7 +194,7 @@ overview = html.Div([  # page 1
                                 ),
                                 go.Bar(
                                     x = ["Goal (non-pen)", "Assisted Attempt", "Penalty Attempt"],
-                                    y = ["0.10", "0.10", "0.11"],
+                                    y = ["0.11", "0.10", "0.11"],
                                     marker = {
                                       "color": "rgb(255, 225, 53)",
                                       "line": {
@@ -322,32 +323,33 @@ top_scorers = html.Div([  # page 2
             ], className="row "),
 
             #next row
-            html.Div([
+            # html.Div([
 
-                html.Div([
-                    html.H6("Top 20 Goal Leaders",
-                            className="gs-header gs-table-header padded"),
-                    dash_table.DataTable(
-                        id = 'Top Contributors',
-                        columns=[{"name": i, "id": i} for i in top_scorers.columns],
-                        data=top_scorers.to_dict("rows"),
-                        css=[{
-                        'selector': '.dash-cell div.dash-cell-value',
-                        'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
-                    }],
-                        style_header={'fontWeight': 'bold'},
-                        style_data_conditional=[{
-                    'if': {'column_id': 'goals'},
-                    'backgroundColor': '#3D9970',
-                    'color': 'white', }],
-                        n_fixed_columns=2,
-                        # style_cell={'textAlign': 'right'},
-                        style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
-                                    'maxHeight': '150', 'maxWidth': '800'},
-                        style_data={'whiteSpace': 'normal'}),
-                    ], className="twelve columns")
+            #     html.Div([
+            #         html.H6("Top 20 Goal Leaders",
+            #                 className="gs-header gs-table-header padded"),
+            #         dash_table.DataTable(
+            #             id = 'Top Contributors',
+            #             columns=[{"name": i, "id": i} for i in top_scorers.columns],
+            #             data=top_scorers.to_dict("rows"),
+            #             css=[{
+            #             'selector': '.dash-cell div.dash-cell-value',
+            #             'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
+            #         }],
+            #             style_header={'fontWeight': 'bold'},
+            #             style_data_conditional=[{
+            #         'if': {'column_id': 'goals'},
+            #         'backgroundColor': 'crimson',
+            #         'color': 'white',
+            #         'fontWeight': 'bold' }],
+            #             n_fixed_columns=2,
+            #             # style_cell={'textAlign': 'right'},
+            #             style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
+            #                         'maxHeight': '150', 'maxWidth': '800'},
+            #             style_data={'whiteSpace': 'normal'}),
+            #         ], className="twelve columns")
 
-            ], className="row "),
+            # ], className="row "),
 
             #next row
                         html.Div([
@@ -360,9 +362,9 @@ top_scorers = html.Div([  # page 2
                         figure={
                             'data': [
                                 go.Scatter(
-                                    x=xg_df[(xg_df['position_id'] == i) & (xg_df['goals'] >=2)]['goals'],
-                                    y=xg_df[(xg_df['position_id'] == i) & (xg_df['goals'] >=2)]['total_xG'],
-                                    text= xg_df[(xg_df['position_id'] == i) & (xg_df['goals'] >=2)]['player_name'],
+                                    x=xg_df[xg_df['position_id'] == i]['goals'],
+                                    y= xg_df[xg_df['position_id'] == i]['total_xG'],
+                                    text= xg_df[xg_df['position_id'] == i]['player_name'],
                                     mode='markers',
                                     opacity=0.7,
                                     marker={
@@ -375,7 +377,7 @@ top_scorers = html.Div([  # page 2
                             'layout': go.Layout(
                                 xaxis={'title': 'Goals Scored', 'range': [0, 15]},
                                 yaxis={'title': 'Predicted Goals', 'range': [0, 15]},
-                                margin={'l': 40, 'b': 40, 't': 10, 'r': 10},
+                                margin={'l': 35, 'b': 35, 't': 8, 'r': 8},
                                 # legend={'x': 0, 'y': 1},
                                 hovermode='closest'
                             )
@@ -462,8 +464,9 @@ total_contributions = html.Div([ # page 3
                     }],
                         style_data_conditional=[{
                     'if': {'column_id': 'total_xG+xA'},
-                    'backgroundColor': '#3D9970',
-                    'color': 'white', }],
+                    'backgroundColor': 'crimson',
+                    'color': 'white',
+                    'fontWeight': 'bold'}],
                         style_header={'fontWeight': 'bold'},
                         n_fixed_columns=2,
                         # style_cell={'textAlign': 'right'},
@@ -503,7 +506,7 @@ per_90 = html.Div([ # page 4
                     }],
                         style_data_conditional=[{
                     'if': {'column_id': 'xG+xA/90'},
-                    'backgroundColor': '#3D9970',
+                    'backgroundColor': 'crimson',
                     'color': 'white', }],
                         n_fixed_columns=2,
                         style_header={'fontWeight': 'bold'},
@@ -580,8 +583,9 @@ gems = html.Div([ # page 5
                     }],
                         style_data_conditional=[{
                     'if': {'column_id': 'transfer_value(USD)'},
-                    'backgroundColor': '#3D9970',
-                    'color': 'white', 
+                    'backgroundColor': 'crimson',
+                    'color': 'white',
+                    'fontWeight': 'bold' 
                     }, 
                     {
                     'if': {'column_id': 'xG+xA/90'},

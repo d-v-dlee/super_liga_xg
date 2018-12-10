@@ -71,7 +71,7 @@ def create_complete_xg_tables():
     ens_sl['total_minutes_played'] = round(ens_sl['total_minutes_played'], 2)
 
     final_col = ['player_id', 'player_name', 'club', 'birthday', 'age', 'foot', 'position_id', 'squad_num',
-       'total_xG', 'total_xA', 'total_xG+xA', 'goals', 'xG_goal_diff', 'xG+xA/90', 'transfer_value(USD)', 'total_minutes_played']
+       'total_xG', 'pen_attempts', 'total_xA', 'total_xG+xA', 'goals', 'xG_goal_diff', 'xG+xA/90', 'transfer_value(USD)', 'total_minutes_played']
 
     rf_df = rf_sl[final_col]
     gb_df = gb_sl[final_col]
