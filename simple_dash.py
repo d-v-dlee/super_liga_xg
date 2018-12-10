@@ -4,13 +4,17 @@ import dash_html_components as html
 import base64
 from dash.dependencies import Input, Output
 import plotly.graph_objs as go
-
 from components import Header, make_dash_table, print_button
-
 import pandas as pd
-
+import flask
+import glob
+import os
 from flask_functions import create_scrollable_table, generate_table
 import dash_table
+
+image_directory = './shot_charts/'
+list_of_images = [os.path.basename(x) for x in glob.glob('{}*.png'.format(image_directory))]
+static_image_route = '/static/'
 
 image_filename = 'all_shots_final.jpg' # replace with your own image
 encoded_image = base64.b64encode(open(image_filename, 'rb').read())
@@ -23,16 +27,16 @@ server = app.server
 
 
 #tables
-fact_dict = {'League': 'Argentina Super League', 'Clubs': 26, 'Number of Players': 625, 'Number of Goals': 321, 'Number of Shots': 2955, 
+fact_dict = {'League': 'Argentina Super League', 'Clubs': 26, 'Number of Players': 625, 'Number of Goals': 321, 'Number of Shots': 3437, 
            'Updated Week': 13}
-df_facts = pd.DataFrame(['League: Argentina Super League', 'Teams: 26', 'Players: 625', 'Goals: 321', 'Shots: 2955', 'Updated Week: 13'] ,index = fact_dict.keys(), columns=['Info'])
+df_facts = pd.DataFrame(['League: Argentina Super League', 'Teams: 26', 'Players: 625', 'Goals: 373', 'Shots: 3437', 'Updated Week: 15'] ,index = fact_dict.keys(), columns=['Info'])
 
-xg_df = pd.read_csv('xgboost_table1.csv') #complete table
+xg_df = pd.read_csv('ensemble_df.csv') #complete table
 xg_df.drop(columns=['Unnamed: 0'], inplace=True)
 
 top_scorers = xg_df.sort_values(by=['goals'], ascending=False).head(20).copy() #top 20 scorers
-top_scorers_dict = {'Top 20 Scorers': {'Shots Per Game': 'Shots Per Game: 2.21', 'Avg xG/Attempt': 'Avg xG/Attempt: 0.16', 'Avg Distance/Attempt (yards)': 'Avg Distance/Attempt: 16.19'},
-                    'Rest of League': {'Shots Per Game': 'Shots Per Game: 1.5', 'Avg xG/Attempt': 'Avg xG/Attempt: 0.13', 'Avg Distance/Attempt (yards)': 'Avg Distance/Attempt: 17.99'}}
+top_scorers_dict = {'Top 20 Scorers': {'Shots Per Game': 'Shots Per Game: 2.28', 'Avg xG/Attempt': 'Avg xG/Attempt: 0.16', 'Avg Distance/Attempt (yards)': 'Avg Distance/Attempt: 15.32'},
+                    'Rest of League': {'Shots Per Game': 'Shots Per Game: 1.5', 'Avg xG/Attempt': 'Avg xG/Attempt: 0.11', 'Avg Distance/Attempt (yards)': 'Avg Distance/Attempt: 18.04'}}
 top_sc_comp = pd.DataFrame(top_scorers_dict)
 
 
@@ -92,7 +96,7 @@ overview = html.Div([  # page 1
                             'data': [
                                 go.Bar(
                                     x = ["XG Boost", "Random Forest", "Gradient Boosting", "Ensemble"],
-                                    y = ["382", "325", "316", "341"],
+                                    y = ["407", "377", "384", "389"],
                                     marker = {
                                       "color": "rgb(53, 83, 255)",
                                       "line": {
@@ -104,7 +108,7 @@ overview = html.Div([  # page 1
                                 ),
                                 go.Bar(
                                     x = ["XG Boost", "Random Forest", "Gradient Boosting", "Ensemble"],
-                                    y = ["321", "321", "321", "321"],
+                                    y = ["373", "373", "373", "373"],
                                     marker = {
                                       "color": "rgb(255, 225, 53)",
                                       "line": {
@@ -172,7 +176,7 @@ overview = html.Div([  # page 1
                             'data': [
                                 go.Bar(
                                     x = ["Goal (non-pen)", "Assisted Attempt", "Penalty Attempt"],
-                                    y = ["0.22", "0.12", "0.74"],
+                                    y = ["0.20", "0.11", "0.86"],
                                     marker = {
                                       "color": "rgb(53, 83, 255)",
                                       "line": {
@@ -184,7 +188,7 @@ overview = html.Div([  # page 1
                                 ),
                                 go.Bar(
                                     x = ["Goal (non-pen)", "Assisted Attempt", "Penalty Attempt"],
-                                    y = ["0.11", "0.11", "0.12"],
+                                    y = ["0.10", "0.10", "0.11"],
                                     marker = {
                                       "color": "rgb(255, 225, 53)",
                                       "line": {
@@ -549,6 +553,7 @@ gems = html.Div([ # page 5
 
             ], className="row "),
 
+
             #Row 2
             html.Div([
 
@@ -589,6 +594,48 @@ gems = html.Div([ # page 5
         ], className="subpage")
 
     ], className="page")
+
+app.config.suppress_callback_exceptions = True
+
+about = html.Div([ # page 5
+
+        html.Div([
+
+            Header(),
+
+            html.Div([
+
+                html.Div([
+                    html.H6("Player Shot Charts",
+                            className="gs-header gs-table-header padded"),
+                    dcc.Dropdown(
+                        id = 'image-dropdown',
+                        options=[{'label': i, 'value': i} for i in list_of_images],
+                        value=list_of_images
+                    ),
+                    html.Img(id='image')
+                ])
+
+            ], className="row ")
+
+        ], className="subpage")
+
+    ], className="page")
+
+@app.callback(
+    dash.dependencies.Output('image', 'src'),
+    [dash.dependencies.Input('image-dropdown', 'value')])
+def update_image_src(value):
+    return static_image_route + value
+
+@app.server.route('{}<image_path>.png'.format(static_image_route))
+def serve_image(image_path):
+    image_name = '{}.png'.format(image_path)
+    if image_name not in list_of_images:
+        raise Exception('"{}" is excluded from the allowed static files'.format(image_path))
+    return flask.send_from_directory(image_directory, image_name)
+
+
 
 
 
