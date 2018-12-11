@@ -50,8 +50,9 @@ def individual_shot_map(shots_df, player_id):
     name = xg_df[xg_df['player_id'] == player_id]['player_name'].iloc[0]
 
     img1 = mpimg.imread('../data/soccer_field.jpg')
-    imgplot = plt.imshow(img1)
-    ax = plt.gca()
+    fig, ax = plt.subplots(figsize=(10, 8))
+    imgplot = ax.imshow(img1)
+    # ax = plt.gca()
     ax.scatter(player_df[player_df['is_goal']==1]['shot_coord_x1'] * 6 + 50, player_df[player_df['is_goal']==1]['shot_coord_y1'] * 6.58 + 250, alpha=0.7, color='red', marker='o' )
     ax.scatter((player_df[player_df['shot_type']==33]['shot_coord_x1'] * 6 + 50), (player_df[player_df['shot_type']==33]['shot_coord_y1'] * 6.58 + 250), alpha=0.4, color='blue', marker='^')
     ax.scatter((player_df[player_df['shot_type']==35]['shot_coord_x1'] * 6 + 50), (player_df[player_df['shot_type']==35]['shot_coord_y1'] * 6.58 + 250), alpha=0.4, color='blue', marker='v')
@@ -59,8 +60,9 @@ def individual_shot_map(shots_df, player_id):
     ax.set_title(f'{name}')
     ax.set_axis_off()
     # ax.annotate(f'xG: {xG}, Goals: {goals}', (400, 400))
-    ax.text(200, 400, s=f'xG: {xG}, Goals: {goals}', fontdict={'color': 'white', 'size': 16}, weight='bold')
+    ax.text(250, 400, s=f'xG: {xG}, Goals: {goals}', fontdict={'color': 'white', 'size': 16}, weight='bold')
     ax.legend(labels=['Goal', 'Shot on Target', 'Shot off Target', 'Post'])
+    ax.figure.savefig(f'../shot_charts/{name}.png')
     # imgplot.figure.savefig('top_shots.png')
 
 def plot_goals_map(df, xG):
