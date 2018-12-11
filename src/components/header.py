@@ -29,7 +29,7 @@ def get_header():
 
         html.Div([
             html.H5(
-                'Expected Goals (xG) for Argentina Super League by David Lee')
+                'Expected Goals (xG) for Argentina Super League')
         ], className="twelve columns padded")
 
     ], className="row gs-header gs-text-header")
