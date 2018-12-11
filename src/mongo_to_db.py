@@ -6,7 +6,7 @@ from json_shot_scraper import flatten_shot, flatten_goal, flatten_complete_pass,
 from  player_scraper import flatten_player, flatten_sub
 from dataframe_cleaner import (pass_to_shot, corner_to_shot, transpose_coordinates, coord_to_yards, 
                                shot_distance_angle, dummy_columns, drop_own_goals, goal_dummy, minutes_played)
-from html_scraper import db
+# from ..scraping_tools.html_scraper import db
 
 def game_to_cleaned_df(game):
     """input game pulled from mongoDB 'db' and run through cleaning functions
@@ -49,7 +49,7 @@ def create_frame():
        'passed_from_id', 'pass_coord_x1', 'pass_coord_x2', 'pass_coord_y1',
        'pass_coord_y2', 'pass_coord_z1', 'pass_coord_z2', 'corner_kick',
        'shot_distance', 'shot_angle', 'assisted_shot', 'is_penalty_attempt',
-       'goal'])
+       'is_goal'])
     return attach_to_df
 
 
@@ -67,7 +67,8 @@ def create_master_df(games):
     for game in games:
         df = game_to_cleaned_df(game)
         final_df = pd.concat([attach_to_df, df], axis=0, ignore_index=True)
-        attach_to_df = final_df.copy()
+        ### may get a warning because a game doesn't have corner_kick values ###
+        attach_to_df = final_df[columns].copy()
     return final_df[columns].copy()
 
 ###below is for players

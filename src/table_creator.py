@@ -1,5 +1,8 @@
+import sys
+sys.path.insert(0, '/Users/david/galvanize/super_liga_xg')
 from combined_player import player_minutes_value
-from html_scraper import db
+from scraping_tools.html_scraper import db
+# from html_scraper import db
 from mongo_to_db import create_master_df
 from model_prep import create_rf_prep, create_xG_df, create_summed_xG_df
 import pickle
@@ -26,9 +29,9 @@ def create_complete_xg_tables():
     games = db['games_update'].find()
     shots_df = create_master_df(games)
 
-    rf_model = pickle.load(open("rfc.pkl", "rb"))
-    gb_model = pickle.load(open("gb.pkl", "rb"))
-    xgb_model = pickle.load(open("xgb.pkl", "rb"))
+    rf_model = pickle.load(open("../models/rfc.pkl", "rb"))
+    gb_model = pickle.load(open("../models/gb.pkl", "rb"))
+    xgb_model = pickle.load(open("../models/xgb.pkl", "rb"))
 
     model_ready_df = create_rf_prep(shots_df)
     columns = ['shot_distance', 'shot_angle', 'assisted_shot', 'is_penalty_attempt']

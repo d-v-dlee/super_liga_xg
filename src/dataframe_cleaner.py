@@ -126,7 +126,7 @@ def dummy_columns(input_df):
 def drop_own_goals(input_df):
     """only return shots that were not own goals"""
     input_df = input_df[input_df['shot_type'] != 10]
-    return input_df
+    return input_df.copy()
 
 def goal_dummy(input_df):
     """creates dummy variable on whether a shot resulted in a goal or not"""
