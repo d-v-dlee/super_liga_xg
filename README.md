@@ -35,6 +35,8 @@ This model helps evaluate player contributions in expected probability so that t
 - **afa.com/ar** - player and shot data 
 - **transfermarkt.co.uk** - player transfer data
 
+Data scraped --> MongoDB --> Pipeline to clean data --> Modeling
+
 ## Modeling
 Random Forest, XG Boost, and Gradient Boosting Classifiers to predict probability of goal based on shot distance,
 shot angle, whether shot was assisted, whether shot was penalty.
