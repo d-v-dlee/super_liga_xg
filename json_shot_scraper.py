@@ -2,14 +2,14 @@ def flatten_shot(shot, game_id):
     """Flatten the schema of a shot record."""
     shot_id = shot[0]
     shot_data = shot[1]
-    
+
     return {'game_id': game_id,
             'shot_id': shot_id,
             'shot_type': shot_data['type'],
             # 't_half': shot_data['t']['half'],
             # 't_min': shot_data['t']['m'],
             # 't_sec': shot_data['t']['s'],
-            'time_of_event(min)': (shot_data['t']['m'] + (shot_data['t']['s'] / 60 )), 
+            'time_of_event(min)': (shot_data['t']['m'] + (shot_data['t']['s'] / 60 )),
             'team_id': shot_data.get('team', None),
             'player_id': float(shot_data['plyrId']),
             # 'caught_by': shot_data.get('ctchBy', None),

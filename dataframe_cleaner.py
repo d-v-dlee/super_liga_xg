@@ -119,8 +119,8 @@ def dummy_columns(input_df):
     add dummy columns on whether or not a shot attempt was a penalty
     input: dataframe
     output: dataframe with dummy columns """
-    input_df['assisted_shot'] = input_df['passed_from_id'].notnull().astype(int)
-    input_df['is_penalty_attempt'] = input_df['shot_type'].isin([13, 44]).astype(int)
+    input_df['assisted_shot'] = input_df['passed_from_id'].notnull().astype(float)
+    input_df['is_penalty_attempt'] = input_df['shot_type'].isin([13, 44]).astype(float)
     return input_df
 
 def drop_own_goals(input_df):
