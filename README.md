@@ -12,14 +12,14 @@ xG = expected goal probability
 xA = expected goal probability of shot after pass
 
 ## File Structure Summary
-| Directory     | Description          | 
-| ------------- |:--------------------:| 
-| archives      | misc jup notebooks   | 
-| data          | csvs                 |
-| models        | pickled models       | 
-| scraping tools| script for scraping  | 
-| shot charts   | shot charts images   | 
-| src           | script for pipeline  | 
+| Directory     | Description                  | 
+| ------------- |:----------------------------:| 
+| archives      | misc jup notebooks           | 
+| data          | csv                          |
+| models        | pickled models               | 
+| scraping tools| script for scraping          | 
+| shot charts   | shot charts images           | 
+| src           | script for pipeline          | 
 
 
 ## Business Understanding
