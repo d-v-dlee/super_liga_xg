@@ -43,13 +43,15 @@ def get_menu():
 
         dcc.Link('Top Goal Scorers   ', href='/argentina_superliga/top_scorers', className="tab"),
 
-        dcc.Link('Total xG + xA Leaders   ', href='/argentina_superliga/total_contributions', className="tab"),
+        # dcc.Link('Total xG + xA Leaders   ', href='/argentina_superliga/total_contributions', className="tab"),
 
-        dcc.Link('Best xG + xA/90 Minutes   ', href='/argentina_superliga/per_90', className="tab"),
+        dcc.Link('Top Contributors per 90 Minutes   ', href='/argentina_superliga/per_90', className="tab"),
 
         dcc.Link('Potential Transfer Gems   ', href='/argentina_superliga/gems', className="tab"),
 
-        dcc.Link('About   ', href='/argentina_superliga/about', className="tab")
+        dcc.Link('Shot Charts   ', href='/argentina_superliga/shot_charts', className="tab"),
+
+        dcc.Link('About   ', href='/argentina_superliga/about', className="tab"),
 
     ], className="row ")
     return menu

@@ -22,6 +22,9 @@ encoded_image = base64.b64encode(open(image_filename, 'rb').read())
 image_filename1 = '../images/shot_compare.jpg'
 encoded_image1 = base64.b64encode(open(image_filename1, 'rb').read())
 
+image_filename2 = '../images/atlanta_united.jpg'
+encoded_image2 = base64.b64encode(open(image_filename2, 'rb').read())
+
 app = dash.Dash(__name__)
 server = app.server
 
@@ -71,9 +74,9 @@ overview = html.Div([  # page 1
                     html.P("\
                             The xG model is a way to measure each player's contribution \
                             to the rare events that occur in a soccer game. \
-                            xG is calculated by predicting the probability of a shot  \
-                            being goal, based on factors like distance and angle, while xA \
-                            (expected assist) is awarded to any pass directly preceding a   \
+                            Expected goal (xG) is the probability of a shot beinga goal, and is calculated \
+                            based on factors like distance and angle. Expected assist (xA) \
+                            is awarded to any pass directly preceding a   \
                             shot. A pass leading to a shot with an xG of 0.3 will be valued at \
                             0.3 xA. By comparing these metrics to a player's proposed transfer value \
                             and age, high value or high potential players  \
@@ -404,86 +407,86 @@ top_scorers = html.Div([  # page 2
 
 
 
-total_contributions = html.Div([ # page 3
+# total_contributions = html.Div([ # page 3
 
-        html.Div([
+#         html.Div([
 
-            Header(),
+#             Header(),
 
-            # Row 1
+#             # Row 1
 
-            html.Div([
-                    html.Div([
-                        html.H6('Goal Creators',
-                            className="gs-header gs-text-header padded"),
+#             html.Div([
+#                     html.Div([
+#                         html.H6('Goal Creators',
+#                             className="gs-header gs-text-header padded"),
 
-                    html.Br([]),
+#                     html.Br([]),
 
-                    html.P("\
-                            Shown below is the table of the top 20 contributors in terms \
-                            of combined xG + xA. Out of 20 players in the top scoring   \
-                            list, eight players also make the top 20 of total xG + xA  \
-                            contributions. Through xG + xA, we see that players like Franco Soldano  \
-                            and Germán Herrera have contributed a total of 6.52 and 5.35  \
-                            worth of goal contributions, despite only scoring two goals."),  
+#                     html.P("\
+#                             Shown below is the table of the top 20 contributors in terms \
+#                             of combined xG + xA. Out of 20 players in the top scoring   \
+#                             list, eight players also make the top 20 of total xG + xA  \
+#                             contributions. Through xG + xA, we see that players like Franco Soldano  \
+#                             and Germán Herrera have contributed a total of 6.52 and 5.35  \
+#                             worth of goal contributions, despite only scoring two goals."),  
 
-                ], className="six columns"),
+#                 ], className="six columns"),
 
-                    html.Div([html.H6('Contributing',
-                            className="gs-header gs-text-header padded"),
+#                     html.Div([html.H6('Contributing',
+#                             className="gs-header gs-text-header padded"),
 
-                    html.Br([]),
+#                     html.Br([]),
 
-                    html.P("\
-                            The eight players who are top 20 in combined xG + xA but not \
-                            in the top 20 in scoring include Carlos Tevez, Claudio Bieler, \
-                            Franco Soldano, Germán Herrera, Jonatan Cristaldo, Leonardo Sequeira \
-                            Luís Leal, Mariano Pavone, Nicolás Fernández, Nicolás Reniero, \
-                            Santiago García and Sebastián Ribas. Despite none of them scoring \
-                            over 3 goals, the eight players have created an expected value of 4.97  \
-                            goals through shots and passes."),
+#                     html.P("\
+#                             The eight players who are top 20 in combined xG + xA but not \
+#                             in the top 20 in scoring include Carlos Tevez, Claudio Bieler, \
+#                             Franco Soldano, Germán Herrera, Jonatan Cristaldo, Leonardo Sequeira \
+#                             Luís Leal, Mariano Pavone, Nicolás Fernández, Nicolás Reniero, \
+#                             Santiago García and Sebastián Ribas. Despite none of them scoring \
+#                             over 3 goals, the eight players have created an expected value of 4.97  \
+#                             goals through shots and passes."),
                             
-                ], className="six columns"),
+#                 ], className="six columns"),
 
-            ],  className="row"),
+#             ],  className="row"),
             
-            #Row 2
+#             #Row 2
 
-            html.Div([
+#             html.Div([
 
-                html.Div([
-                    html.H6("Top xG + xA Contributors",
-                            className="gs-header gs-table-header padded"),
-                    dash_table.DataTable(
-                        id = 'Top Contributors',
-                        columns=[{"name": i, "id": i} for i in top_contributors.columns],
-                        data=top_contributors.to_dict("rows"),
-                        css=[{
-                        'selector': '.dash-cell div.dash-cell-value',
-                        'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
-                    }],
-                        style_data_conditional=[{
-                    'if': {'column_id': 'total_xG+xA'},
-                    'backgroundColor': 'crimson',
-                    'color': 'white',
-                    'fontWeight': 'bold'}],
-                        style_header={'fontWeight': 'bold'},
-                        n_fixed_columns=2,
-                        # style_cell={'textAlign': 'right'},
-                        style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
-                                    'maxHeight': '300', 'maxWidth': '800'},
-                        style_data={'whiteSpace': 'normal'}),
-                    ], className="twelve columns")
+#                 html.Div([
+#                     html.H6("Top xG + xA Contributors",
+#                             className="gs-header gs-table-header padded"),
+#                     dash_table.DataTable(
+#                         id = 'Top Contributors',
+#                         columns=[{"name": i, "id": i} for i in top_contributors.columns],
+#                         data=top_contributors.to_dict("rows"),
+#                         css=[{
+#                         'selector': '.dash-cell div.dash-cell-value',
+#                         'rule': 'display: inline; white-space: inherit; overflow: inherit; text-overflow: inherit;'
+#                     }],
+#                         style_data_conditional=[{
+#                     'if': {'column_id': 'total_xG+xA'},
+#                     'backgroundColor': 'crimson',
+#                     'color': 'white',
+#                     'fontWeight': 'bold'}],
+#                         style_header={'fontWeight': 'bold'},
+#                         n_fixed_columns=2,
+#                         # style_cell={'textAlign': 'right'},
+#                         style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
+#                                     'maxHeight': '300', 'maxWidth': '800'},
+#                         style_data={'whiteSpace': 'normal'}),
+#                     ], className="twelve columns")
 
-            ], className="row "),
+#             ], className="row "),
 
-        ], className="subpage")
+#         ], className="subpage")
 
-    ], className="page")
+#     ], className="page")
 
 
 
-per_90 = html.Div([ # page 4
+per_90 = html.Div([ # page 3
 
         html.Div([
 
@@ -559,7 +562,7 @@ per_90 = html.Div([ # page 4
 
     ], className="page")
 
-gems = html.Div([ # page 5
+gems = html.Div([ # page 4
 
         html.Div([
 
@@ -589,12 +592,12 @@ gems = html.Div([ # page 5
                     }, 
                     {
                     'if': {'column_id': 'xG+xA/90'},
-                    'backgroundColor': '#3D9970',
+                    'backgroundColor': 'crimson',
                     'color': 'white', }],
                         n_fixed_columns=2,
                         # style_cell={'textAlign': 'right'},
                         style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
-                                    'maxHeight': '150'},
+                                    'maxHeight': '150', 'maxWidth': '800'},
                         style_data={'whiteSpace': 'normal'}),
                     ], className="twelve columns")
 
@@ -644,7 +647,7 @@ gems = html.Div([ # page 5
 
 app.config.suppress_callback_exceptions = True
 
-about = html.Div([ # page 5
+shot_charts = html.Div([ # page 5
 
         html.Div([
 
@@ -670,6 +673,67 @@ about = html.Div([ # page 5
 
     ], className="page")
 
+about = html.Div([ # page 6
+
+        html.Div([
+
+            Header(),
+
+            # Row 1
+
+            html.Div([
+                    html.Div([
+                        html.H6('About the Model',
+                            className="gs-header gs-text-header padded"),
+
+                    html.Br([]),
+
+                    html.P("\
+                            All shot and player data was gathered from afa.com.ar and   \
+                            transfermarkt.co.uk/ . All charts and tables displayed on  \
+                            the website are based on the XGBoost model. Some interesting observations \
+                            about the model's prediction include the very high value it predicts for  \
+                            penalty kicks (0.91 xG versus a worldwide conversation rate closer to 0.75) \
+                            and its predictions for top scorers (the top three scorers greatly outperformed \
+                            their xG). Whether this is due to luck, or the skill of the top scorers must \
+                            be further investigated.  "),  
+
+                ], className="six columns"),
+
+                    html.Div([html.H6('Inspiration',
+                            className="gs-header gs-text-header padded"),
+
+                    html.Br([]),
+
+                    html.P("\
+                            The purpose of the expected goal model is to better evaluate  \
+                            player contributions so that teams can more confidently invest  \
+                            in South American talent. MLS champions Atlanta United, have shown \
+                            that doing so not only improves the level of play but also  \
+                            provides more revenue to reinvest through future player sales ( Miguel \
+                            Almiron purchased for $8m, will move to Europe for $15-20m). \
+                            Hopefully other American clubs can follow suit and make the MLS \
+                            the stepping stone to Europe, to improve the strength of the \
+                            league and generate future transfer fee revenue for reinvestment. "),
+                            
+                ], className="six columns"),
+
+            ],  className="row"),
+
+            html.Div([
+
+                html.Div([
+                    html.H6('',
+                            className="gs-header gs-table-header padded"),
+                    html.Img(src='data:image/png;base64,{}'.format(encoded_image2.decode()))
+                ], className="twelve columns"),
+
+            ], className="row "),
+
+        ], className="subpage")
+
+    ], className="page")
+
 
 
 # Describe the layout, or the UI, of the app
@@ -689,14 +753,12 @@ def display_page(pathname):
         return overview
     elif pathname == '/argentina_superliga/top_scorers':
         return top_scorers
-    elif pathname == '/argentina_superliga/total_contributions':
-        return total_contributions
     elif pathname == '/argentina_superliga/per_90':
         return per_90
     elif pathname == '/argentina_superliga/gems':
         return gems
-    # elif pathname == '/argentina_superliga/notable_transfers':
-    #     return transfers
+    elif pathname == '/argentina_superliga/shot_charts':
+        return shot_charts
     elif pathname == '/argentina_superliga/about':
         return about
     elif pathname == '/argentina_superliga/full-view':
