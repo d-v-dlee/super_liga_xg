@@ -33,7 +33,7 @@ def shots_df_average(subset_df, shots_df, category, subset=True):
 
 def plot_shot_map(df):
     """input shot df and show shots by color or marks"""
-    img1 = mpimg.imread('data/soccer_field.jpg')
+    img1 = mpimg.imread('../data/soccer_field.jpg')
     imgplot = plt.imshow(img1)
     ax = plt.gca()
     ax.scatter((df[df['is_goal']==0]['shot_coord_x1'] * 6 + 50), (df[df['is_goal']==0]['shot_coord_y1'] * 6.58 + 250), alpha=0.2, color='blue', linewidths=0.1)
@@ -49,7 +49,7 @@ def individual_shot_map(shots_df, player_id):
     goals = xg_df[xg_df['player_id'] == player_id]['goals'].iloc[0]
     name = xg_df[xg_df['player_id'] == player_id]['player_name'].iloc[0]
 
-    img1 = mpimg.imread('data/soccer_field.jpg')
+    img1 = mpimg.imread('../data/soccer_field.jpg')
     imgplot = plt.imshow(img1)
     ax = plt.gca()
     ax.scatter(player_df[player_df['is_goal']==1]['shot_coord_x1'] * 6 + 50, player_df[player_df['is_goal']==1]['shot_coord_y1'] * 6.58 + 250, alpha=0.7, color='red', marker='o' )
@@ -66,10 +66,11 @@ def individual_shot_map(shots_df, player_id):
 def plot_goals_map(df, xG):
     """input shot df and show shots by color or marks
     multiply coordinates by 6 instead of 7.32"""
-    img1 = mpimg.imread('data/soccer_field.jpg')
+    img1 = mpimg.imread('../data/soccer_field.jpg')
     imgplot = plt.imshow(img1)
     ax = plt.gca()
     ax.text(200, 400, s=f' Average xG of Shot: {xG}', fontdict={'color': 'white', 'size': 14}, weight='bold')
+    ax.set_axis_off()
     # ax.annotate(f'Average xG: {xG}', (400, 400))
     # ax.scatter((df[df['is_goal']==0]['shot_coord_x1'] * 7.32 + 50), (df[df['is_goal']==0]['shot_coord_y1'] * 6.58 + 250), alpha=0.2, color='blue', linewidths=0.1)
     ax.scatter(df[df['is_goal']==1]['shot_coord_x1'] * 6 + 50, df[df['is_goal']==1]['shot_coord_y1'] * 6.58 + 250, alpha=0.5, color='red', linewidths=0.1)
