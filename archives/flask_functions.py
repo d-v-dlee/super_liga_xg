@@ -5,6 +5,12 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pickle
 
+import dash
+import dash_core_components as dcc
+import dash_html_components as html
+from dash.dependencies import Input, Output
+import plotly.graph_objs as go
+
 from combined_player import player_minutes_value
 from html_scraper import db
 from mongo_to_db import create_master_df
@@ -72,5 +78,27 @@ def top_20_young(min_minutes=300, max_age=25):
     # return top_20_df
 
 
+def create_scrollable_table(df):
+    trace = go.Table(
+        header=dict(values=list(df.columns),
+                    fill = dict(color='#C2D4FF'),
+                    align = ['left'] * 5),
+        cells=dict(values=[df.player_name, df.club, df.age, df.foot],
+                fill = dict(color='#F5F8FF'),
+                align = ['left'] * 5))
+
+    data = [trace] 
+    py.iplot(data, filename = 'pandas_table')
 
 
+
+def generate_table(dataframe, max_rows=10):
+    return html.Table(
+        # Header
+        [html.Tr([html.Th(col) for col in dataframe.columns])] +
+
+        # Body
+        [html.Tr([
+            html.Td(dataframe.iloc[i][col]) for col in dataframe.columns
+        ]) for i in range(min(len(dataframe), max_rows))]
+    )
