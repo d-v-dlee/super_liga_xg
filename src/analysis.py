@@ -57,11 +57,11 @@ def individual_shot_map(shots_df, player_id):
     ax.scatter((player_df[player_df['shot_type']==33]['shot_coord_x1'] * 6 + 50), (player_df[player_df['shot_type']==33]['shot_coord_y1'] * 6.58 + 250), alpha=0.4, color='blue', marker='^')
     ax.scatter((player_df[player_df['shot_type']==35]['shot_coord_x1'] * 6 + 50), (player_df[player_df['shot_type']==35]['shot_coord_y1'] * 6.58 + 250), alpha=0.4, color='blue', marker='v')
     ax.scatter((player_df[player_df['shot_type']==34]['shot_coord_x1'] * 6 + 50), (player_df[player_df['shot_type']==34]['shot_coord_y1'] * 6.58 + 250), alpha=0.4, color='blue', marker='>')
-    ax.set_title(f'{name}')
+    ax.set_title(f'{name}', fontsize=16)
     ax.set_axis_off()
     # ax.annotate(f'xG: {xG}, Goals: {goals}', (400, 400))
     ax.text(250, 400, s=f'xG: {xG}, Goals: {goals}', fontdict={'color': 'white', 'size': 16}, weight='bold')
-    ax.legend(labels=['Goal', 'Shot on Target', 'Shot off Target', 'Post'])
+    ax.legend(labels=['Goal', 'Shot on Target', 'Shot off Target', 'Post'], fontsize=14)
     ax.figure.savefig(f'../shot_charts/{name}.png')
     # imgplot.figure.savefig('top_shots.png')
 
