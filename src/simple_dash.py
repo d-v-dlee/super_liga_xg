@@ -723,9 +723,21 @@ about = html.Div([ # page 6
             html.Div([
 
                 html.Div([
-                    html.H6('',
+                    html.H6(' ',
                             className="gs-header gs-table-header padded"),
                     html.Img(src='data:image/png;base64,{}'.format(encoded_image2.decode()))
+                ], className="twelve columns"),
+
+            ], className="row "),
+
+            html.Div([
+
+                html.Div([
+                    html.H6(' ',
+                            className="gs-header gs-table-header padded"),
+
+                html.Br([]),
+                html.A('Contact', href='https://www.linkedin.com/in/d-v-dlee/', target='_blank')
                 ], className="twelve columns"),
 
             ], className="row "),
@@ -763,6 +775,8 @@ def display_page(pathname):
         return about
     elif pathname == '/argentina_superliga/full-view':
         return overview,top_scorers,total_contributions,per_90,gems
+    # elif pathname == 'https://www.linkedin.com/in/d-v-dlee/':
+
     else:
         return 'noPage'
 
