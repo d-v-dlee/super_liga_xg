@@ -94,7 +94,8 @@ def create_player_min_frame():
     return attach_to_df
 
 def create_master_player_min_df(games):
-    """input games from mongodb by db.games.find() and return a cleaned dataframe"""
+    """input games from mongodb by db.games.find() and return a cleaned dataframe with club
+    abbreviation instead of club_id"""
     
     columns = ['game_id', 'name', 'player_id', 'position_id', 'squad_number',
        'substitute', 'team_id', 'minutes_played']
