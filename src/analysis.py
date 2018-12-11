@@ -3,7 +3,7 @@ import matplotlib.image as mpimg
 import matplotlib.pyplot as plt
 import pandas as pd
 
-xg_df = pd.read_csv('xgb_df.csv')
+xg_df = pd.read_csv('../data/xgb_df.csv')
 
 def shots_per_game(subset_df, shots_df):
     """
