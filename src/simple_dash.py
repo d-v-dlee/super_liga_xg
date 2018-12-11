@@ -31,7 +31,7 @@ fact_dict = {'League': 'Argentina Super League', 'Clubs': 26, 'Number of Players
            'Updated Week': 13}
 df_facts = pd.DataFrame(['League: Argentina Super League', 'Teams: 26', 'Players: 625', 'Goals: 373', 'Shots: 3437', 'Updated Week: 15'] ,index = fact_dict.keys(), columns=['Info'])
 
-xg_df = pd.read_csv('./data/xgb_df.csv') #complete table
+xg_df = pd.read_csv('../data/xgb_df.csv') #complete table
 xg_df.drop(columns=['Unnamed: 0'], inplace=True)
 xg_df['total_xG'] = round(xg_df['total_xG'], 2)
 
