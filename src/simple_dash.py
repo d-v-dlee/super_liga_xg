@@ -12,14 +12,14 @@ import os
 # from flask_functions import create_scrollable_table, generate_table
 import dash_table
 
-image_directory = './shot_charts/'
+image_directory = '../shot_charts/'
 list_of_images = [os.path.basename(x) for x in glob.glob('{}*.png'.format(image_directory))]
 static_image_route = '/static/'
 
-image_filename = 'all_shots_final.jpg' # replace with your own image
+image_filename = '../images/all_shots_final.jpg' # replace with your own image
 encoded_image = base64.b64encode(open(image_filename, 'rb').read())
 
-image_filename1 = 'shot_compare.jpg'
+image_filename1 = '../images/shot_compare.jpg'
 encoded_image1 = base64.b64encode(open(image_filename1, 'rb').read())
 
 app = dash.Dash(__name__)
