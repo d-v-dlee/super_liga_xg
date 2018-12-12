@@ -13,12 +13,12 @@ def get_logo():
     logo = html.Div([
 
         html.Div([
-            html.Img(src='http://logonoid.com/images/vanguard-logo.png', height='40', width='160')
+            html.Img(src='https://en.wikipedia.org/wiki/Argentine_Primera_Divisi%C3%B3n#/media/File:Superliga_Argentina_logo.svg', height='40', width='160')
         ], className="ten columns padded"),
 
-        html.Div([
-            dcc.Link('Full View   ', href='/dash-vanguard-report/full-view')
-        ], className="two columns page-view no-print")
+        # html.Div([
+        #     dcc.Link('Full View   ', href='/dash-vanguard-report/full-view')
+        # ], className="two columns page-view no-print")
 
     ], className="row gs-header")
     return logo

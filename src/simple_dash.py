@@ -358,7 +358,7 @@ top_scorers = html.Div([  # page 2
                         html.Div([
 
                 html.Div([
-                    html.H6("Actual Goal Production vs. Expected Goals",
+                    html.H6("Actual Goal Production vs. Expected Goals(Double Click Top Scorers Above) ",
                             className="gs-header gs-table-header padded"),
                     dcc.Graph(
                         id='xG vs Goals',
@@ -593,7 +593,8 @@ gems = html.Div([ # page 4
                     {
                     'if': {'column_id': 'xG+xA/90'},
                     'backgroundColor': 'crimson',
-                    'color': 'white', }],
+                    'color': 'white',
+                    'fontWegiht': 'bold' }],
                         n_fixed_columns=2,
                         # style_cell={'textAlign': 'right'},
                         style_table={'overflowX': 'scroll', 'overflowY': 'scroll',
