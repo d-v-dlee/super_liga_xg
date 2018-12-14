@@ -80,7 +80,7 @@ overview = html.Div([  # page 1
                             shot. A pass leading to a shot with an xG of 0.3 will be valued at \
                             0.3 xA. By comparing these metrics to a player's proposed transfer value \
                             and age, high value or high potential players  \
-                            may be identified for a potentially transfer to the MLS."),
+                            may be identified for a potential transfer to the MLS."),
 
                 ], className="six columns"),
 
