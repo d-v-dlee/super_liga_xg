@@ -166,7 +166,7 @@ def player_minutes_total(players_minutes_df):
 
 def create_rf_prep(df):
     """input df, return the appropriate columns to be run through rf"""
-    rf_columns = ['player_id', 'shot_distance', 'shot_angle', 'assisted_shot', 'is_penalty_attempt']
+    rf_columns = ['player_id', 'shot_distance', 'shot_angle', 'assisted_shot'] #, 'is_penalty_attempt']
     return df[rf_columns].astype(float)
 
 #use to tune classifiers
