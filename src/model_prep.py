@@ -202,15 +202,16 @@ def stage_score_plot(estimator, X_train, y_train, X_test, y_test):
     # create xs in order to plot. each x represents n_estimators.
     xs = range(0, len(test_logloss_at_stages))
 
-    fig, ax = plt.subplots(figsize=(12, 8))
+    fig, ax = plt.subplots(figsize=(8, 6))
     ax.plot(xs, train_logloss_at_stages, 
             label="{} Train".format(estimator.__class__.__name__))
     ax.plot(xs, test_logloss_at_stages, 
             label="{} Test".format(estimator.__class__.__name__))
     ax.axvline(num_trees_lowest_test_error)
     ax.legend()
-    print(f'lowest test error(log loss): {lowest_test_error}')
-    print(f'num_trees at lowest test error: {num_trees_lowest_test_error}')
+    return lowest_test_error, num_trees_lowest_test_error
+    # print(f'lowest test error(log loss): {lowest_test_error}')
+    # print(f'num_trees at lowest test error: {num_trees_lowest_test_error}')
 
 
     # example of how to use:
