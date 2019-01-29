@@ -15,7 +15,7 @@ db = mc['gameinfo_db']
 coll = db['games']
 players = db['players']
 teams = db['teams']
-coll1 = db['games_update']
+coll1 = db['games_update'] #used instead of games 
 
 #turned off because scrape complete...
 # browser = Firefox()
