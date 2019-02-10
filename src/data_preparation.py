@@ -3,6 +3,9 @@ from xlg import game_to_single_df, create_frame
 
 
 class ConvertData():
+    """
+    this class is used for turning shot data from MongoDb into data ready for modeling
+    """
     def __init__(self, param=None):
         self.param = param
     
@@ -49,7 +52,7 @@ class ConvertData():
         df_no_pen = df[df['is_penalty_attempt'] == 0].copy()
         return df_no_pen
     
-    def create_rf_prep(self, df):
+    def create_xy_prep(self, df):
         """
         Parameters
         -----------
@@ -57,8 +60,15 @@ class ConvertData():
 
         Returns
         ----------------
-        df[rf_columns]: dataframe of only features that model will predict on
+        X: df[rf_columns], dataframe of only features that model will predict on
+        y: the label
+        shot_df: dataframe with shot data + player_id
         
         """
-        rf_columns = ['shot_distance', 'shot_angle', 'assisted_shot']
-        return df[rf_columns].astype(float)
+        player_shot_columns = ['player_id', 'shot_distance', 'shot_angle', 'assisted_shot', 'is_goal', 'passed_from_id']
+        model_columns = ['shot_distance', 'shot_angle', 'assisted_shot']
+        X =  df[model_columns].astype(float)
+        y = df['is_goal'].astype(float)
+        shot_df = df[player_shot_columns]
+        return X, y, shot_df
+

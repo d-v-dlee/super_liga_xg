@@ -132,3 +132,13 @@ def gb_kfold_tune(X, y, splits=5, metric=log_loss):
     
     return list(zip(scores_, trees_))
 
+def gb_best_parameters(X, y, splits=5, metric=log_loss):
+    """
+    returns optimum number of trees for best log loss
+    THE ONLY FUNCTION YOU NEED TO RUN FOR GB TUNING
+    """
+    gb_results = gb_kfold_tune(X, y)
+    lowest_ll = np.min([np.mean(gb_results[i][0]) for i in range(6)])
+    best_loss_pos = np.argmin([np.mean(gb_results[i][0]) for i in range(6)])
+    best_trees = [np.mean(gb_results[i][1]) for i in range(6)][best_loss_pos]
+    return best_trees, lowest_ll
