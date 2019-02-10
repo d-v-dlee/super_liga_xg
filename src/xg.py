@@ -60,6 +60,7 @@ class ExpectedGoal():
         ---------
         contribution_df: dataframe grouped by unique player_id with summed up xG and xA
         """
+        
         unique_players = self.ensemble_df['player_id'].unique()
         contributions = []
         for player in unique_players:
@@ -71,6 +72,11 @@ class ExpectedGoal():
         return contribution_df
     
     def xg_and_xa(self):
+        """
+        returns
+        --------
+        df: dataframe with attacking stats for players
+        """
         xa_sum = self.create_summed_xa()
         xg_sum = self.create_summed_xg()
 
