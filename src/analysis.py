@@ -39,15 +39,24 @@ def plot_shot_map(df):
     ax.scatter((df[df['is_goal']==0]['shot_coord_x1'] * 6 + 50), (df[df['is_goal']==0]['shot_coord_y1'] * 6.58 + 250), alpha=0.2, color='blue', linewidths=0.1)
     ax.scatter(df[df['is_goal']==1]['shot_coord_x1'] * 6 + 50, df[df['is_goal']==1]['shot_coord_y1'] * 6.58 + 250, alpha=0.5, color='red', linewidths=0.1)
 
-def individual_shot_map(shots_df, player_id):
-    """input shots_df and player_id and return shot chart for individual player
-    multiply coordinate system by 6 instead of 7.32 for distance and representation
-    normally 7.32, here 6"""
+def individual_shot_map(shots_df, final_df, player_id):
+    """
+
+    parameters
+    --------------
+    shots_df: dataframe with coordinate of shots
+    final_df: dataframe with player as rows with summed xG values
+    player_id: player_id
+
+    returns
+    --------------
+    plot of goals
+    """
 
     player_df = shots_df[shots_df['player_id'] == player_id ]
-    xG = round(xg_df[xg_df['player_id'] == player_id]['total_xG'].iloc[0], 2)
-    goals = xg_df[xg_df['player_id'] == player_id]['goals'].iloc[0]
-    name = xg_df[xg_df['player_id'] == player_id]['player_name'].iloc[0]
+    xG = round(final_df[final_df['player_id'] == player_id]['total_xG'].iloc[0], 2)
+    goals = final_df[final_df['player_id'] == player_id]['goals'].iloc[0]
+    name = final_df[final_df['player_id'] == player_id]['name'].iloc[0]
 
     img1 = mpimg.imread('../data/soccer_field.jpg')
     fig, ax = plt.subplots(figsize=(10, 8))
