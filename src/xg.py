@@ -26,6 +26,7 @@ class ExpectedGoal():
         p_xgboost = self.xgb_model.predict_proba(predict_df)
         p_ensemble = (p_random_forest + p_gradient_boost + p_xgboost) / 3
         self.model_probs.extend([p_random_forest, p_gradient_boost, p_xgboost, p_ensemble])
+        self.df['xG'] = p_ensemble[:, 1]
         # return self.model_probs
 
     def xg_ensemble(self):
@@ -39,7 +40,7 @@ class ExpectedGoal():
 
         self.xa_df = self.ensemble_df.loc[:, ['xA', 'passed_from_id']].copy()
         self.ensemble_df.drop(['xA', 'passed_from_id'], axis=1, inplace=True)
-        return self.ensemble_df, self.xa_df
+        # return self.ensemble_df, self.xa_df
     
     def create_summed_xa(self):
         unique_players = self.ensemble_df['player_id'].unique()
@@ -73,13 +74,27 @@ class ExpectedGoal():
     
     def xg_and_xa(self):
         """
+        CALL THIS and this will call create_summed_xg and create_summed_xa
+
         returns
         --------
         df: dataframe with attacking stats for players
         """
+        self.xg_ensemble()
         xa_sum = self.create_summed_xa()
         xg_sum = self.create_summed_xg()
 
         df = pd.merge(xa_sum, xg_sum, on=['player_id'])
         df['total_xG+xA'] = df.loc[:, 'total_xG'] + df.loc[:, 'total_xA']
         return df[['player_id', 'total_xG', 'goals', 'total_xA', 'total_xG+xA']].sort_values('goals', ascending=False)
+    def transform_coordinate_xg(self, coordinate_shot_df):
+        """
+        parameters
+        --------
+        coordinate_shot_df: dataframe with shots as rows with coordinate data
+        returns
+        ------------
+        dataframe with xG added
+        """
+        coordinate_shot_df['xG'] = self.ensemble_df.loc[: ,'xG']
+        return coordinate_shot_df
