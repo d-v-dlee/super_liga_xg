@@ -46,13 +46,13 @@ class FinalDataframe():
     
     def final_df_creator(self):
         self.final_df = pd.merge(self.player_df, self.total_df, on=['player_id'])
-        self.final_sub_df = self.final_df[['name', 'position', 'minutes_played', 'age', 'transfer_value(USD)', 'goals', 'total_xG', 'total_xA', 'total_xG+xA']].sort_values('goals', ascending=False).copy()
+        self.final_sub_df = self.final_df[['player_id', 'name', 'position', 'minutes_played', 'age', 'transfer_value(USD)', 'goals', 'total_xG', 'total_xA', 'total_xG+xA']].sort_values('goals', ascending=False).copy()
         return self.final_sub_df
     
     def additional_stats(self):
         alt_df = self.final_sub_df.copy()
         alt_df['xG+xA/90'] = round(alt_df.loc[:, 'total_xG+xA'] / alt_df.loc[:, 'minutes_played'] * 90, 2)
-        alt_df['Goals v. Expected'] = alt_df.loc[:, 'goals'] - alt_df.loc[:, 'total_xG']
+        alt_df['Goals v. Expected Diff'] = alt_df.loc[:, 'goals'] - alt_df.loc[:, 'total_xG']
         return alt_df
 
  
