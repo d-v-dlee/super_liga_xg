@@ -149,7 +149,10 @@ def minutes_played(subs_df, player_df):
     return player_df
     
 def turn_into_dollar_value(value, exchange_rate):
-    """input value (transfer_value(sterlings) in dataframe) and return dollar amount as float"""
+    """input value (transfer_value(sterlings) in dataframe) and return dollar amount as float
+    
+    used as helper function to transfer_markt_cleaner
+    """
     if 'm' in value:
         num_value = float(''.join(x for x in value if x in ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '.']))
     elif 'k' in value:
@@ -160,7 +163,17 @@ def turn_into_dollar_value(value, exchange_rate):
 
 def transfer_markt_cleaner(players):
     """input players from db.players.find() and return cleaned dataframe with club_brev and squad_num as floats, 
-    transfer_value in USD and age"""
+    transfer_value in USD and age
+    
+    parameters
+    ----------
+    players: output from mongodb db.players.find()
+
+    returns
+    ------------
+    tm_player: dataframe of meta playerdata from transfermarkt
+
+    """
     
     tm_club_brev = {'Squad Club Atlético Boca Juniors': 'BOC' , 'Squad Club Atlético Independiente': 'IND', 'Squad Club Atlético River Plate': 'RIV', 'Squad Racing Club': 'RAC',
        'Squad Club Atlético San Lorenzo de Almagro': 'SLO', 'Squad Club Atlético Lanús': 'LAN', 'Squad Club Atlético Vélez Sarsfield': 'VEL',
