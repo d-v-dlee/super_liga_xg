@@ -1,5 +1,5 @@
 PyWavelets==1.0.0
-PyYAML==3.13
+PyYAML==4.2b1
 pyzmq==17.1.2
 QtAwesome==0.4.4
 qtconsole==4.4.1
