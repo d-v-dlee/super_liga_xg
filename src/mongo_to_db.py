@@ -66,7 +66,7 @@ def create_master_df(games):
     attach_to_df = create_frame()
     for game in games:
         df = game_to_cleaned_df(game)
-        final_df = pd.concat([attach_to_df, df], axis=0, ignore_index=True)
+        final_df = pd.concat([attach_to_df, df], axis=0, ignore_index=True, sort=True)
         ### may get a warning because a game doesn't have corner_kick values ###
         attach_to_df = final_df[columns].copy()
     return final_df[columns].copy()
@@ -87,6 +87,30 @@ def game_to_player_df(game):
 
     minutes_player_df = minutes_played(subs_df, player_df)
     return minutes_player_df
+
+
+def afa_player_dict(games):
+    """
+    turns game from mongodb into pd --> back into dictionary
+    
+    parameters
+    ----------------
+    game: a game from mongodb
+
+    returns:
+    dictionary of player_info and total_minutes player
+    """
+    player_dict = {}
+    for game in games:
+        temp_df = game_to_player_df(game)
+        for player in temp_df['player_id'].unique():
+            if player not in player_dict:
+                player_dict[player] = {'name': temp_df[temp_df['player_id'] == player]['name'].values[0] , 'position_id':  temp_df[temp_df['player_id'] == player]['position_id'].values[0],
+                                        'squad_num':  temp_df[temp_df['player_id'] == player]['squad_number'].values[0], 'team_id':  temp_df[temp_df['player_id'] == player]['team_id'].values[0],
+                                        'minutes_played':  temp_df[temp_df['player_id'] == player]['minutes_played'].values[0], 'player_id': temp_df[temp_df['player_id'] == player]['player_id'].values[0] }
+            else:
+                player_dict[player]['minutes_played'] += temp_df.loc[temp_df['player_id']==player, 'minutes_played'].values[0]
+    return player_dict
 
 def create_player_min_frame():
     """return a dataframe to concat to for player_sub_information"""
